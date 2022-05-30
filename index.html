@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -137,25 +138,29 @@
         </div>
         <div class="mid_header">
           <div class="container">
-            <div class="row">
-              <div class="col-2">
-                <div class="main-logo">
-                  <img
+            <div class="row align-items-center">
+              <div class="col-2 col-xl-2">
+                <div class="main-logo ">
+                  <img class="img-fluid"
                     width="130px"
                     src="https://cmart.global/static/img/citimart-logo.svg"
                     alt=""
                   />
                 </div>
               </div>
-              <div class="col-5">
-                <!-- <div class="input-group">
+              <div class="col-5 col-xl-6">
+                <div class="input-group search_bar">
                   <button
-                    class="btn btn-outline-secondary dropdown-toggle"
+                    class="btn btn-outline-secondary dropdown-toggle "
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                  All Categories
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1484 5L6.39844 8.75L2.64844 5" stroke="#787E8D" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      
                   </button>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action before</a></li>
@@ -172,22 +177,27 @@
                     type="text"
                     class="form-control"
                     aria-label="Text input with 2 dropdown buttons"
+                    placeholder="I’m Looking for..."
                   />
                   <button
-                    class="btn btn-outline-secondary"
+                    class="btn btn-outline-secondary search_btn"
                     type="button"
                     id="button-addon2"
                   >
-                    Button
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.2734 19.25C15.6227 19.25 19.1484 15.7242 19.1484 11.375C19.1484 7.02576 15.6227 3.5 11.2734 3.5C6.9242 3.5 3.39844 7.02576 3.39844 11.375C3.39844 15.7242 6.9242 19.25 11.2734 19.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.3984 18.5L21.3984 21.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
                   </button>
-                </div> -->
+                </div>
               </div>
-              <div class="col-5">
+              <div class="col-5 col-xl-4">
                 <div class="float-end d-flex align-items-center">
                   <div class="header_user_area">
                     <ul>
                       <li>
-                        <a href="">
+                        <a class="login_btn" href="">
                           <svg
                             width="18"
                             height="25"
@@ -252,11 +262,11 @@
             </div>
           </div>
         </div>
-        <!-- <div class="navbar-custom-new">
+        <div class="desktop_nav">
           <div class="container">
-            <div class="row">
-              <div class="col-3">
-                <div class="new-all-department">
+            <div class="row ">
+              <div class="col-1 col-sm-2">
+                <div class="all_department">
                   <ul>
                     <li>
                       <a role="button" id="categoryMenuToggle">
@@ -280,24 +290,26 @@
                             fill="white"
                           />
                         </svg>
-                        All DEPARTMENTS
+                        <span>All DEPARTMENTS</span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="custom-new-main-menu text-center">
-                  <ul class="justify-content-center">
+              <div class="col-9 col-sm-7">
+                <div class="desktop_nav_items text-center">
+                  <ul class="justify-content-center ">
                     <li><a href="">home</a></li>
                     <li><a href="">products</a></li>
                     <li><a href="">daily need</a></li>
                     <li><a href="">offers</a></li>
+                    <li><a href="">flash sell</a></li>
+                    <li><a href="">ramadan</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="col-3">
-                <div class="new-custom-hotline-area">
+              <div class="col-2 col-sm-3">
+                <div class="hotline_area">
                   <ul class="float-end">
                     <li>
                       <a href="">
@@ -313,7 +325,7 @@
                             fill="white"
                           />
                         </svg>
-                        HOTLINE: (+880)123456790</a
+                        <span>HOTLINE: </span> (+880)123456790</a
                       >
                     </li>
                   </ul>
@@ -321,7 +333,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
         <div class="all_department_menu">
           <div class="container">
             <div class="row">
@@ -403,9 +415,9 @@
                     </li>
                   </ul>
   
-                  <div class="new-all-department-mega-menu">
+                  <div class="all_department-mega-menu">
                     <!-- Mega menu  -->
-                        <div class="col-12 new-all-department-mega-menu-items"></div>
+                        <div class="col-12 all_department-mega-menu-items"></div>
                   </div>
                 </div>
   
@@ -421,7 +433,7 @@
       .all_department_menu-items{
         position: relative;
       }
-      .new-all-department-mega-menu{
+      .all_department-mega-menu{
         position: absolute;
         width: 100%;
         height: 100%;
@@ -438,19 +450,19 @@
     ></script>
     <script>
       $("#categoryMenuToggle").on("click", function () {
-        $(".all_department_menu").slideToggle(500);
+        $(".all_department_menu").slideDown(500);
       });
 
       // $(".all_department_menu-items ul li").hover(function () {
-      //   $(".new-all-department-mega-menu").css({
+      //   $(".all_department-mega-menu").css({
       //     display: "block",
       //   });
       // });
 
       // $(document).ready(function () {
-      //   $(".all_department_menu-items ul li, .new-all-department-mega-menu").hover(
+      //   $(".all_department_menu-items ul li, .all_department-mega-menu").hover(
       //     function () {
-      //       $(".new-all-department-mega-menu").slideDown(500);
+      //       $(".all_department-mega-menu").slideDown(500);
       //     }
 
       //   );
