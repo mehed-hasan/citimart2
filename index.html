@@ -3290,46 +3290,32 @@
     </section>
 
 
-    <!-- <section class="mobile_menu d-flex">
+    <section class="mobile_menu d-flex align-items-center justify-content-between">
       <div class="mob_menu_item">
-        <a href="">
-          <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 19.2487V11.4227C21.0001 10.8782 20.889 10.3395 20.6735 9.83942C20.458 9.33939 20.1428 8.8886 19.747 8.51468L12.374 1.54669C12.0027 1.19561 11.511 1 11 1C10.489 1 9.99734 1.19561 9.626 1.54669L2.253 8.51468C1.85722 8.8886 1.54195 9.33939 1.3265 9.83942C1.11104 10.3395 0.999942 10.8782 1 11.4227V19.2487C1 19.7791 1.21071 20.2878 1.58579 20.6629C1.96086 21.038 2.46957 21.2487 3 21.2487H19C19.5304 21.2487 20.0391 21.038 20.4142 20.6629C20.7893 20.2878 21 19.7791 21 19.2487Z" stroke="#FF0000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <a href="#">
+          <img src="images/icons/home.svg" alt="">
             Home            
         </a>
       </div>
 
-      <div class="mob_menu_item">
-        <a href="">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="1" width="8.42105" height="8.42105" rx="2" stroke="#92929D" stroke-width="1.5"/>
-            <rect x="12.579" y="1" width="8.42105" height="8.42105" rx="2" stroke="#92929D" stroke-width="1.5"/>
-            <rect x="1" y="12.5789" width="8.42105" height="8.42105" rx="2" stroke="#92929D" stroke-width="1.5"/>
-            <rect x="12.579" y="12.5789" width="8.42105" height="8.42105" rx="2" stroke="#92929D" stroke-width="1.5"/>
-            </svg>
-            
+      <div class="mob_menu_item mobile_cat">
+        <a href="#">
+          <img src="images/icons/cat.svg" alt="">
             Category            
         </a>
         </div>
 
         <div class="mob_menu_item">
-          <a href="">
-            <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 6.4C1 2 4.5 1 6.5 1C9 1 11 3 12 4.5C13 3 15 1 17.5 1C19.5 1 23 2 23 6.4C23 13 12 19 12 19C12 19 1 13 1 6.4Z" stroke="#92929D" stroke-width="1.8"/>
-              </svg>
+          <a href="#">
+            <img src="images/icons/heart.svg" alt="">
               Favorite              
           </a>
         </div>
 
 
         <div class="mob_menu_item">
-          <a href="">
-            <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.5 9.5C8.37283 9.5 7.29183 9.05223 6.4948 8.2552C5.69777 7.45817 5.25 6.37717 5.25 5.25C5.25 4.12283 5.69777 3.04183 6.4948 2.2448C7.29183 1.44777 8.37283 1 9.5 1C10.6272 1 11.7082 1.44777 12.5052 2.2448C13.3022 3.04183 13.75 4.12283 13.75 5.25C13.75 6.37717 13.3022 7.45817 12.5052 8.2552C11.7082 9.05223 10.6272 9.5 9.5 9.5Z" stroke="#92929D" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M1 20.8333V19.4167C1 17.9138 1.59702 16.4724 2.65973 15.4097C3.72243 14.347 5.16377 13.75 6.66667 13.75H12.3333C13.8362 13.75 15.2776 14.347 16.3403 15.4097C17.403 16.4724 18 17.9138 18 19.4167V20.8333" stroke="#92929D" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-              
+          <a href="#">
+            <img src="images/icons/profie.svg" alt="">
               Account              
           </a>
         </div>
@@ -3337,7 +3323,7 @@
  
 
 
-    </section> -->
+    </section>
 
 
 
@@ -3354,9 +3340,15 @@
         $(".all_department_menu").slideDown(500);
       });
 
-      $(".mobile_menu_btn a").click(function(){
+      $(".mobile_cat").click(function(){
         $(".mobile_drawer").toggleClass("mobile_drawer_switch");
       });
+
+      $(".mob_menu_item").click(function(){
+        $(".mob_menu_item").removeClass("mob_menu_item_active");
+        $(this).addClass("mob_menu_item_active");
+      });
+
 
 
       // $(".all_department_menu-items ul li").hover(function () {
