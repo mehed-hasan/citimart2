@@ -3,6 +3,7 @@
   --primary-color: #FF0000;
   --secondary-color:#BBBBBB;
   --tatiary-color:#F5F5F5;
+  --title-color : #474C5A;
 }
 
 
@@ -15,13 +16,17 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow: unset;
 }
-ul{
+.body_scroll_lock{
+  overflow: hidden;
+}
+
+ul, li, a, p, h1, h2, h3, h4, h5, h6{
   padding: 0px;
+  margin: 0px;
 }
-li{
-  padding: 0px;
-}
+
 
 .btn-check:active+.btn-outline-secondary:focus, .btn-check:checked+.btn-outline-secondary:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus, .btn-outline-secondary:active:focus
 {
@@ -31,7 +36,6 @@ li{
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: transparent;
   box-shadow: none;
   
 }
@@ -84,10 +88,8 @@ line-height: 21px;
 }
 
 .main {
-  /*will remove*/
   width: 100%;
-  background: rebeccapurple;
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 
@@ -432,11 +434,6 @@ header.custom_header {
 }
 
 
-/* Deparment items hover  */
-/* .department_items {
-  position: relative;
-} */
-
 .all_department_menu{
   position: relative;
 }
@@ -467,7 +464,7 @@ header.custom_header {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  color: #474C5A;
+  color: var(--title-color);
   margin-bottom: 24px;
 }
 .nav_mega_sub_items a{
@@ -503,7 +500,6 @@ header.custom_header {
 /* Mobile header  */
 
 body{
-  height: 100vh;
   position: relative;
 }
 #mobile_header{
@@ -526,18 +522,21 @@ body{
 }
 .mobile_search_cart_btn a:first-child {
 }
-.mobile_drawer{
+.mobile_menu_content{
   position: absolute;
   width: 100%;
   right: 100%;
+  height: 100vh;
   transition: .5s;
+  z-index: 1;
 }
 .accordion-collapse.show{
   transition: 4s;
 }
 
-.mobile_drawer_switch{
-  right: 0%;
+.mobile_content_switch{
+  right: 0% !important;
+  z-index: 999;
 }
 
 .mobile_drawer .all_department_menu{
@@ -598,10 +597,12 @@ body{
 }
 .mobile_drawer .accordion-button:not(.collapsed)::after {
   background-image:url(images/icons/arrow.png);
+  background-image:url(/assets/images/icons/arrow.png);
   transform: rotate(-180deg);
 }
 .mobile_drawer .accordion-button::after {
   background-image:url(images/icons/arrow.png);
+  background-image:url(/assets/images/icons/arrow.png);
 }
 
 .mobile_drawer .accordion-button:focus {
@@ -643,6 +644,7 @@ border-radius: 8px;
 
 .mobile_drawer .accordion-body {
   padding: 0px 10px;
+  overflow: scroll;
 }
 
 .mobile_drawer .tab-content>.tab-pane {
@@ -655,6 +657,7 @@ border-radius: 8px;
 .mobile_menu{
   display: none !important;
 }
+
 .mobile_menu {
   min-height: 60px;
   margin: auto;
@@ -688,7 +691,7 @@ display: block;
 .mob_menu_item_active img{
   -webkit-filter: invert(0%) grayscale(100%) brightness(93%) sepia(81%) hue-rotate(-49deg) saturate(400%) contrast(5);
 }
-.mob_menu_item_active a{
+.mob_menu_item_active{
   color: var(--primary-color) !important;
 }
 
@@ -699,15 +702,10 @@ display: block;
 /* ------------------------------------------- */
 
 
-
-
-/* code for footer started  */
-
 #footer{
   background-color:#E11919;
-  padding-bottom: 50px;
 }
-#footer .row{
+#footer .top_footer .row{
   min-height: 329px;
 }
 
@@ -736,10 +734,7 @@ display: block;
   margin: 0px 8.5px;
   text-decoration: none;
 }
-.top_footer .useful_links{
-  margin-left: auto;
-  max-width: 500px;
-}
+
 .footer_options a{
   display: block;
   text-decoration: none;
@@ -752,16 +747,25 @@ display: block;
 
 
 }
+.footer_contact_option a{
+  font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+}
 .footer_logo img{
   max-width: 200px;
   width: 100%;
 }
 .tiny_footer{
-  background-image: url('assets/images/backgrounds/tiny_footer.png');
+  background-image: url(../images/footer/tiny_footer.svg);
+  background-image: url(/assets/images/footer/tiny_footer.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.tiny_footer .row{
   min-height: 83px;
+
 }
 .tiny_footer .tiny_text{
   font-style: normal;
@@ -871,7 +875,7 @@ display: block;
 
 .find_store {
   background-color: transparent;
-  height: 90px
+  height: 120px
 
 }
 .find_store a{
@@ -891,13 +895,123 @@ display: block;
   font-size: 12px !important;
 }
 }
+}
 
+
+/* Mobile search screen started  xxx*/ 
+
+
+.mobile_menu_content .search_bar button{
+  background: var(--primary-color);
+  border: 1px solid transparent;
+}
+.mobile_menu_content .search_bar input{
+  background-color: #F7F7F7;
+  border-color: #F7F7F7;
+}
+.mobile_menu_content ::placeholder{
+  color: rgba(215, 215, 215, 1);
+}
+.mobile_menu_content .input-group{
+  height: 50px;
+  margin-top: 10px;
+}
+
+
+
+.tag_btn {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #C4C4C4;
+  padding: 5px;
+  border: 1.5px solid #F5F5F5;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: .5s;
+  margin-right:5px ;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.mobile_search h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #44444F;
+}
+/* Mobile search screen ended  */
+
+/* Mobile navs screen  started ----------------- */
+.mobile_nav a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #C4C4C4;
+  display: block;
+  margin-bottom: 15px;
+}
+
+
+
+/* Gap classes for this project started  */
+/* -------------------------------------------- */
+
+
+.gap_96{
+  height: 96px;
+}
+.gap_64{
+  height: 64px;
+}
+.gap_40{
+  height: 40px;
+}
+.gap_32{
+  height: 32px;
+}
+.gap_24{
+  height: 24px;
+}
+
+/* Gap classes for this project ended--------   */
+/* ----------------------------------------------------- */
+
+
+
+/* heading clasess started  */
+/* --------------------------------------------- */
+
+.heading_1{
+ color:  var(--title-color);
+ font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-align: center;
+
+}
+/* Heading classes ended - */
+/* ----------------------------------------------------- */
+
+
+
+/*-------- Media query of common css ---------- */
+
+/* 1425px break point ------------------- */
 @media screen and (max-width:1425px){
   .department_items .nav_mega_menu {
     top:178% !important;
   }
 
 
+  /* 1201 breakpoint----------------  */
   @media screen and (max-width:1201px){
     #desktop_header{
       display: none;
@@ -925,10 +1039,54 @@ display: block;
 
 }
 
+/* 992 px responsive------------------- */
 @media screen and (max-width:992px){
+  #footer{
+    padding:0px 10px;
+    margin-bottom: 60px;
+
+  }
   .top_footer .useful_links {
-    max-width: 750px;
+    max-width: 400px;
     width: 100%;
+    margin: auto;
+}
+
+
+
+.top_footer img{
+  padding-top: 20px;
+
+}
+
+.find_store svg {
+  height: 55px;
+}
+
+.tiny_footer_images img{
+  margin: 0px 2px;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 }
+
+
+/* 768 brakpoint ---------------- */
+@media screen and (max-width:768px){
+  .tiny_footer .tiny_text{
+    font-size: 14px;
+  }
 }
+
+
+
+/* 375 brakpoint ---------------- */
+
+@media screen and (max-width:375px){
+  .footer_options a {
+    font-size: 12px;
+  }
+}
+
+
+/* Meadia query css ended  */
