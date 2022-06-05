@@ -22,3 +22,7 @@
   });
 
 
+// Desktop sliding option 
+$("#categoryMenuToggle").on("click", function () {
+  $(".all_department_menu").slideToggle(500);
+});
