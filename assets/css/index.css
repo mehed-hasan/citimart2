@@ -1,0 +1,687 @@
+/* Importing commons css file       */
+@import url(common.css);
+
+/* Home banner with side menu started ----====  */
+/* ============================================== */
+
+#sidemenu_banner .banner_part {
+    padding: 0px !important;
+}
+
+.banner_options ul li {
+    list-style: none;
+}
+
+.level_1_option>li {
+    position: relative;
+}
+
+
+
+.level_2_option,
+.level_3_option {
+    position: absolute;
+    left: 100%;
+    top: 20px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.last_child svg {
+    display: none;
+}
+
+.level_1_option>li:hover .level_2_option {
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+}
+
+.level_2_option>li:hover .level_3_option {
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+}
+
+
+
+.banner_options a {
+    text-decoration: none;
+    color: #787E8D;
+    padding: 10px 15px;
+    background: #F7F7FA;
+    border-bottom: 1px solid #ebedf2;
+    border-right: 1px solid #ebedf2;
+    transition: .5s;
+}
+
+.banner_options>ul>li>ul a {
+    background-color: white;
+}
+
+
+.sidemenu_item img {
+    transition: .5s;
+}
+
+.sidemenu_item svg {
+    transition: .5s;
+}
+
+.sidemenu_item:hover {
+    color: var(--primary-color);
+}
+
+.sidemenu_item:hover svg path {
+    stroke: var(--primary-color);
+}
+
+.sidemenu_item:hover img {
+    -webkit-filter: invert(80%) grayscale(100%) brightness(93%) sepia(81%) hue-rotate(-49deg) saturate(400%) contrast(5);
+}
+
+.sidemenu_item span {
+    padding-left: 20px;
+}
+
+.banner_bg {
+    background-origin: center;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner_content {
+    align-items: center;
+    height: 100%;
+    padding: 0px 80px;
+}
+
+.banner_content .row {
+    height: 100%;
+    align-items: center;
+}
+
+.banner_heading h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 42px;
+    color: var(--primary-color);
+}
+
+.banner_heading {
+    padding: 50px 0px;
+}
+
+.banner_heading h3 {
+    font-style: normal;
+    font-weight: 200px;
+    font-size: 32px;
+    line-height: 42px;
+    color: #C4C4C4;
+    margin-top: 10px;
+
+}
+
+.banner_slider .slick-dots .slick-active button {
+    background-color: var(--primary-color);
+    ;
+}
+
+.banner_slider_el {
+    margin-top: 80px;
+}
+
+.intro_img img {
+    margin: auto;
+    width: 273px;
+    max-width: 100%;
+}
+
+.banner_slider .slick-dots li {
+    list-style: none;
+    float: left;
+
+}
+
+
+.banner_slider .slick-dots {
+    padding-left: 0px;
+    margin-left: 0px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    top: 135%;
+    left: 45%;
+}
+
+.banner_slider .slick-dots li button {
+    color: transparent;
+    border: none;
+    background-color: #C4C4C4;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0px 8px;
+}
+
+
+
+
+
+/* .cat_filter btn  */
+.cat_btn_group {
+    text-align: center;
+}
+
+.cat_btn_group .cat_btn {
+    margin-bottom: 16px;
+    display: inline-flex;
+}
+
+.cat_btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.cat_btn {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--primary-color);
+    padding: 7px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+    margin: 0px 10px;
+}
+
+
+
+/* Offers section css started from here  */
+#product_offers {
+    max-width: 1320px;
+    width: 100%;
+    margin: auto;
+}
+
+.product_offer_card .offered_date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787E8D;
+}
+
+.product_offer_card .offered_text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #474C5A;
+    max-width: 266px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 34px;
+
+}
+
+.product_offer_card {
+    background: #F5F5F5;
+    border-radius: 15px;
+    max-width: 630px;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+.offered_product_img img{
+    max-height: 170px;
+}
+
+
+.product_offer_card a.shop_now {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+/* Offers section css ended from here  */
+
+
+
+
+/* Specific product section css started */
+.specific_bundles .rounded_product{
+margin-bottom: 40px;
+}
+.rounded_product  div {
+    height: 200px;
+    max-width: 200px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 12px !important;
+    margin: auto;
+}
+
+.rounded_product a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474C5A;
+}
+/* Specific product section css ended */
+
+
+/* Advertise section css started  */
+#addvertise_section .find_store{
+    background-color: var(--primary-color) ;
+    margin-bottom: 0px;
+   }
+   .addvertise_left{
+       height: 100%;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       border-radius: 15px;
+   }
+  .addvertise_right{
+      min-height: 560px;
+  }
+
+
+  /* Department section has started  */
+  
+  #departments .heading_section{
+    margin-top: 24px !important;
+  }
+
+  .filter_btn_group{
+    max-width: 1123px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .filter_btn{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(71, 76, 90, 0.6);
+    padding: 7px 15px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+    margin: 0px 10px;
+    margin-bottom: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(215, 215, 215, 0.2);
+    border: none;
+  }
+
+  .refresh_btn{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #50CE5C !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(80, 206, 92, 0.1);
+    border-radius: 12px;
+    display: block;
+    width: fit-content;
+    margin: auto;
+    transition: .5s;
+    border: none;
+  }
+  
+  .refresh_btn:hover{
+    color: #50CE5C;
+    background: rgba(80, 206, 92, 0.2);
+  }
+
+  .refresh_btn svg{
+    margin-right: 16px;
+  }
+
+  .filter_btn:hover{
+    background-color:  #FF0000;
+    color:white;
+  }
+  .filter_btn svg {
+    margin-right: 5px;
+  }
+  .filter_btn:hover svg path{
+    transition: .5s;
+  }
+  .filter_btn:hover svg path {
+    fill:white;
+    
+  }
+  
+  /* Isotop  */
+  
+
+/* ISotop code has been started  */
+
+.isotop  .wrapper {
+    width: 1000px;
+    margin: auto;
+    display: block;
+  }
+  
+  .isotop .btn{
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 15px;
+    background: #d6d6d6;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .isotop .btn:hover {
+    background: #aaa;
+  }
+  
+  /* ---- button ---- */
+  
+  .isotop  .button {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    background: #EEE;
+    border: none;
+    border-radius: 7px;
+    background: #f3f3f3;
+    color: #222;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-shadow: 0;
+    cursor: pointer;
+  }
+  
+  .isotop .button:hover {
+    background-color: #8CF;
+    color: #222;
+  }
+  
+  .isotop .button:active,
+  .isotop .button.is-checked {
+      background: #085BD8 !important;
+      box-shadow: 0px 0px 14px rgba(8, 91, 216, 0.35) !important;
+      color: white !important;
+      
+  }
+  
+  .isotop .button.is-checked {
+    color: white;
+  }
+  
+  
+  /* ---- button-group ---- */
+  
+  .isotop .button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .isotop  .button-group  .button {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 14px rgba(206, 206, 206, 0.35);
+      border-radius: 5px;
+      padding: 10px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+      color: #312E49;
+      border-radius: 5px;
+      margin: 0px 12px;
+  }
+  .filter_btn.is-checked{
+    background-color:  #FF0000;
+    color:white;
+  }
+  
+  .filter_btn.is-checked svg path{
+    fill:white;
+  }
+  
+  
+  /* ---- isotope ---- */
+  
+  .isotop  .content {
+    border: 0;
+    /* max-width: 984px;
+    width: 100%; */
+    margin: auto;
+    overflow:hidden ;
+  }
+  
+  
+  .isotop .element-item {
+    color: #262524;
+    min-height: 100px;
+    width: 16.66%;
+    padding: 0px 10px;
+    transition: .5s;
+    position: static !important;
+    left: 15% !important;
+    /* top: 50% !important; */
+    transform: translate(5%, 0%);
+}
+  .isotop  .element-item img {
+    width: 100%;
+    height: auto;
+  }
+  .isotop  .rounded_product{
+      margin-bottom: 40px;
+  }
+  
+  @media screen and (max-width:992px){
+    /* .isotop .element-item {
+      width: 33.33%;
+      min-height: 300px;
+      } */
+  }
+  
+  
+  @media screen and (max-width:768px){
+    .isotop .element-item {
+      width: 33.33%;
+      }
+  }
+  
+  @media screen and (max-width:450px){
+    /* .isotop .element-item {
+      width: 100%;
+      margin-bottom: 25px;
+      padding: 0px;
+    } */
+  }
+  
+  
+  
+  .isotop  .element-item .name {
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  
+  .isotop  .element-item .city {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .isotop  .element-item .date {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+  }
+  
+  /*Isotop ended */
+
+
+/* Home banner with side menu ended ----====  */
+/* ============================================== */
+
+
+
+
+
+/* Responsive code started for home.css  */
+
+
+/* Advertise section responsive  */
+@media screen and (max-width:1201px) {
+    .addvertise_right{
+        min-height: 500px
+    }
+    .banner_slider_el{
+        margin: 20px 0px;
+    }
+    
+}
+
+
+@media screen and (max-width:992px) {
+
+    /* Banner section responsive started  */
+
+    .banner_heading h1 {
+        font-size: 50px;
+    }
+
+    .banner_heading {
+        text-align: center;
+        padding: 0px 0px;
+    }
+
+    .banner_heading h3 {
+        font-size: 20px;
+    }
+
+    .banner_heading h3 {
+        margin: 12px 10px;
+    }
+
+    .banner_content {
+        padding: 0px;
+    }
+
+    .banner_slider .slick-dots {
+        top: 103%;
+    }
+
+    /* Banner section responsive ended  */
+
+
+    /* Cat button group responsive  */
+    .filter_btn,
+    .cat_btn {
+        font-size: 14px;
+        margin-bottom: 10px !important;
+    }
+
+    /* Cat button group responsive ended  */
+
+
+    /* Product offer button responsive  */
+    .product_offer_card .offered_text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .rounded_product a {
+        font-size: 12px;
+    }
+
+    /* Advertise section responsive  */
+    .addvertise_right{
+        min-height: 400px
+    }
+    #addvertise_section .find_store a{
+        line-height: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .banner_heading h1 {
+        font-size: 46px;
+    }
+
+    .filter_btn,
+    .cat_btn {
+        margin: 0px !important;
+        margin-bottom: 10px !important;
+
+    }
+
+      /* Product offer button responsive  */
+      /* .product_offer_card .offered_text {
+        font-size: 10px;
+    } */
+
+      .product_offer_card a.shop_now {
+        font-size: 12px;
+    }
+    .rounded_product a {
+        font-size: 10px;
+    }
+    .rounded_product div{
+        height: 111px;
+        max-width: 111px;
+        width: 100%;
+    } 
+
+        /* Advertise section responsive  */
+
+        #addvertise_section .find_store{
+            margin-top: 20px;
+        }
+        .addvertise_left{
+            min-height: 235px;
+        }
+        .addvertise_right{
+            min-height: 350px;
+        }
+        .addvertise_right{
+            margin-top: 20px;
+        }
+
+
+
+
+}
