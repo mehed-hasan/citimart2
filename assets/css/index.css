@@ -305,7 +305,9 @@ margin-bottom: 40px;
 
 
   /* Department section has started  */
-  
+  .content.all_items{
+    height: auto !important;
+}
   #departments .heading_section{
     margin-top: 24px !important;
   }
@@ -365,7 +367,7 @@ margin-bottom: 40px;
   }
 
   .filter_btn:hover{
-    background-color:  #FF0000;
+    background-color: var(--primary-color);
     color:white;
   }
   .filter_btn svg {
@@ -685,3 +687,4 @@ margin-bottom: 40px;
 
 
 }
+

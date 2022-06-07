@@ -1,0 +1,104 @@
+@import url(common.css);
+
+
+
+.offer_card img{
+    border-radius: 16px;
+  }
+  
+  .offer_card .offer_btn_wrapper{
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .add_to_bag{
+    padding: 9px;
+    text-align: center;
+    width: 100%;
+    background-color:var(--primary-color);
+    color:white;
+    border-radius: 8px;
+    border: none;
+    min-height:40px;
+  }
+  
+  .offer_card{
+    margin-bottom: 80px;
+  }
+  .offer_card img{
+      width: 100%;
+  }
+  
+  .oofer_card_details p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #979797;
+  }
+  .offer_card_price{
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+  }
+  
+  .offer_card_price h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #44444F;
+  
+  }
+  
+.offer_card_price small{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-decoration-line: line-through;
+  color: #FF0000;
+  margin-left: 12px;
+}
+
+
+  .counter_btn{
+  max-width: 200px;
+   display: flex;
+   margin: auto;
+   display: none;
+   min-height: 40px;
+  }
+
+  
+  .counter_btn button{
+    width: 25%;
+  }
+  
+  .counter_btn .add_to_bag:first-child{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .counter_btn .add_to_bag:last-child{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .counter_btn input{
+    border: none;
+    background-color: #FFEBEB;
+    color: rgba(255, 0, 0, 1);
+    font-size: 24px;
+    width: 50%;
+    padding-left: 10px;
+  }
+  @media screen and (max-width:1974px){
+    .counter_btn input{
+      padding-left: 0px;
+    }
+  }
+  
