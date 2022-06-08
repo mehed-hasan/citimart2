@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   text-decoration-line: line-through;
-  color: #FF0000;
+  color: var(--primary-color);
   margin-left: 12px;
 }
 
@@ -91,14 +91,16 @@
   .counter_btn input{
     border: none;
     background-color: #FFEBEB;
-    color: rgba(255, 0, 0, 1);
+    color: var(--primary-color);
     font-size: 24px;
-    width: 50%;
+    width: 50%;  
     padding-left: 10px;
   }
-  @media screen and (max-width:1974px){
-    .counter_btn input{
-      padding-left: 0px;
+  @media screen and (max-width:992px){
+    .offer_card {
+        margin-bottom: 40px;
     }
   }
   
+
+ 

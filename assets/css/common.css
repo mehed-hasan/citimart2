@@ -28,7 +28,7 @@ body {
   overflow: hidden;
 }
 
-ul, li, a, p, h1, h2, h3, h4, h5, h6{
+ul, li, a, p, h1, h2, h3, h4, h5, h6, p{
   padding: 0px;
   margin: 0px;
 }
@@ -87,7 +87,7 @@ line-height: 21px;
 }
 
 /*! Custom  container for this project */
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
   .container {
     max-width: 1520px !important;
   }
