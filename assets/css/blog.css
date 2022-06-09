@@ -26,7 +26,7 @@
 }
 .blog_category {
     width: 96px;
-    height: 28px;
+    height: auto;
     background-color: #f9f0f0;
     padding: 5px 15px;
     border-radius: 219px;
@@ -199,12 +199,7 @@
 
 
 /******************** Trending Review Part Start  ********************/
-.trending_review_headline {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 80px;
-    color: #b5b6c2;
-}
+
 .trending-review {
     display: flex;
     flex-direction: column;
@@ -216,13 +211,16 @@
 }
 
 
-.trending-review-card {
+.trending_review_card {
     box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
 }
 .trending-review-image img {
     object-fit: cover;
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    min-height: 300px;
 }
 .trending_review_title {
     font-weight: 500;
@@ -232,7 +230,7 @@
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.trending-review-body {
+.trending_review_body {
     padding: 20px;
 }
 .trending-review-details {
@@ -245,7 +243,7 @@
     margin-top: 10px;
     margin-bottom: 24px;
 }
-.trending-review-card:nth-child(2) {
+.trending_review_card:nth-child(2) {
     margin-top: 24px;
 }
 .focus .trending-review-details {
@@ -259,21 +257,21 @@
 
 
 
-.news-card {
+.news_card {
     box-shadow: 4px 4px 32px rgba(0, 0, 0, 0.05);
     background-color: #fff;
     border-radius: 20px;
     margin-right: 48px;
     max-width: 388px;
 }
-.news-body {
+.news_body {
     padding: 20px;
 }
-.news-image {
+.news_image {
     width: 100%;
     height: auto;
 }
-.news-body-title {
+.news_body_title {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -281,7 +279,10 @@
     margin-top: 40px;
     margin-bottom: 10px;
 }
-.news-body-description {
+.news_card .blog_status{
+    max-width: 100% !important; 
+}
+.news_body_description {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -294,7 +295,18 @@
 
 /* REsponsive code started from here  */
 
+@media screen and (max-width:1201px){
+
+    .news_card {
+        border-radius: 20px;
+        margin-right: 20px;
+        max-width: 307px;
+    }
+}
+
 @media screen and (max-width:992px){
+
+
     
     .popular_blog_image{
         width: 100%;
@@ -317,10 +329,32 @@
 }
 
 @media screen and (max-width:768px){
-    .news-image img{
-        height: 350px;
+    .news_body{
+        padding: 20px 5px;
+
+    }
+    .news_image img{
+        height: 250px;
         margin: auto;
         display: unset;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .trending_review_headline{
+        font-size: 26px;
+    }
+    .trending_review_card {
+        margin-bottom: 35px;
+    }
+    .news_card {
+        margin-right: 14px;
+        max-width: 315px;
+    }
+    .blog_status{
+        max-width: 100%;
     }
 }
 

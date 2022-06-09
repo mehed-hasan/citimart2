@@ -1,0 +1,41 @@
+.blog_details {
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.blog_details .blog_status{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+.blog_details .latest_blog_image{
+    margin-bottom: 20px;
+}
+.blog_details .latest_blog_body{
+    padding: 10px 35px;
+}
+.popular_categories_slider .slick-dots{
+    bottom: -17px;
+}
+
+@media screen and (min-width:576px){
+    .blog_details img{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .popular_blog_title{
+        font-size: 14px;
+    }
+    .popular_blog_image {
+        width: 33%;
+    }
+    .popular_blog_card {
+        min-height: auto;
+    }
+    
+    
+    
+}

@@ -25,6 +25,31 @@
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
+
+    <!-- Modal started from here  -->
+<!-- Modal -->
+<div class="location_modal modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header text-center mx-auto">
+          <img src="https://cmart.global/static/img/citimart-logo.svg" alt="">
+      </div>
+      <div class="modal-body">
+        <input class="form-control" placeholder="Dhaka" type="text" name="" id="">
+
+        <select class="form-control" name="" id="">
+          <option value="">South Dhaka</option>
+          <option value="">North Dhaka</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal ended  -->
     <section id="desktop_header">
       <header class="custom_header">
         <div class="top-header">
@@ -7159,6 +7184,10 @@
       });
 
       // external js: isotope.pkgd.js
+      $(window).on('load', function() {
+        $(".location_modal").modal('show');
+
+    });
     </script>
   </body>
 </html>

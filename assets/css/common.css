@@ -1426,6 +1426,40 @@ text-align: center;
 
 
 
+/* MOdal code started from here  */
+.modal {
+  background: rgba(255, 255, 255, .3) !important;
+  backdrop-filter: blur(8px);
+  width: 100%;
+}
+.modal-header,.modal-body, .modal-footer{
+  border:none;
+}
+.modal-header img{
+  max-width: 200px;
+  width: 100%;
+}
+
+.modal input, .modal select{
+  background: #F7F7F7;
+  margin-bottom: 35px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D7D7D7;
+  border-radius: 10px;
+  padding: 18px;
+  border: none;
+}
+
+.modal-body{
+  max-width: 350px;
+  width: 100%;
+  margin: auto;
+}
+
 
 
 /* 768 brakpoint ---------------- */
