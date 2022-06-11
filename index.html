@@ -26,30 +26,367 @@
   </head>
   <body>
 
-    <!-- Modal started from here  -->
-<!-- Modal -->
-<div class="location_modal modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- Modal started from here  -->
+<!-- location Modal -->
+<div class="location_modal  modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header text-center mx-auto">
           <img src="https://cmart.global/static/img/citimart-logo.svg" alt="">
       </div>
-      <div class="modal-body">
-        <input class="form-control" placeholder="Dhaka" type="text" name="" id="">
 
-        <select class="form-control" name="" id="">
-          <option value="">South Dhaka</option>
-          <option value="">North Dhaka</option>
-        </select>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
+      <form class="needs-validation" action="" method="post" novalidate>
+        <div class="modal-body">
+          <div class="col-12 form_items">
+            <label class="d-none" for="city_field"></label>
+            <input class="form-control" placeholder="City" type="text" name="" id="city_field" required>
+            <div class="valid-feedback">
+              Looks Good
+            </div>
+            <div class="invalid-feedback">
+              Please select city
+            </div>
+          </div>
+  
+          <div class="col-12 form_items">
+            <label class="d-none" for="select_area"></label>
+            <select class="form-control" name="" id="select_area" required>
+              <option value="">Select Area</option>
+              <option value="">South Dhaka</option>
+              <option value="">North Dhaka</option>
+            </select>
+
+            <div class="valid-feedback">
+              Looks Good
+            </div>
+            <div class="invalid-feedback">
+              Please select area
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" >Locate</button>
+        </div>
+      </form>
+
     </div>
   </div>
 </div>
-    <!-- Modal ended  -->
+<!--location  Modal ended  -->
+
+
+<!-- Sign in modal started  -->
+
+<div class="sign_in_modal modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal_head text-center">
+        <a role="button" data-bs-dismiss="modal" >
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.3994 0.3994C0.931933 -0.133133 1.79534 -0.133133 2.32787 0.3994L14.9366 13.0082L27.6774 0.406548C28.2129 -0.123053 29.0763 -0.118311 29.6059 0.417139C30.1355 0.952589 30.1307 1.81598 29.5953 2.34558L16.8651 14.9367L29.6006 27.6721C30.1331 28.2047 30.1331 29.0681 29.6006 29.6006C29.0681 30.1331 28.2047 30.1331 27.6721 29.6006L14.9261 16.8545L2.32256 29.3204C1.78711 29.85 0.923719 29.8452 0.394119 29.3098C-0.135482 28.7743 -0.13074 27.9109 0.40471 27.3813L12.9976 14.926L0.3994 2.32787C-0.133133 1.79534 -0.133133 0.931933 0.3994 0.3994Z" fill="#DADADA"/>
+            </svg>
+        </a>
+          
+        <div class="modal_heading">
+          <h3> Sign In </h3>
+        <small>Don't have an account? To join us <a class="text-decoration-none" href="">Sign Up</a></small>
+        </div>
+     </div>
+
+     <div class="gap_40"></div>
+
+
+      <form action="" class="needs-validation" novalidate >
+      <div class="modal-body">
+        <div class="col-12 form_items">
+          <label for="validationCustom01">First name</label>
+          <input id="validationCustom01" class="form-control" placeholder="Full Name" type="text" name=""  required>
+          <div class="invalid-feedback">
+            Please choose a username.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-12 form_items">
+          <label for="validationCustom02">Password</label>
+          <input id="validationCustom02" class="form-control" placeholder="Password" type="password" name=""  required>
+          <div class="invalid-feedback">
+            Please write a valid password.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+      </div> 
+      <!-- xxx  -->
+        <div class="modal-footer text-center">
+          <button type="submit" class="btn btn-outline-primary" >Confirm</button>
+        </div>
+
+        <div class="recover_pass text-center">
+          <small>Forgot your password?
+             <a href="">Recover Password</a></small>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Sign in modal ended  -->
+<!-- ======================================= -->
+
+<!-- Sign up modal step 1 started  -->
+<div  class="sign_up_modal_1 modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal_head text-center">
+        <a role="button" data-bs-dismiss="modal" >
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.3994 0.3994C0.931933 -0.133133 1.79534 -0.133133 2.32787 0.3994L14.9366 13.0082L27.6774 0.406548C28.2129 -0.123053 29.0763 -0.118311 29.6059 0.417139C30.1355 0.952589 30.1307 1.81598 29.5953 2.34558L16.8651 14.9367L29.6006 27.6721C30.1331 28.2047 30.1331 29.0681 29.6006 29.6006C29.0681 30.1331 28.2047 30.1331 27.6721 29.6006L14.9261 16.8545L2.32256 29.3204C1.78711 29.85 0.923719 29.8452 0.394119 29.3098C-0.135482 28.7743 -0.13074 27.9109 0.40471 27.3813L12.9976 14.926L0.3994 2.32787C-0.133133 1.79534 -0.133133 0.931933 0.3994 0.3994Z" fill="#DADADA"/>
+            </svg>
+        </a>
+          
+        <div class="modal_heading">
+          <h3> Sign Up </h3>
+        <small>Already have an account? <a class="text-decoration-none" href="">Sign In</a></small>
+        </div>
+     </div>
+
+     <div class="gap_40"></div>
+
+
+      <form action="" class="needs-validation" novalidate >
+      <div class="modal-body">
+        <div class="col-12 form_items">
+          <label for="signup_user_name">First name</label>
+          <input id="signup_user_name" class="form-control" placeholder="Your Name " type="text" name=""  required>
+          <div class="invalid-feedback">
+            Please insert a valid username 
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <div class="col-12 form_items">
+          <label for="signup_phone_no">Phone</label>
+          <input id="signup_phone_no" class="form-control" placeholder="+8801234567890" type="tel" name=""  required>
+          <div class="invalid-feedback">
+            Please write a valid phone number.
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+      </div> 
+        <div class="modal-footer text-center">
+          <button data-next="sign_up_modal_2"   type="submit" class="btn btn-outline-primary  " >Next
+            <svg style="margin-left:15px ;" width="10" height="12" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 16L8.10526 8.5L1 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Sign up modal step 1 ended  -->
+
+
+<!-- Sign up modal step 2 started  -->
+<div  class="sign_up_modal_2 modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal_head text-center">
+        <a role="button" data-bs-dismiss="modal" >
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.3994 0.3994C0.931933 -0.133133 1.79534 -0.133133 2.32787 0.3994L14.9366 13.0082L27.6774 0.406548C28.2129 -0.123053 29.0763 -0.118311 29.6059 0.417139C30.1355 0.952589 30.1307 1.81598 29.5953 2.34558L16.8651 14.9367L29.6006 27.6721C30.1331 28.2047 30.1331 29.0681 29.6006 29.6006C29.0681 30.1331 28.2047 30.1331 27.6721 29.6006L14.9261 16.8545L2.32256 29.3204C1.78711 29.85 0.923719 29.8452 0.394119 29.3098C-0.135482 28.7743 -0.13074 27.9109 0.40471 27.3813L12.9976 14.926L0.3994 2.32787C-0.133133 1.79534 -0.133133 0.931933 0.3994 0.3994Z" fill="#DADADA"/>
+            </svg>
+        </a>
+          
+        <div class="modal_heading">
+          <h3> Sign Up </h3>
+          
+          <div class="modal_text text-center">
+            <p>A four digit OTP has been sent to <span>+8801679813381</span> <br> Enter the code here.</p>
+          </div>
+        </div>
+     </div>
+
+     <div class="gap_40"></div>
+
+
+      <form action="" class="needs-validation" novalidate >
+      <div class="modal-body">
+        <div class="col-12 ">
+          <label for="signup_user_name">Verification Code</label>
+          <input id="signup_user_name" class="form-control" placeholder="Enter verification code" type="text" name=""  required>
+          <div class="invalid-feedback">
+            Please insert a valid code 
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <a class="resend_code" href="">Resend Code</a>
+
+      </div> 
+        <div class="modal-footer text-center">
+          <a style="font-weight: 600;" data-prev="sign_up_modal_1"   type="submit" class="btn btn-outline-primary modal_back" >
+            <svg style="margin-right:15px ; transform:rotate(180deg)"  width="10" height="12" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 16L8.10526 8.5L1 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            Back
+          </a>
+
+
+          <button data-next="sign_up_modal_3"   type="submit" class="btn btn-outline-primary  " >Next 
+            <svg  style="margin-left:15px ;" width="10" height="12" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 16L8.10526 8.5L1 1" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 
+<!-- Sign up modal step 2 ended  -->
+
+
+
+
+<!-- Sign up modal step 3 started  -->
+<div  class="sign_up_modal_3 modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal_head text-center">
+        <a role="button" data-bs-dismiss="modal" >
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.3994 0.3994C0.931933 -0.133133 1.79534 -0.133133 2.32787 0.3994L14.9366 13.0082L27.6774 0.406548C28.2129 -0.123053 29.0763 -0.118311 29.6059 0.417139C30.1355 0.952589 30.1307 1.81598 29.5953 2.34558L16.8651 14.9367L29.6006 27.6721C30.1331 28.2047 30.1331 29.0681 29.6006 29.6006C29.0681 30.1331 28.2047 30.1331 27.6721 29.6006L14.9261 16.8545L2.32256 29.3204C1.78711 29.85 0.923719 29.8452 0.394119 29.3098C-0.135482 28.7743 -0.13074 27.9109 0.40471 27.3813L12.9976 14.926L0.3994 2.32787C-0.133133 1.79534 -0.133133 0.931933 0.3994 0.3994Z" fill="#DADADA"/>
+            </svg>
+        </a>
+          
+        <div class="modal_heading">
+          <h3> Sign Up </h3>
+          
+          <div class="modal_text text-center">
+            <p>A four digit OTP has been sent to <span>+8801679813381</span> <br> Enter the code here.</p>
+          </div>
+        </div>
+     </div>
+
+     <div class="gap_40"></div>
+
+
+      <form action="" class="needs-validation" novalidate >
+      <div class="modal-body">
+        <div class="col-12 form_items">
+          <label for="signup_user_name">Password</label>
+          <input id="signup_user_name" class="form-control" placeholder="Enter Password " type="password" name=""  required>
+          <div class="invalid-feedback">
+            Please insert password
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        
+
+        <div class="col-12 form_items">
+          <label for="signup_user_name">Confirm Password</label>
+          <input id="signup_user_name" class="form-control" placeholder="Re-enter Password " type="password" name=""  required>
+          <div class="invalid-feedback">
+            Please insert password
+          </div>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+      </div> 
+        <div class="modal-footer text-center">
+
+
+          <button data-next="sign_up_modal_3"   type="submit" class="btn btn-outline-primary  " >Confirm 
+
+          </button>
+
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div> 
+<!-- Sign up modal step 3 ended  -->
+
+
+<!-- Sign up modal step 3 started  -->
+<div  class="greetings modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+
+      <div class="modal_head text-center">
+        <a role="button" data-bs-dismiss="modal" >
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.3994 0.3994C0.931933 -0.133133 1.79534 -0.133133 2.32787 0.3994L14.9366 13.0082L27.6774 0.406548C28.2129 -0.123053 29.0763 -0.118311 29.6059 0.417139C30.1355 0.952589 30.1307 1.81598 29.5953 2.34558L16.8651 14.9367L29.6006 27.6721C30.1331 28.2047 30.1331 29.0681 29.6006 29.6006C29.0681 30.1331 28.2047 30.1331 27.6721 29.6006L14.9261 16.8545L2.32256 29.3204C1.78711 29.85 0.923719 29.8452 0.394119 29.3098C-0.135482 28.7743 -0.13074 27.9109 0.40471 27.3813L12.9976 14.926L0.3994 2.32787C-0.133133 1.79534 -0.133133 0.931933 0.3994 0.3994Z" fill="#DADADA"/>
+            </svg>
+        </a>
+
+     </div>
+
+     <div class="gap_40"></div>
+
+     <svg  style="margin: auto;" width="105" height="65" viewBox="0 0 105 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M72.3178 1.38281H30.596C28.6758 1.38281 27.1191 2.93076 27.1191 4.84026V39.4147C27.1191 41.3242 28.6758 42.8722 30.596 42.8722H72.3178C74.238 42.8722 75.7946 41.3242 75.7946 39.4147V4.84026C75.7946 2.93076 74.238 1.38281 72.3178 1.38281Z" stroke="#FF0000" stroke-width="2"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M96.6558 56.7034H101.519C102.676 56.7034 103.609 55.7775 103.609 54.6353V41.4842C103.609 40.3456 103.022 38.695 102.298 37.8053L90.847 23.7397C90.1224 22.8497 88.6013 22.1289 87.4487 22.1289H75.7949V56.7034H82.7486C82.7486 52.8844 85.8618 49.7885 89.7022 49.7885C93.5426 49.7885 96.6558 52.8844 96.6558 56.7034Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M82.748 31.1213C82.748 29.9735 83.6868 29.043 84.8353 29.043H94.9706L103.609 39.3221V41.4601H84.8341C83.682 41.4601 82.748 40.5268 82.748 39.3817V31.1213Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M34.7681 56.7009H31.2902C28.9826 56.7009 27.1191 54.8431 27.1191 52.5515V42.8711H75.7946V56.7009H48.6754C48.6754 52.8819 45.5622 49.786 41.7218 49.786C37.8814 49.786 34.7681 52.8819 34.7681 56.7009Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M41.7217 63.6149C45.5621 63.6149 48.6754 60.519 48.6754 56.7C48.6754 52.8811 45.5621 49.7852 41.7217 49.7852C37.8813 49.7852 34.7681 52.8811 34.7681 56.7C34.7681 60.519 37.8813 63.6149 41.7217 63.6149Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M89.7017 63.6149C93.5421 63.6149 96.6553 60.519 96.6553 56.7C96.6553 52.8811 93.5421 49.7852 89.7017 49.7852C85.8613 49.7852 82.748 52.8811 82.748 56.7C82.748 60.519 85.8613 63.6149 89.7017 63.6149Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7.99658 12.1016H22.9978" stroke="#FF0000" stroke-width="2" stroke-linecap="round"/>
+      <path d="M7.99658 29.3867H22.9978" stroke="#FF0000" stroke-width="2" stroke-linecap="round"/>
+      <path d="M1.62695 22.4727H22.9979" stroke="#FF0000" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+
+      <div class="greeting_text mt-3">
+        <h3>Congratulations! </h3>
+         <h3>Your order has accepted </h3>
+      </div>
+
+      <div class="modal_text text-center mt-3">
+        <p>You will recive an SMS with tracking information once your goods have been shipped</p>
+      </div>
+      
+      <div class="order_btn_group d-flex justify-content-evenly mt-5">
+        <a class="track_order" href="">Track order </a>
+        <button class="btn btn-primary">Continue Shopping 
+          <svg style="margin-left: 10px;" width="10" height="12" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 16L8.10526 8.5L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        </button>
+      </div>
+      
+    </div>
+  </div>
+</div> 
+<!-- Sign up modal step 3 ended  -->
+
+
     <section id="desktop_header">
       <header class="custom_header">
         <div class="top-header">
@@ -82,6 +419,7 @@
                             d="M8.7255 13.5916C9.22757 13.5916 9.63459 13.1846 9.63459 12.6825C9.63459 12.1805 9.22757 11.7734 8.7255 11.7734C8.22342 11.7734 7.81641 12.1805 7.81641 12.6825C7.81641 13.1846 8.22342 13.5916 8.7255 13.5916Z"
                             fill="#7D7D7D"
                           />
+                          
                         </svg>
                         FAQ's
                       </a>
@@ -7185,9 +7523,50 @@
 
       // external js: isotope.pkgd.js
       $(window).on('load', function() {
-        $(".location_modal").modal('show');
+        $(".greetings").modal('show');
 
+        $(".modal_back").click(function(){
+          var prev = $(this).attr("data-prev");
+                $(this).parent().parent().parent().parent().parent().modal('hide');
+                $("."+prev).modal('show');
+        })
     });
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+
+        (function () {
+          'use strict'
+
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.querySelectorAll('.needs-validation')
+
+          // Loop over them and prevent submission
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+   
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation();
+                }
+
+                else{
+                  // If validated 
+
+                // Remove those line when it comes from back end 
+                event.preventDefault()
+                event.stopPropagation();
+                var next = $(this).find("button").attr("data-next");
+                $(this).parent().parent().parent().modal('hide');
+                $("."+next).modal('show');
+                 
+                }
+
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+
     </script>
   </body>
 </html>
