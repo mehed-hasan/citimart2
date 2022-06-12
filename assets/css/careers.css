@@ -1,0 +1,143 @@
+/* Banner 2 component started from here  */
+
+#banner_2{
+
+}
+
+.banner_2_right{
+    background-image: url('../images/backgrounds/banner_2.png');
+    min-height: 450px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#banner_2 .banner_2_heading h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #373737;
+    
+}
+
+#banner_2 .banner_2_heading p{
+    max-width: 558px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #6B6B6B;
+}
+
+/* Banner 2 component ended from here  */
+
+/* Job card component started from here  */
+.job_panel_heading h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #424242;
+    max-width: 404px;
+    width: 100%;
+}
+.job_card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.08);
+    border-radius: 15px; 
+    padding: 25px;
+    min-height: 200px;
+    margin-bottom: 30px;
+
+}
+
+.job_card h4{
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #000000;
+margin-bottom: 5px;
+
+}
+.job_card  .job_details p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #BEBEBE;
+    text-align: left;
+
+}
+.job_time{
+    color: white;
+    background-color: var(--primary-color);
+    width: fit-content;
+    border-radius: 4px;
+    padding: 1px 11px;
+    height: 26px;
+    font-weight: 600;
+    font-size: 12px;
+
+
+
+}
+
+.job_card a.view_details{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary-color); 
+    text-decoration: none;
+    text-align: left;
+}
+
+/* Job card component ended from here  */
+
+
+
+/* job portal page responsive  */
+
+@media screen and (max-width:992px){
+
+    #banner_2 .banner_2_heading h3 {
+        font-size: 32px;
+    }
+
+    #banner_2 .banner_2_heading p {
+    font-size: 14px;
+    line-height: 21px;
+    }
+
+    .banner_2_right{
+        min-height: 300px;
+    }
+    .job_panel_heading h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .job_card h4 {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .job_card a.view_details{
+        font-size: 12px;
+    }
+
+    #jobs .btn-dark{
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width:768px){
+    .job_panel_heading h3 {
+        font-size: 21px;
+        line-height: 30px;
+        max-width: 265px;
+    }
+}

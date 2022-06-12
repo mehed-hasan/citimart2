@@ -293,6 +293,8 @@
 }
 /******************** News of the Day Part End  ********************/
 
+
+
 /* REsponsive code started from here  */
 
 @media screen and (max-width:1201px){
@@ -358,10 +360,12 @@
     }
 }
 
+
+
 @media screen and (max-width:576px){
     .latest_blog_card{
         box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.05);
-border-radius: 20px;
+        border-radius: 20px;
     }
     .latest_blog_image{
         height: 300px;
