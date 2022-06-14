@@ -1,0 +1,173 @@
+
+
+.page_heading h1{
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 84px;
+    color: #000000;
+      
+}
+
+/* Store page search input field css started  */
+
+#store_search{
+    max-width: 750px;
+    width: 100%;
+}
+#store_search input{
+    border: 0.5px solid rgba(71, 76, 90, 0.2);
+    border-left: none;
+    padding: 15px ;
+    background: #FCFCFC;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+#store_search .target{
+    border: 1px solid #ced4da;
+    border-right: none;
+    background-color: transparent;
+    border: 0.5px solid rgba(71, 76, 90, 0.2);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+#store_search .search_text{
+    margin-left: 15px;
+}
+#store_search button:last-child{
+    background-color: var(--primary-color);
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+#store_search button{
+    padding: 0px 24px;
+}
+
+/* Store page search input field css ended  */
+
+
+#map{
+    height:250px;
+}
+
+/* Store details css started */
+.store_card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.division{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.39em;
+    color: #787E8D;
+    margin-bottom: 8px;  
+}
+
+.store_card {
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(206, 189, 189, 0.25);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.store_address{
+    padding: 15px;
+}
+
+.store_card .address{
+    margin-bottom: 12px;
+}
+.store_card .address span{
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+color: #474C5A;
+}
+
+.store_card .address span:last-child{
+    opacity: .5;
+    font-weight: normal;
+}
+
+.store_card a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color:var(--primary-color);
+
+}
+
+/* Store details css ended */
+
+
+/* Responsive code for this page  */
+
+@media screen and (max-width:1200px){
+        .address span{
+            font-size: 14px !important;
+        }
+        .store_card a {
+            font-size: 12px;
+        }
+        .store_address svg{
+            width:12px;
+        }
+        .division{
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        .store_card{
+            padding: 5px;
+        }
+        .store_address{
+            padding: 8px;
+        }
+
+        #store_search button{
+            padding: 0px 12px;
+        }
+
+        #store_search button:last-child {
+            font-size: 14px !important;
+        }
+        #store_search button svg{
+            height: 18px;
+        }
+        #store_search input{
+            padding: 10px 5px;
+        }
+        #map_section iframe{
+            height: 300px !important;
+        }
+        .page_heading h1 {
+            font-size: 36px;
+        }
+
+        
+    }
+
+    @media screen and (max-width:992px) {
+        .page_heading h1 {
+            font-size: 30px;
+        }
+    }
+    
