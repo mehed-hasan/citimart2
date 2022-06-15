@@ -5429,8 +5429,8 @@
             <section class="track_order_banner">
                 <div class="container">
                     <div class="row">
-                        <div class="col-5">
-                            <div class="track_banner_left">
+                        <div class="col-12 col-md-6 col-lg-5">
+                            <div class="track_banner_left text-center text-md-start">
                                 <h2 >Track your order</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam 
                                     placerat,it amet hendrerit metus vulputate id. Lorem ipsum </p>
@@ -5451,13 +5451,13 @@
                                 </div>
                             </div>
     
-                            <div class="invoices">
+                            <div class="invoices text-center text-md-start">
                                 <span>Invoice: </span><span> 2E4ffhhhkJ</span>
                             </div>
                         </div>
     
-                        <div class="col-5 offset-2">
-                            <div class="track_banner_right">
+                        <div class="col-12 offset-0   col-md-5 offset-md-1  col-lg-5 offset-lg-2 ">
+                            <div class="track_banner_right text-center text-md-start"">
                                 <p>Estimated delivery time</p>
                                 <h2>30 - 40 mins</h2>
                                 <h3>Delivery Address:</h3>
@@ -5476,38 +5476,168 @@
                         </div>
                     </div>
                 </div>
+                <div class="gap_64"></div>
             </section>
     
     
-            <section id="track_history" class="d-flex justify-content-between">
+            <section id="tracker">
+
+              <div class="tracking_heding text-center">
+                <h3>Track History</h3>
+                <div class="gap_64"></div>
+              </div>
+              <div id="track_history" class="d-flex justify-content-between">
                 <div class="completed_bar">
                     <div class="completed_dot"></div>
                 </div>
                 <div class="incompleted_bar"></div>
 
-                <div class="step">
-                    <img src="../assets/images/icons/track/like.svg" alt="">
+                <div class="step_wrapper">
+                  <div data-name="step_1" data-process="15%" class="step ">
+                      <img src="../assets/images/icons/track/like.svg" alt="">
+                  </div>
+                  <div class="step_name text-center">
+                    <p>confirmed</p>
+                    <p>Processing</p>
+                  </div>
                 </div>
 
-                <div class="step">
+                <div class="step_wrapper">
+                  <div data-name="step_2" data-process="38%" class="step ">
                     <img src="../assets/images/icons/track/tool.svg" alt="">
                 </div>
-
-
-                <div class="step">
-                    <img src="../assets/images/icons/track/tool.svg" alt="">
+                <div class="step_name text-center">
+                  <p>confirmed</p>
+                  <p>26/08/2021</p>
+                </div>
                 </div>
 
-                <div class="step">
+
+                <div class="step_wrapper">
+                  <div data-name="step_3" data-process="38%" class="step ">
+                    <img src="../assets/images/icons/track/tool.svg" alt="">
+                  </div>
+
+                  <div class="step_name text-center">
+                    <p>confirmed</p>
+                    <p>26/08/2021</p>
+                  </div>
+                </div>
+                
+
+                <div class="step_wrapper">
+                  <div data-name="step_4" data-process="62%" class="step active">
                     <img src="../assets/images/icons/track/truck1.svg" alt="">
                 </div>
-
-
-                <div class="step">
-                    <img src="../assets/images/icons/track/truck2.svg" alt="">
+                <div class="step_name text-center">
+                  <p>confirmed</p>
+                  <p>26/08/2021</p>
                 </div>
+                </div>
+                
+
+                <div class="step_wrapper">
+                  <div data-name="step_4" data-process="100%" class="step ">
+                    <img src="../assets/images/icons/track/truck2.svg" alt="">
+                 </div>
+                 <div class="step_name text-center">
+                  <p>confirmed</p>
+                  <p>26/08/2021</p>
+                </div>
+                </div>
+                
+            </div>
+            </section>
+
+            <div class="gap_24"></div>
+
+
+            <section id="item_list" >
+              <div class="gap_96"></div>
+
+              <div class="item_list_heading">
+                <h3>Item list</h3>
+              </div>
+              <div class="gap_24"></div>
+              <ul style="list-style: none;">
+                <li>
+                  <div class="ordered_item d-flex align-items-center justify-content-between">
+
+                    <div class="d-flex align-items-center">
+                      <span class="no">1.</span>
+
+                      <img src="../assets/images/products/oil.png" alt="">
+                      <h3 class="ordered_item_heading">
+                        Soyabean Oil ( 5 ltr )
+                      </h3>
+                    </div>
+                    <p class="quantity">Quantity : <span>1</span></p>
+                    <p class="price">Tk : <span>123</span></p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ordered_item d-flex align-items-center justify-content-between">
+
+                    <div class="d-flex align-items-center">
+                      <span class="no">2.</span>
+
+                      <img src="../assets/images/products/oil.png" alt="">
+                      <h3 class="ordered_item_heading">
+                        Soyabean Oil ( 5 ltr )
+                      </h3>
+                    </div>
+                    <p class="quantity">Quantity : <span>1</span></p>
+                    <p class="price">Tk : <span>123</span></p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ordered_item d-flex align-items-center justify-content-between">
+
+                    <div class="d-flex align-items-center">
+                      <span class="no">3.</span>
+
+                      <img src="../assets/images/products/oil.png" alt="">
+                      <h3 class="ordered_item_heading">
+                        Soyabean Oil ( 5 ltr )
+                      </h3>
+                    </div>
+                    <p class="quantity">Quantity : <span>1</span></p>
+                    <p class="price">Tk : <span>123</span></p>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="ordered_item d-flex align-items-center justify-content-between">
+
+                    <div class="d-flex align-items-center">
+                      <span class="no">4.</span>
+
+                      <img src="../assets/images/products/oil.png" alt="">
+                      <h3 class="ordered_item_heading">
+                        Soyabean Oil ( 5 ltr )
+                      </h3>
+                    </div>
+                    <p class="quantity">Quantity : <span>1</span></p>
+                    <p class="price">Tk : <span>123</span></p>
+                  </div>
+                  <div style=" border-bottom: 1px solid rgba(71, 76, 90, 0.5);"  class="gap_40"></div>
+
+                </li>
+
+
+                <li class="total">
+                  <div class="ordered_item d-flex align-items-end justify-content-end mt-4">
+                    <p class="price"><span style="color:#474C5A ;">Total : Tk</span> <span class="total_price"> 123</span></p>
+                  </div>
+                </li>
+
+
+              </ul>
             </section>
         </div>
+        <div class="gap_96"></div>
     </section>
 
 
@@ -5773,16 +5903,12 @@
     <script src="../assets/plugins/isotop/isotop.js" type="text/javascript"></script>
 
     <script>
-      $(".banner_slider").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        arrows: false,
-        autoplaySpeed: 2000,
-        dots: true,
+
+      $(window).on('load', function(){
+        $position = $("#track_history").find(".active").attr("data-process");
+        $(".completed_bar").css({"width":$position});
       });
 
-      // external js: isotope.pkgd.js
     </script>
   </body>
 </html>

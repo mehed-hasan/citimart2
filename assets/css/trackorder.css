@@ -1,5 +1,10 @@
 .track_order_banner  h2{
     margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #474C5A;
+
 }
 
 .track_order_banner p{
@@ -28,14 +33,11 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    display: flex;
-    align-items: center;
     color: #787E8D;
     
 }
 
 .track_order_banner .invoices span:last-child{
-    
     color:#474C5A;
 }
 
@@ -54,8 +56,6 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 48px;
-    display: flex;
-    align-items: center;
     color: var(--primary-color);
 }
 
@@ -64,8 +64,6 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    display: flex;
-    align-items: center;
     color: #474C5A;
     margin-bottom: 24px;
 }
@@ -88,25 +86,70 @@
 
 
 
-/* Track history  */
+
+/* Track history css started   */
 #track_history{
     position: relative;
     overflow: hidden;
-
+    max-width: 1263px;
+    width: 100%;
+    margin: auto;
 }
+
+.tracking_heding h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #474C5A;
+}
+
+.track_heading h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    color: #474C5A;
+}
+
 #track_history  .step{
-    padding: 15px;
+    padding: 8px;
     background-color: white;
     z-index: 2;
-}
-#track_history img{
-    height: 50px;
-    width: 50px;
     border-radius: 50%;
-    border: 2px solid var(--primary-color);
-    padding: 8px;
-    
+    border: 2px solid var(--primary-color) ;
+
+}
+.step_name{
+    margin-left: -15px;
+    margin-top: 10px;
+}
+#track_history   .step_wrapper{
+    background-color: white;
+    z-index: 10;
+    width: 60px;
+}
+
+#track_history  .step.active{
+    padding: 5px;
+    background-color: var(--primary-color);
+    z-index: 2;
+    border-radius: 50%;
+    border: 5px solid #FFE1E1 ;
+}
+
+
+#track_history img{
+    width: 40px;
+    height: 40px;
+    padding: 8px;    
 } 
+
+.step.active img{
+    -webkit-filter: invert(50%) grayscale(39%) brightness(232%) sepia(81%) hue-rotate(-49deg) saturate(319%) contrast(5);
+}
 
 
 
@@ -114,17 +157,18 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    top: 50%;
+    top: 25%;
     z-index: -1;
     border: 2px dashed #909090;
+    opacity: .3;
 }
 .completed_bar{
     position: absolute;
-    width: 85%;
+    width: 0%;
     height: 2px;
-    top: 50%;
-    z-index: 1;
+    top: 25%;
     border: 2px dashed var(--primary-color) !important;
+    transition: 1s;
 }
 .completed_dot{
     position: absolute;
@@ -132,8 +176,299 @@
     width: 25px;
     border-radius: 50%;
     right: 0px;
+    z-index: 10;
     background:var(--primary-color);
     transform: translateY(-12px)translateX(15px);
     border: 5px solid #FFE1E1;
 
 }
+
+/* Track history css ended   */
+
+
+/* Ordered item list css started  */
+#item_list{
+    max-width: 750px;
+    width: 100%;
+    
+}
+
+#item_list li{
+    margin-bottom: 32px;
+}
+
+#item_list .no{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px; 
+    color: #474C5A;
+}
+
+#item_list .item_list_heading  h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #474C5A;
+    border-bottom: 0.5px solid rgba(120, 126, 141, 0.3);
+    padding-bottom: 24px;
+}
+
+#item_list h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #474C5A;
+}
+
+#item_list .quantity, #item_list .price{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #787E8D;
+}
+
+#item_list .total_price {
+    color: var(--primary-color);
+}
+
+/* Ordered item list css ended  */
+
+
+
+@media screen and (max-width:1200px){
+    .track_order_banner h2 {
+        font-size: 32px ;
+    }
+
+    .track_order_banner p {
+        font-size: 16px;
+    }
+
+
+    
+    /* Order item responsive  */
+    #item_list h3 {
+        font-size: 18px;
+    }
+
+    #item_list .quantity, #item_list .price{
+        font-size: 16px;
+    }
+    #item_list .no {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width:992px){
+/* Track order banne responsive  */
+
+
+.track_order_banner h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.track_order_banner input {
+    padding: 10px;
+}
+
+
+
+.track_order_banner .search_bar {
+    margin: 37px 0px;
+}
+
+.track_order_banner p {
+    font-size: 14px;
+}
+ 
+
+#track_history img {
+    height: 40px;
+    width: 40px;
+}
+
+    .track_order_banner input {
+        padding: 5px;
+    }
+    .completed_dot{
+        height: 20px;
+        width: 20px;
+        transform: translateY(-10px)translateX(15px);
+
+    }
+
+
+    .incompleted_bar{
+        border: 1px dashed #909090;
+
+    }
+    .completed_bar {
+        border: 1px dashed var(--primary-color) !important;
+    }
+
+    .track_order_banner .invoices {
+        font-size: 20px;
+    }
+
+
+
+    .track_banner_right h3 {
+        font-size: 18px;
+    }
+
+
+    .track_banner_right .location {
+        font-size: 14px;
+    }
+
+    .track_banner_right .phone {
+        font-size: 15px;
+    }
+    .tracking_heding h3{
+        font-size: 26px;
+    }
+
+    #item_list .item_list_heading  h3{
+        font-size: 20px;
+        padding-bottom: 18px;
+    }
+
+
+}
+
+@media screen and (max-width:768px){
+
+    .track_banner_right{
+       margin-bottom: 35px;
+    }
+
+    .track_order_banner h2{
+        line-height: 15px;
+        margin-top: 25px;
+    }
+
+    .track_order_banner .search_bar {
+        margin: 20px 0px;
+    }
+
+    .track_order_banner input {
+        padding: 5px 8px;
+    }
+
+
+    #track_history img {
+        height: 20px;
+        width: 23px;
+        padding: 3px;
+    }
+    .completed_dot{
+        height: 18px;
+        width: 18px;
+        transform: translateY(-10px)translateX(15px);
+
+    }
+    #track_history .step{
+        padding: 8px;
+    }
+
+    .tracking_heding h3{
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+
+        /* Order item responsive  */
+        #item_list h3 {
+            font-size: 12px;
+        }
+        #item_list .quantity, #item_list .price{
+            font-size: 12px;
+        }
+    
+
+        #item_list .no {
+            font-size: 16px;
+        }
+
+        #item_list .item_list_heading  h3{
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+        #item_list li{
+            margin-bottom: 16px;
+        }
+
+
+        /* REsponsive bar  */
+        #track_history {
+            position: relative;
+            overflow: hidden;
+            max-width: 1263px;
+            width: 100%;
+            margin: auto;
+            height: 500px;
+            flex-direction: column;
+        }
+
+        .completed_bar {
+            position: absolute;
+            width: 0%;
+            height: 63%;
+            top: 0px;
+            z-index: 1;
+            left: 27px;
+            border: none !important;
+            border-left: 2px dashed var(--primary-color) !important;
+            transition: 1s;
+        }
+
+        .completed_dot {
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            bottom: 0px;
+            left: 0px;
+            z-index: 10;
+            background: var(--primary-color);
+            transform: translateY(10px)translateX(-13px);
+            border: 5px solid #FFE1E1;
+        }
+
+        .incompleted_bar {
+            position: absolute;
+            height: 100%;
+            top: 0px;
+            left: 27px;
+            z-index: -1;
+            border: none;
+            border-left: 2px dashed #909090 ;
+            opacity: .3;
+        }
+        #track_history .step.active {
+            padding: 12px;
+        }
+        #track_history .step {
+            padding: 15px;
+            background-color: white;
+            z-index: 2;
+            border-radius: 50%;
+            border: 2px solid var(--primary-color);
+            height: 57px;
+            width: 56px;
+        }
+
+}
+
+    @media screen and (max-width:375px){
+        .ordered_item img{
+            width: 25%;
+        }
+    }
