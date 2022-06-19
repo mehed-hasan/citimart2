@@ -1,0 +1,56 @@
+@import url('../css/common.css');
+
+.all_tabs button{
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    text-transform: capitalize;
+    color: #474C5A;
+    opacity: 0.4;
+    text-align: left;
+}
+
+.all_tabs .nav-link{
+    border-radius: 0px;
+    border-right: 1px solid rgba(71, 76, 90, 0.2);
+
+}
+.all_tabs .nav-link.active{
+    border-right: 1px solid  var(--primary-color);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: white;
+    color: #474C5A;
+    opacity: 1;
+}
+
+strong{
+    color: rgba(120, 126, 141, 1);
+}
+.tab_heading{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+/* Almost dark */
+
+color: #474C5A;
+
+}
+
+.content {
+    color: rgba(120, 126, 141, 1);
+}

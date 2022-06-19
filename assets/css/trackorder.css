@@ -120,16 +120,28 @@
     z-index: 2;
     border-radius: 50%;
     border: 2px solid var(--primary-color) ;
+    width: 60px;
+    margin: auto;
 
 }
 .step_name{
-    margin-left: -15px;
+    margin-left: -1px;
     margin-top: 10px;
+    font-size: 16px;
+}
+.step_name p:first-child{
+    color: #474C5A;
+    font-weight: 500;
+}
+.step_name p:last-child{
+    color: #A0A1A5;
+    font-weight: 400;
+    margin-top: 16px;
 }
 #track_history   .step_wrapper{
     background-color: white;
-    z-index: 10;
-    width: 60px;
+    z-index: 1;
+    /* width: 60px; */
 }
 
 #track_history  .step.active{
@@ -322,11 +334,13 @@
 
     .track_banner_right h3 {
         font-size: 18px;
+        margin-bottom: 10px;
+
     }
 
 
     .track_banner_right .location {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .track_banner_right .phone {
@@ -347,12 +361,12 @@
 @media screen and (max-width:768px){
 
     .track_banner_right{
-       margin-bottom: 35px;
+       margin-bottom: 25px;
     }
 
     .track_order_banner h2{
         line-height: 15px;
-        margin-top: 25px;
+        margin: 10px;
     }
 
     .track_order_banner .search_bar {
@@ -417,6 +431,24 @@
             flex-direction: column;
         }
 
+        .step_wrapper{
+            display: flex;
+            width: 100% !important;
+            justify-content: space-between;
+
+        }
+        .step_name{
+            font-size: 14px;
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            padding: 0px 15px;
+            margin-top: 20px;
+        }
+        .step_name p:last-child {
+            margin-top: 0px;
+        }
+
         .completed_bar {
             position: absolute;
             width: 0%;
@@ -463,6 +495,7 @@
             border: 2px solid var(--primary-color);
             height: 57px;
             width: 56px;
+            margin: unset;
         }
 
 }
