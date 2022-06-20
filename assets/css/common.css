@@ -81,7 +81,7 @@ ul, li, a, p, h1, h2, h3, h4, h5, h6, p{
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  box-shadow: none;
+  box-shadow: 0 0 0 0.25rem rgb(255 0 0 / 25%) !important;
   
 }
 

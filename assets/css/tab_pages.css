@@ -13,14 +13,20 @@
     opacity: 0.4;
     text-align: left;
 }
+.all_tabs{
+    max-width: 271px;
+}
 
 .all_tabs .nav-link{
     border-radius: 0px;
-    border-right: 1px solid rgba(71, 76, 90, 0.2);
-
+    border-right: 2px solid rgba(71, 76, 90, 0.2);
+    padding-bottom: 24px;
+}
+.all_tabs .nav-link:hover{
+    color: #474C5A;
 }
 .all_tabs .nav-link.active{
-    border-right: 1px solid  var(--primary-color);
+    border-right: 2px solid  var(--primary-color);
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
@@ -29,7 +35,7 @@
     opacity: 1;
 }
 
-strong{
+.content strong{
     color: rgba(120, 126, 141, 1);
 }
 .tab_heading{
@@ -44,13 +50,147 @@ display: flex;
 align-items: center;
 text-align: center;
 text-transform: capitalize;
-
 /* Almost dark */
-
 color: #474C5A;
 
 }
 
 .content {
     color: rgba(120, 126, 141, 1);
+    height: auto !important;
+}
+
+.content .heading{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+text-align: justify;
+color: #000000;
+margin: 20px 0px;
+
+}
+
+.content a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.content ul strong{
+    font-weight: 500;
+}
+
+.content ul {
+    padding-left: 2rem;
+}
+
+form.contat_us label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    align-items: center;
+    text-transform: capitalize;
+    color: #474C5A;
+    margin-bottom: 12px;
+}
+
+form.contat_us input, form.contat_us textarea{
+    margin-bottom: 24px;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+}
+form.contat_us sup{
+    color: var(--primary-color);
+}
+/* .support card started css  */
+.support_card{
+    border: 0.5px solid #DBDBDB;
+    border-radius: 10px;
+    padding: 24px 35px;
+    margin-bottom: 16px;
+}
+
+
+
+.support_info h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #474C5A;
+    margin-top: 12px;
+    margin-bottom: 4px;   
+}
+
+.support_info p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #787E8D;
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width:1201px){
+    form.contat_us label {
+        font-size: 16px;
+    }    
+
+    .all_tabs{
+        max-width: none;
+        width: 100%;
+    }
+
+    .tab_heading{
+        font-size: 26px;
+    }
+
+    .content{
+        font-size: 14px;
+    }
+
+    .support_card {
+        padding: 16px 24px;
+    }
+}
+
+
+
+
+@media screen and (max-width:992px){
+    .all_tabs{
+        max-width: none;
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .all_tabs{
+        max-width: none;
+        width: 100%;
+    }
+    .all_tabs .nav-link{
+        padding-bottom: 18px;
+    }
+    .tab_heading {
+        font-size: 20px;
+    }
+    .support_info h4 {
+        font-size: 16px;
+    }
+    
+    .tab_page_content{
+        margin-bottom: 25px;
+    }
 }
