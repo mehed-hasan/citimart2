@@ -1,0 +1,439 @@
+@import url(common.css);
+
+.page_heading h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 48px;
+    color: #C4C4C4;  
+}
+
+h3.tab_heading{
+    color: var(--primary-color);
+}
+
+.all_tabs button{
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    text-transform: capitalize;
+    color: #474C5A;
+    text-align: left;
+}
+
+.all_tabs svg{
+    margin-right: 20px;
+}
+.all_tabs{
+    max-width: 271px;
+}
+
+.all_tabs .nav-link{
+    border-radius: 0px;
+    border-right: 2px solid rgba(71, 76, 90, 0.2);
+    padding-bottom: 24px;
+}
+.all_tabs .nav-link:hover{
+    color: #474C5A;
+}
+.all_tabs .nav-link.active{
+    border-right: 2px solid  var(--primary-color);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: white;
+    color: #474C5A;
+}
+.nav-link  svg{
+    border-radius: 10px;
+}
+
+.nav-link.active svg{
+    opacity: 1;
+    background-color: var(--primary-color);
+}
+.nav-link.active svg path{
+    opacity: 1 !important;
+    stroke: white;
+}
+
+/* Form of profile has been started from here  */
+.profile_form{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+.profile_form .profile_info h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    color: #44444F;
+    margin-top: 15px;
+}
+.profile_form .profile_image{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+.profile_form .profile_image img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile_form .profile_image input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: 3;
+    opacity: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.profile_form  label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 12px;
+    color: #44444F;
+}
+.profile_form input{
+    margin-bottom: 30px;
+    padding: 12px 10px;
+    background: #F7F7F7;
+    border-radius: 10px;
+    border: none;
+}
+
+.delivery_address{
+    max-width: 480px;
+    width: 100%;
+}
+
+
+/* Addres card css from here  */
+.address_card{
+    padding: 17px 0px;
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 27px;
+}
+
+.address_card .map_text h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #AFAFAF;
+    background: #FFFFFF;
+}
+
+.address_card img{
+    padding: 0px 15px;
+}
+
+.address_card .map_text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #DEDEDE;
+}
+
+
+/* Create new address css  */
+#add_new_address{
+    max-width: 740px;
+    width: 100%;
+    margin: auto;
+}
+
+p.short_desc{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color: #C0C0C0;
+max-width: 400px;
+width: 100%;
+margin-top: 10px;
+}
+
+.address_options{
+    margin-bottom: 30px;
+}
+
+.new_address_form input {
+    margin-bottom: 30px;
+    padding: 12px 10px;
+    background: #F7F7F7;
+    border-radius: 10px;
+    border: none;
+}
+
+#other_option{
+    pointer-events:none;
+}
+
+.event_block_open{
+    pointer-events:unset !important;
+}
+
+
+.address_options span{
+    color:rgba(171, 171, 171, 1) ;
+    margin-top: 21px;
+}
+
+.new_address_form .alert_check span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #C0C0C0;
+}
+
+.form_button_wrapper .all_tabs a {
+    color: var(--primary-color);
+    text-decoration:none;
+}
+
+#create_new_address{
+    max-width: 740px;
+    width: 100%;
+    margin: auto;
+    background-color: red;
+}
+/* Create nre address css ended  */
+
+
+/* Last order tab/page css started  */
+
+.delivery_times a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #D2D2D2;
+    margin-left: 5px;
+}
+.delivery_times a:first-child{
+    margin-left: 0px;
+}
+
+.delivery_times{
+    margin-bottom: 24px;
+}
+
+.view_btn a{
+    min-width: 145px;
+}
+.all_orders{
+    max-width: 480px;
+    width: 100%;
+    height: 560px;
+    overflow: scroll;
+    border-right: 1px solid 
+    rgba(183, 182, 182, 1);
+    padding-right: 10px;
+}
+.order_card{
+    padding: 18px 30px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    min-height: 150px;
+    transition: 1s;
+    margin-bottom: 30px;
+}
+.price_and_button span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.order_card .ordered_date, .order_card .invoice_no,
+.order_card .ordered_price small
+{
+     color: #C4C4C4;
+     font-size: 16px;
+}
+
+.order_card.active{
+    background-color: rgba(63, 63, 63, 1);
+}
+.order_card.active .ordered_date, .order_card.active .invoice_no,
+.order_card.active .ordered_price small
+{
+     color: white;
+}
+
+.time_and_status{
+
+}
+.price_and_button{
+
+}
+.status_badge{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 11px;
+color: #FFFFFF;
+border-radius: 5px;
+padding: 0px 20px;
+display: flex;
+align-items: center;
+height: 30px;
+}
+.completed_status{
+    background: #30C559;
+}
+.canceled_status{
+    background: #C4C4C4;
+}
+
+.time_and_status .ordered_date p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C4C4C4;
+}
+
+.order_details h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #C4C4C4;
+    
+}
+.user_address{
+    background: #FFFFFF;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    padding: 15px ;
+    margin-top: 20px;  
+    margin-bottom: 10px;
+}
+.user_address span:first-child{
+    color: #C4C4C4;
+    font-size: 14px;
+ 
+}
+.display_orders .invoice_info{
+    color: rgba(196, 196, 196, 1)
+}
+
+.display_orders .invoice_date_time span:first-child{
+    margin-right: 25px;
+}
+
+.display_orders .invoice_info .invoice_no{
+   color: rgba(48, 196, 89, 1); 
+}
+
+.display_orders .ordered_product_list{
+    margin-top: 40px;
+}
+
+.display_orders .ordered_quantity span:first-child{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #DADADA;
+}
+.display_orders .ordered_quantity span:last-child{
+    color: var(--primary-color);
+}
+
+.display_orders .ordered_product img{
+    filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.05));
+    border-radius: 10px;
+}
+.display_orders .carted_items{
+    padding: 15px;
+}
+.invoice_no{
+    font-size: 16px;
+}
+/* Last order tab/page css ended  */
+
+
+/* Display orders for mobile  */
+
+.for_mobile .accordion-item{
+    border: none;
+}
+
+.btn-outline-primary.active{
+    background: #C4C4C4 !important;
+    border: 1px solid #C4C4C4;
+    color: white;
+}
+.for_mobile .view_btn a.active{
+    content: "hide";
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+.for_mobile .view_btn a.active{
+   position: relative;
+}
+.for_mobile .view_btn a.active::after{
+   content: "Hide";
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: var(--primary-color);
+   width: 100%;
+   height: 100%;
+   line-height: 35px;
+}
+.btn-outline-primary.active {
+    background: #C4C4C4 !important;
+    border: 1px solid transparent;
+    color: white;
+}
+
+@media screen and (max-width:992px){
+    .all_tabs{
+        max-width: 100%;
+    }
+    .all_tabs .nav-link {
+        border-right: none;
+    }
+    .all_tabs .nav-link.active {
+        border-right: none;
+    }
+}

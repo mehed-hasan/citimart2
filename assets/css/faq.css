@@ -35,7 +35,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 36px;
     color: #787E8D;;
     background-color: transparent;
@@ -71,7 +71,7 @@
     background: #FFFFFF;
     border: none;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border-radius: 7px;
 }
 
@@ -169,7 +169,7 @@
     position: absolute;
     right: 0;
     transform: translate(-5%, 14%);
-    z-index: 10;
+    z-index: 3;
 
 }
 
@@ -212,7 +212,11 @@
         line-height: 30px;
         margin-bottom: 10px !important; 
     }
-
+    .faq_heading h2:first-child{
+        margin-bottom: 15px;
+        font-size: 26px;
+        line-height: 30px;
+    }
 
     .faq_heading h2 {
         font-size: 20px;
@@ -223,9 +227,18 @@
         line-height: 50px;
     }
 
+    .nav-pills .nav-link {
+
+        font-size: 13px;
+        padding: 0px 2px;
+    }
+    .faq_heading p{
+        margin-bottom: 15px;
+    }
+
     .accordion .accordion-item .accordion-button {
         font-size: 16px;
-        padding: 20px 8px;
+        padding: 10px 8px;
         border-radius: 24px;
         font-size: 16px;
     }
@@ -249,9 +262,17 @@
         margin-top: 20px;
     }
 
+    .faq_heading h2:first-child{
+        line-height: 15px;
+    }
+
 
     .accordion .accordion-item .accordion-button {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    .contact_form {
+        margin-bottom: 25px;
     }
 
 

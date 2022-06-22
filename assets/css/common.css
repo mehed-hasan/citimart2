@@ -6,7 +6,9 @@
   --title-color : #474C5A;
 }
 
-
+input{
+  accent-color: var(--primary-color);
+}
 
 /* Preventing default  */
 
