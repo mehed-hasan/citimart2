@@ -27,7 +27,7 @@ h3.tab_heading{
 }
 
 .all_tabs svg{
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 .all_tabs{
     max-width: 271px;
@@ -60,6 +60,10 @@ h3.tab_heading{
 .nav-link.active svg path{
     opacity: 1 !important;
     stroke: white;
+}
+
+.nav-link.active img{
+    
 }
 
 /* Form of profile has been started from here  */
@@ -144,6 +148,7 @@ h3.tab_heading{
     line-height: 22px;
     color: #AFAFAF;
     background: #FFFFFF;
+    margin-bottom: 15px;
 }
 
 .address_card img{
@@ -189,6 +194,9 @@ margin-top: 10px;
     background: #F7F7F7;
     border-radius: 10px;
     border: none;
+}
+.new_address_form input[type='checkbox']{
+    margin-bottom: 5px;
 }
 
 #other_option{
@@ -250,6 +258,8 @@ margin-top: 10px;
 
 .view_btn a{
     min-width: 145px;
+    font-size: 13px;
+    padding: 8px 0px;
 }
 .all_orders{
     max-width: 480px;
@@ -352,7 +362,8 @@ height: 30px;
  
 }
 .display_orders .invoice_info{
-    color: rgba(196, 196, 196, 1)
+    color: rgba(196, 196, 196, 1);
+    margin: 20px 0px;
 }
 
 .display_orders .invoice_date_time span:first-child{
@@ -426,7 +437,54 @@ height: 30px;
     color: white;
 }
 
+.all_tabs button svg {
+   border: 1px solid var(--primary-color);
+   padding: 5px;
+ }
+
+ @media screen and (max-width:1200px){
+    /* Delivery order list  */
+    .display_orders .invoice_info {
+        margin: 20px 0px;
+        font-size: 14px;
+    }
+
+    /* Delivery products  */
+    .carted_item_name h3{
+        font-size: 12px;
+    }
+    .item_price{
+        font-size: 14px;
+    }
+
+    /* View btn  */
+    .view_btn a{
+        font-size: 12px;
+        padding: 5px 8px;
+        min-width: fit-content;
+    }
+    .time_and_status .ordered_date p{
+        font-size: 12px;
+    }
+    .order_card .ordered_date, .order_card .invoice_no, .order_card .ordered_price small {
+       font-size: 12px;
+    }
+ }
+
 @media screen and (max-width:992px){
+    .profile_form, .new_address_form{
+        box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 25px 10px;
+    }
+
+
+    .delivery_address {
+        margin: auto;
+    }
+    .tab_heading, .heading_wrapper{
+        display: none !important;
+    }
     .all_tabs{
         max-width: 100%;
     }
@@ -436,4 +494,60 @@ height: 30px;
     .all_tabs .nav-link.active {
         border-right: none;
     }
+
+}
+
+@media screen and (max-width:768px){
+
+    .order_card {
+        padding: 12px 10px;
+    }
+
+    /* Delivery address  */
+
+    .display_orders .invoice_info {
+        font-size: 12px;
+    }
+    .display_orders .carted_items {
+        padding: 5px;
+    }
+
+    .address_card .map_text p{
+        font-size: 16px;
+    }
+    .address_card .map_text p{
+        font-size: 14px;
+        padding: 5px;
+    }
+
+
+    .delivery_address .address_card{
+        margin-top: 25px;
+    }
+    p.short_desc{
+        margin-bottom: 15px;
+    }
+
+    label{
+        font-size: 14px !important;
+    }
+
+
+    .profile_form .profile_info h4{
+        font-size: 18px;
+    }
+
+    .all_tabs button svg {
+       margin-bottom: 10px;
+    }
+
+
+     .all_tabs .nav-link {
+        border-right: none;
+        font-size: 11px;
+        padding: 0px;
+        width: 25%;
+    }
+    
+
 }

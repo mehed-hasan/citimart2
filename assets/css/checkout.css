@@ -1,0 +1,225 @@
+@import url(common.css);
+
+/* Addres card css from here  */
+.tab_heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #DDDDDD;
+}
+
+.address_card{
+    padding: 17px 0px;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 27px;
+    padding: 20px 30px;
+    background-color: rgba(247, 247, 247, 1);
+}
+
+
+.address_heading h4{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+color: #C4C4C4;
+margin-bottom: 20px;
+}
+
+
+
+.address_card .map_text h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #44444F;
+    margin-bottom: 5px;
+    
+}
+
+
+.address_card .map_text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #DEDEDE;
+}
+.checkouted_products{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #44444F;
+}
+
+.checkout_form h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #44444F;
+    margin-bottom: 15px;
+}
+
+.checkout_form .form-group > div{
+    margin-bottom: 10px;
+    margin-left: 25px;
+    color: rgba(21, 20, 57, 0.4);
+}
+.checkout_form .form-group > div input{
+    padding: 0px 8px;
+}
+
+.checkout_form small{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: var(--primary-color);
+margin-left: 20px;
+}
+
+.checkout_form input[type='text']{
+    max-width: 220px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background: #F7F7F7;
+    border:none;
+
+}
+
+.checkout_product_wrapper .carted_item_name h3{
+    max-width: 200px;
+    color: rgba(21, 20, 57, 0.4);
+}
+.checkout_product_wrapper .item_cross{
+    margin-left: 20px;
+}
+
+
+.checkout_product_wrapper .carted_items{
+    padding: 10px 0px
+}
+.checkout_product_wrapper .carted_items:last-child{
+    border-bottom: 1px solid rgba(235, 235, 235, 1);
+}
+
+.checkout_product_wrapper .cart_counter, .checkout_product_wrapper .carted_item_name{
+    height: 75px;
+}
+
+.checkout_price h5{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #44444F;
+
+}
+
+.checkout_price{
+    margin-right: 33px;
+}
+.checkout_price .price_group div{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: #DADADA;
+}
+
+.checkout_price .price_group {
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.checkout_price .price_group  .price{
+    color: var(--primary-color) !important;
+    margin-left: 5px;
+}
+.cart_hider{
+    padding: 10px 16px;
+    background: #F7F7F7;
+    border-radius: 10px;
+    margin: 15px 0px;
+}
+
+.cart_hider h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #44444F;
+}
+.cart_hider  a{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: var(--primary-color) !important;
+text-decoration: none;
+}
+.cart_hider svg{
+    transform: rotate(-90deg);
+    transition: .5s;
+}
+.spin{
+    transform: rotate(90deg) !important;
+}
+
+@media screen and (max-width:992px){
+    .checkout_buttons a, .cart_hider{
+        max-width: 450px;
+        width: 100%;
+        margin: auto;
+    }
+    .checkout_product_wrapper{
+        display: none;
+    }
+    .checkouted_products{
+        margin: 40px 0px;
+    }
+    .checkout_form h4{
+        font-size: 16px;
+    }
+    .form-group div{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .tab_heading{
+        font-size: 22px;
+    }
+    .address_heading h4{
+        font-size: 16px;
+    }
+    .address_card .map_text h3{
+        font-size: 14px;
+    }
+
+    .checkout_price h5{
+        font-size: 12px;
+    }
+    .price{
+        font-size: 14px;
+    }
+}

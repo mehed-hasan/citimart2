@@ -18,6 +18,16 @@ input{
   color: white;
   border: 1px solid #BEBEBE;
 }
+.btn-outline-dark{
+  color: #C4C4C4;
+  border: 1px solid #C4C4C4;;
+}
+
+.btn-outline-dark:hover{
+  background-color:white;
+  border:1px solid  var(--primary-color) !important;
+  color: var(--primary-color);
+}
 
 
 .btn:focus {
@@ -1334,6 +1344,9 @@ margin-right: 8px;
 
 .carted_items{
   border-bottom: 1px solid rgba(235, 235, 235, 1);
+}
+.carted_items:last-child{
+  border-bottom:none;
 }
 .item_quantity{
   font-style: normal;
