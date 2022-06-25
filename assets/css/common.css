@@ -1701,6 +1701,248 @@ button{
 /* Square product component css has ended here ----------------------------------- */
 
 
+
+
+/* We provide card started  */
+.payment_footer{
+  background: #EBEBEB;
+}
+
+.payment_footer .row{
+  min-height: 350px;
+
+}
+
+.we_provide_card{
+  background: #FFFFFF;
+box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+min-height: 140px;
+padding: 18px 10px;
+max-width: 190px;
+width: 100%;
+border-radius: 10px;
+
+}
+
+.we_provide_card p{
+  max-width: 152px;
+  margin: auto;
+  width: 100%;
+  color: #C4C4C4;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.we_provide_card svg{
+  height: 40px;
+  width: 40px;
+}
+.pay_with h5{
+  font-style: normal;
+font-weight: 500;
+font-size: 18px;
+/* identical to box height */
+color: #B7B6B6;
+  margin-bottom: 30px;
+}
+
+
+#product_modal .we_provide_card{
+  max-width: 120px;
+  width: 100%;
+  margin: 5px;
+  min-height: 66px;
+  font-size: 10px;
+  padding: 5px;
+
+}
+
+#product_modal .we_provide_card p{
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+#product_modal  .we_provide_card svg {
+  height: 20px;
+  width: 20px;
+}
+
+
+#product_modal .tiny_footer_images{
+  max-width: 350px;
+  width: 100%;
+}
+#product_modal .tiny_footer_images img{
+  margin: 5px;
+}
+@media screen and (max-width:1200px){
+  .we_provide_card{
+    max-width: 150px;
+  }
+}
+@media screen and (max-width:992px){
+  .we_provide_card{
+    margin: 10px auto;
+  }
+
+}
+/* We provide card ended  */
+
+
+/* Product details componenet css started from here  */
+.product_details img{
+  /* box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 20px; */
+}
+
+.big_view{
+  box-shadow: 4px 4px 40px rgb(0 0 0 / 8%);
+  border-radius: 20px;
+}
+.details_info{
+  /* max-width: 494px; */
+  width: 100%;
+}
+.product_name_price p:first-child{
+  font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #44444F;
+}
+
+.product_name_price p:last-child{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--primary-color);
+  
+}
+.product_name_price p:last-child small{
+  font-size: 14px;
+  line-height: 21px;
+  color: #DADADA;
+}
+
+.bordered_btns_group{
+  margin-top: 10px;
+}
+.bordered_btns_group button:first-child{
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+.bordered_btns_group button svg{
+  padding: 4px;
+}
+
+.bordered_btns_group button:last-child{
+ width: 80%;
+}
+
+.product_details .details p{
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #B7B6B6;
+}
+
+.details_btn_groups{
+  max-width: 354px;
+  width: 100%;
+}
+.single_image{
+  margin: 0px 20px;
+}
+.single_image img {
+  width: 90%;
+  height: 80px;
+  object-fit: contain;
+}
+.slick-prev {
+  top: 50%;
+  position: absolute;
+  left: 0px;
+  transform: translate(-40%, -50%) rotate(180deg);
+
+
+}
+.slick-next {
+  top: 50%;
+  position: absolute;
+  right: 0px;
+  transform: translate(40%, -50%);
+}
+
+.all_images img{
+  box-shadow: none !important;
+}
+.slick-slider .slick-arrow{
+background: #FFFFFF;
+box-shadow: -4px 0px 40px rgba(0, 0, 0, 0.1);
+padding: 5px 10px;
+border-radius: 50%;
+z-index: 3;
+}
+
+.slick-slider .square_product {
+  max-width: 250px;
+  width: 100%;
+  margin: 0px 15px;
+}
+
+.big_view{
+  max-height: 750px;
+  overflow: hidden;
+}
+.big_view img{
+  transition: 1s;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#product_modal .modal-dialog{
+  max-width: 1400px;
+  width: 65%;
+  margin: auto;
+}
+
+#product_modal .product_details{
+  padding: 20px;
+}
+#product_modal .modal-content {
+  padding: 0px ;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#product_modal .payment_footer{
+  padding: 20px;
+}
+/* .all_images .slick-current img{
+  border:1px solid var(--primary-color)
+} */
+
+@media screen and (max-width:992px){
+  #product_modal .modal-dialog{
+    width: 80%;
+
+  }
+}
+
+@media screen and (max-width:768px){
+  #product_modal .modal-dialog{
+    width: 95%;
+
+  }
+}
+
+
+/* Product_details component ended from here  */
+
 /*===========================Media query of common css ==============================================
 =====================================================================================================- */
 
@@ -1905,5 +2147,6 @@ button{
   }
 }
 
+ 
 
 /* Meadia query css ended  */
