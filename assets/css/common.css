@@ -137,11 +137,18 @@ line-height: 21px;
 }
 
 /*! Custom  container for this project */
+
+
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1520px !important;
   }
 }
+
+
+
+
 @media  (min-width: 1200px){
   .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1520px !important;
@@ -1954,6 +1961,15 @@ z-index: 3;
 
 }
   /* 1201 breakpoint----------------  */
+
+  @media screen and (max-width:1200px){
+    .banner_slider .slick-dots{
+      top: 103%;
+    }
+  }
+
+
+  
   @media screen and (max-width:1201px){
     #page_content{
       margin-top: 63px;
@@ -1966,6 +1982,9 @@ z-index: 3;
       z-index: 10;
     }
   
+
+
+
   .mobile_menu{
     display: inline-flex !important;
   }

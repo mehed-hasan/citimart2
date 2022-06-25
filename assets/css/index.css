@@ -644,6 +644,10 @@ margin-bottom: 40px;
         font-size: 46px;
     }
 
+    #all_cat_name{
+        margin-top: 50px;
+    }
+
     .filter_btn,
     .cat_btn {
         margin: 0px !important;

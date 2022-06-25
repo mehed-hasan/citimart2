@@ -23,6 +23,8 @@
       type="text/css"
     />
     <link rel="stylesheet" href="assets/css/index.css" />
+
+    <link rel="stylesheet" href="assets/css/profile_pages.css" />
   </head>
   <body>
 
@@ -5748,6 +5750,1333 @@
           <button href=""><span>BDT </span> 423</button>
         </div>
       </div>
+
+      <div class="mobile_account mobile_menu_content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <div class="page_heading text-center text-lg-start">
+                <h3>User Profile</h3>
+              </div>
+              <div class="gap_40"></div>
+              <div class=" all_tabs  nav flex justify-content-between flex-lg-column justify-content-lg-start nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link text-center text-md-start d-flex flex-column flex-lg-row justify-content-sm-start align-items-center active" id="v-pills-home-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-my_account" type="button" role="tab" aria-controls="v-pills-home"
+                  aria-selected="true">
+                  <svg class="me-0 me-lg-3" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 20C20.4183 20 24 16.4183 24 12C24 7.58172 20.4183 4 16 4C11.5817 4 8 7.58172 8 12C8 16.4183 11.5817 20 16 20Z" stroke="#FF0000" stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="M3.875 27.0001C5.10367 24.8716 6.87104 23.104 8.99944 21.875C11.1278 20.646 13.5423 19.999 16 19.999C18.4577 19.999 20.8722 20.646 23.0006 21.875C25.129 23.104 26.8963 24.8716 28.125 27.0001" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+    
+                  My Account</button>
+                <button class="nav-link text-center text-md-start d-flex flex-column flex-lg-row justify-content-sm-start align-items-center" id="v-pills-profile-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-delivery_address" type="button" role="tab" aria-controls="v-pills-profile"
+                  aria-selected="false">
+                  <svg class="me-0 me-lg-3" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.8996 8.31667L26.733 5.81667C26.6506 5.72156 26.5285 5.66661 26.3998 5.66667H17.7333V4.41667C17.7333 4.18656 17.5393 4 17.3 4H14.7C14.4607 4 14.2667 4.18656 14.2667 4.41667V5.66667H12.1001C11.8608 5.66667 11.6668 5.85323 11.6668 6.08333V11.0833C11.6668 11.3134 11.8608 11.5 12.1001 11.5H14.2667V12.3333H5.60023C5.47148 12.3333 5.34939 12.3882 5.267 12.4833L3.10038 14.9833C2.96654 15.1378 2.96654 15.3622 3.10038 15.5167L5.267 18.0167C5.34939 18.1118 5.47148 18.1667 5.60023 18.1667H14.2667V28.5833C14.2667 28.8134 14.4607 29 14.7 29H17.3C17.5393 29 17.7333 28.8134 17.7333 28.5833V18.1667H19.8999C20.1392 18.1667 20.3332 17.9801 20.3332 17.75V12.75C20.3332 12.5199 20.1392 12.3333 19.8999 12.3333H17.7333V11.5H26.3998C26.5285 11.5001 26.6506 11.4451 26.733 11.35L28.8996 8.85C29.0335 8.69552 29.0335 8.47115 28.8996 8.31667ZM15.1334 4.83333H16.8666V5.66667H15.1334V4.83333ZM16.8666 28.1667H15.1334V18.1667H16.8666V28.1667ZM19.4666 13.1667V17.3333H5.80346L3.99693 15.25L5.80346 13.1667H19.4666ZM15.1334 12.3333V11.5H16.8666V12.3333H15.1334ZM26.1974 10.6667H12.5334V6.5H26.1965L28.0031 8.58333L26.1974 10.6667Z" fill="#FF0000"/>
+                    </svg>
+                    
+                    
+                    
+    
+    
+                  Delivery Address</button>
+                <button class="nav-link text-center text-md-start d-flex flex-column flex-lg-row justify-content-sm-start align-items-center" id="v-pills-messages-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-favorites" type="button" role="tab" aria-controls="v-pills-messages"
+                  aria-selected="false">
+                  <svg class="me-0 me-lg-3" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.7146 26.4877L26.8396 16.3627C29.3271 13.8627 29.6896 9.77517 27.3396 7.16267C26.7503 6.50431 26.0329 5.97302 25.2312 5.60128C24.4296 5.22953 23.5606 5.02513 22.6774 5.00056C21.7941 4.97599 20.9151 5.13177 20.094 5.45839C19.273 5.785 18.5272 6.27559 17.9021 6.90017L16.0021 8.81267L14.3646 7.16267C11.8646 4.67517 7.77713 4.31267 5.16463 6.66267C4.50626 7.25203 3.97498 7.96943 3.60323 8.77105C3.23148 9.57266 3.02708 10.4417 3.00251 11.3249C2.97795 12.2082 3.13373 13.0872 3.46034 13.9083C3.78695 14.7293 4.27754 15.4751 4.90213 16.1002L15.2896 26.4877C15.4792 26.6755 15.7353 26.7808 16.0021 26.7808C16.269 26.7808 16.525 26.6755 16.7146 26.4877V26.4877Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    
+    
+                  Favorites</button>
+    
+    
+    
+    
+                  
+                <button class="nav-link text-center text-md-start d-flex flex-column flex-lg-row justify-content-sm-start align-items-center" id="v-pills-settings-tab" data-bs-toggle="pill"
+                  data-bs-target="#v-pills-last_orders" type="button" role="tab" aria-controls="v-pills-settings"
+                  aria-selected="false">
+                  <svg class="me-0 me-lg-3" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 19H20" stroke="#FF0000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 15H20" stroke="#FF0000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 5H25C25.2652 5 25.5196 5.10536 25.7071 5.29289C25.8946 5.48043 26 5.73478 26 6V27C26 27.2652 25.8946 27.5196 25.7071 27.7071C25.5196 27.8946 25.2652 28 25 28H7C6.73478 28 6.48043 27.8946 6.29289 27.7071C6.10536 27.5196 6 27.2652 6 27V6C6 5.73478 6.10536 5.48043 6.29289 5.29289C6.48043 5.10536 6.73478 5 7 5H12" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 9V8C11 6.67392 11.5268 5.40215 12.4645 4.46447C13.4021 3.52678 14.6739 3 16 3C17.3261 3 18.5979 3.52678 19.5355 4.46447C20.4732 5.40215 21 6.67392 21 8V9H11Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    
+                    
+                  My Last Orders</button>
+              </div>
+            </div>
+            <div class="col-12 mt-4 col-lg-9 mt-lg-0">
+              <div class="tab_page_content tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-my_account" role="tabpanel"
+                  aria-labelledby="v-pills-home-tab">
+                  <h3 class="tab_heading ">My Account</h3>
+                  <div class="gap_32"></div>
+    
+                  <div class="gap_96 d-block d-lg-none"></div>
+                  <div class="profile_form ">
+    
+                    <div class="profile_info">
+                      <div class="profile_image position-relative">
+                        <input type="file" name="" id="">
+                        <img src="../assets/images/icons/image_holder.png" alt="">
+    
+                      </div>
+                      <h4 class="user_name text-center">Bob Ken</h4>
+                    </div>
+    
+                    <div class="gap_96"></div>
+                    <div class="row">
+                      <div class="col-12">
+                        <form class="contat_us" action="" method="post">
+    
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col-6">
+                                <label for="">Name </label>
+                                <input placeholder="Your Name" class="form-control" type="email" name="" id=""
+                                  value="Bob Ken">
+                              </div>
+                              <div class="col-6">
+                                <label for="">Old Password</label>
+                                <input placeholder="Old Password" class="form-control" type="password" name="" id=""
+                                  value="123456789">
+                              </div>
+                            </div>
+                          </div>
+    
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col-6">
+                                <label for="">Email </label>
+                                <input placeholder="Your Email" class="form-control" type="email" name="" id=""
+                                  value="bob@gmail.com">
+                              </div>
+                              <div class="col-6">
+                                <label for="">New Password </label>
+                                <input placeholder="New Password" class="form-control" type="password" name="" id="">
+                              </div>
+                            </div>
+                          </div>
+    
+                          <div class="gap_96"></div>
+                          <div class="form_button_wrapper text-center">
+                            <button class="btn btn-primary" type="submit">Save Changes</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="tab-pane fade" id="v-pills-delivery_address" role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab">
+                  <h3 class="tab_heading">Delivery Address</h3>
+                  <div class="gap_32"></div>
+    
+                  <div class="delivery_address">
+                    <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="add_new_address btn btn-primary form-control " id="v-pills-settings-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-new_address" type="button" role="tab" aria-controls="v-pills-settings"
+                        aria-selected="false">+ Add New Address</button>
+                    </div>
+    
+    
+                    <div class="gap_40"></div>
+    
+                    <div class="address_card ">
+                      <div class="address_card_contents d-flex justify-content-between">
+                        <div class="map_img">
+                          <img class="img-fluid" src="../assets/images/backgrounds/map.png" alt="">
+                        </div>
+                        <div class="map_text">
+                          <h3>Mother's Home</h3>
+                          <p>12H - UN3, 562/A, St. Begum
+                            Rokeya, Gulshan 1.</p>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="address_card ">
+                      <div class="address_card_contents d-flex justify-content-between">
+                        <div class="map_img">
+                          <img class="img-fluid" src="../assets/images/backgrounds/map.png" alt="">
+                        </div>
+                        <div class="map_text">
+                          <h3>Mother's Home</h3>
+                          <p>12H - UN3, 562/A, St. Begum
+                            Rokeya, Gulshan 1.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+    
+                <div class="tab-pane fade v-pills-favorites" id="v-pills-favorites" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                    <h3 class="tab_heading">Favorites</h3>
+                    <div class="gap_32"></div>
+    
+                      <div class="row">
+                        <div class="col-6  col-md-3 ">
+                          <div class="square_product">
+                              <div class="product_image">
+                                  <img src="../assets/images/products/p6.jpg" alt="">
+                              </div>
+          
+                              <div class="inc_btn_2 d-flex justify-content-center align-items-center">
+                                <button class="details_bn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.125 7H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 12H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 17H13.25" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.375 17H20.125" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.25 15.125V18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+          
+                                <div class="offer_btn_wrapper">
+                                  <button class="add_to_bag static_btn">Add to Bag</button>
+                                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                                      <button type="button" class="add_to_bag add_btn">+</button>
+                                      <input disabled="" class="text-center" value="1">
+                                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                                  </div>
+                              </div>
+          
+                                <button class="heart_btn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4466 18.555L18.7748 12.2269C20.3295 10.6644 20.556 8.10973 19.0873 6.47691C18.7189 6.06544 18.2705 5.73338 17.7695 5.50104C17.2685 5.2687 16.7254 5.14095 16.1734 5.12559C15.6213 5.11024 15.0719 5.2076 14.5588 5.41174C14.0456 5.61587 13.5795 5.92249 13.1888 6.31285L12.0013 7.50816L10.9779 6.47691C9.41539 4.92223 6.8607 4.69566 5.22789 6.16441C4.81641 6.53276 4.48436 6.98114 4.25202 7.48215C4.01968 7.98316 3.89193 8.52628 3.87657 9.07833C3.86122 9.63038 3.95858 10.1798 4.16271 10.6929C4.36685 11.2061 4.67346 11.6722 5.06383 12.0629L11.556 18.555C11.6745 18.6724 11.8345 18.7382 12.0013 18.7382C12.1681 18.7382 12.3281 18.6724 12.4466 18.555V18.555Z" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+          
+                              <div class="product_details">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh</p>
+                                  <div class="product_price">
+                                      <p>BDT 1980</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+          
+          
+                        <div class="col-6  col-md-3 ">
+                          <div class="square_product">
+                              <div class="product_image">
+                                  <img src="../assets/images/products/p6.jpg" alt="">
+                              </div>
+          
+                              <div class="inc_btn_2 d-flex justify-content-center align-items-center">
+                                <button class="details_bn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.125 7H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 12H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 17H13.25" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.375 17H20.125" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.25 15.125V18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+          
+                                <div class="offer_btn_wrapper">
+                                  <button class="add_to_bag static_btn">Add to Bag</button>
+                                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                                      <button type="button" class="add_to_bag add_btn">+</button>
+                                      <input disabled="" class="text-center" value="1">
+                                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                                  </div>
+                              </div>
+          
+                                <button class="heart_btn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4466 18.555L18.7748 12.2269C20.3295 10.6644 20.556 8.10973 19.0873 6.47691C18.7189 6.06544 18.2705 5.73338 17.7695 5.50104C17.2685 5.2687 16.7254 5.14095 16.1734 5.12559C15.6213 5.11024 15.0719 5.2076 14.5588 5.41174C14.0456 5.61587 13.5795 5.92249 13.1888 6.31285L12.0013 7.50816L10.9779 6.47691C9.41539 4.92223 6.8607 4.69566 5.22789 6.16441C4.81641 6.53276 4.48436 6.98114 4.25202 7.48215C4.01968 7.98316 3.89193 8.52628 3.87657 9.07833C3.86122 9.63038 3.95858 10.1798 4.16271 10.6929C4.36685 11.2061 4.67346 11.6722 5.06383 12.0629L11.556 18.555C11.6745 18.6724 11.8345 18.7382 12.0013 18.7382C12.1681 18.7382 12.3281 18.6724 12.4466 18.555V18.555Z" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+          
+                              <div class="product_details">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh</p>
+                                  <div class="product_price">
+                                      <p>BDT 1980</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+          
+          
+                        <div class="col-6  col-md-3 ">
+                          <div class="square_product">
+                              <div class="product_image">
+                                  <img src="../assets/images/products/p6.jpg" alt="">
+                              </div>
+          
+                              <div class="inc_btn_2 d-flex justify-content-center align-items-center">
+                                <button class="details_bn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.125 7H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 12H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 17H13.25" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.375 17H20.125" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.25 15.125V18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+          
+                                <div class="offer_btn_wrapper">
+                                  <button class="add_to_bag static_btn">Add to Bag</button>
+                                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                                      <button type="button" class="add_to_bag add_btn">+</button>
+                                      <input disabled="" class="text-center" value="1">
+                                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                                  </div>
+                              </div>
+          
+                                <button class="heart_btn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4466 18.555L18.7748 12.2269C20.3295 10.6644 20.556 8.10973 19.0873 6.47691C18.7189 6.06544 18.2705 5.73338 17.7695 5.50104C17.2685 5.2687 16.7254 5.14095 16.1734 5.12559C15.6213 5.11024 15.0719 5.2076 14.5588 5.41174C14.0456 5.61587 13.5795 5.92249 13.1888 6.31285L12.0013 7.50816L10.9779 6.47691C9.41539 4.92223 6.8607 4.69566 5.22789 6.16441C4.81641 6.53276 4.48436 6.98114 4.25202 7.48215C4.01968 7.98316 3.89193 8.52628 3.87657 9.07833C3.86122 9.63038 3.95858 10.1798 4.16271 10.6929C4.36685 11.2061 4.67346 11.6722 5.06383 12.0629L11.556 18.555C11.6745 18.6724 11.8345 18.7382 12.0013 18.7382C12.1681 18.7382 12.3281 18.6724 12.4466 18.555V18.555Z" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+          
+                              <div class="product_details">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh</p>
+                                  <div class="product_price">
+                                      <p>BDT 1980</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+          
+          
+                        <div class="col-6  col-md-3 ">
+                          <div class="square_product">
+                              <div class="product_image">
+                                  <img src="../assets/images/products/p6.jpg" alt="">
+                              </div>
+          
+                              <div class="inc_btn_2 d-flex justify-content-center align-items-center">
+                                <button class="details_bn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.125 7H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 12H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 17H13.25" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.375 17H20.125" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.25 15.125V18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+          
+                                <div class="offer_btn_wrapper">
+                                  <button class="add_to_bag static_btn">Add to Bag</button>
+                                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                                      <button type="button" class="add_to_bag add_btn">+</button>
+                                      <input disabled="" class="text-center" value="1">
+                                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                                  </div>
+                              </div>
+          
+                                <button class="heart_btn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4466 18.555L18.7748 12.2269C20.3295 10.6644 20.556 8.10973 19.0873 6.47691C18.7189 6.06544 18.2705 5.73338 17.7695 5.50104C17.2685 5.2687 16.7254 5.14095 16.1734 5.12559C15.6213 5.11024 15.0719 5.2076 14.5588 5.41174C14.0456 5.61587 13.5795 5.92249 13.1888 6.31285L12.0013 7.50816L10.9779 6.47691C9.41539 4.92223 6.8607 4.69566 5.22789 6.16441C4.81641 6.53276 4.48436 6.98114 4.25202 7.48215C4.01968 7.98316 3.89193 8.52628 3.87657 9.07833C3.86122 9.63038 3.95858 10.1798 4.16271 10.6929C4.36685 11.2061 4.67346 11.6722 5.06383 12.0629L11.556 18.555C11.6745 18.6724 11.8345 18.7382 12.0013 18.7382C12.1681 18.7382 12.3281 18.6724 12.4466 18.555V18.555Z" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+          
+                              <div class="product_details">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh</p>
+                                  <div class="product_price">
+                                      <p>BDT 1980</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+          
+          
+                        <div class="col-6  col-md-3 ">
+                          <div class="square_product">
+                              <div class="product_image">
+                                  <img src="../assets/images/products/p6.jpg" alt="">
+                              </div>
+          
+                              <div class="inc_btn_2 d-flex justify-content-center align-items-center">
+                                <button class="details_bn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.125 7H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 12H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 17H13.25" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.375 17H20.125" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.25 15.125V18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+          
+                                <div class="offer_btn_wrapper">
+                                  <button class="add_to_bag static_btn">Add to Bag</button>
+                                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                                      <button type="button" class="add_to_bag add_btn">+</button>
+                                      <input disabled="" class="text-center" value="1">
+                                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                                  </div>
+                              </div>
+          
+                                <button class="heart_btn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4466 18.555L18.7748 12.2269C20.3295 10.6644 20.556 8.10973 19.0873 6.47691C18.7189 6.06544 18.2705 5.73338 17.7695 5.50104C17.2685 5.2687 16.7254 5.14095 16.1734 5.12559C15.6213 5.11024 15.0719 5.2076 14.5588 5.41174C14.0456 5.61587 13.5795 5.92249 13.1888 6.31285L12.0013 7.50816L10.9779 6.47691C9.41539 4.92223 6.8607 4.69566 5.22789 6.16441C4.81641 6.53276 4.48436 6.98114 4.25202 7.48215C4.01968 7.98316 3.89193 8.52628 3.87657 9.07833C3.86122 9.63038 3.95858 10.1798 4.16271 10.6929C4.36685 11.2061 4.67346 11.6722 5.06383 12.0629L11.556 18.555C11.6745 18.6724 11.8345 18.7382 12.0013 18.7382C12.1681 18.7382 12.3281 18.6724 12.4466 18.555V18.555Z" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+          
+                              <div class="product_details">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh</p>
+                                  <div class="product_price">
+                                      <p>BDT 1980</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+          
+          
+                        <div class="col-6  col-md-3 ">
+                          <div class="square_product">
+                              <div class="product_image">
+                                  <img src="../assets/images/products/p6.jpg" alt="">
+                              </div>
+          
+                              <div class="inc_btn_2 d-flex justify-content-center align-items-center">
+                                <button class="details_bn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.125 7H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 12H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 17H13.25" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.375 17H20.125" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.25 15.125V18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+          
+                                <div class="offer_btn_wrapper">
+                                  <button class="add_to_bag static_btn">Add to Bag</button>
+                                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                                      <button type="button" class="add_to_bag add_btn">+</button>
+                                      <input disabled="" class="text-center" value="1">
+                                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                                  </div>
+                              </div>
+          
+                                <button class="heart_btn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4466 18.555L18.7748 12.2269C20.3295 10.6644 20.556 8.10973 19.0873 6.47691C18.7189 6.06544 18.2705 5.73338 17.7695 5.50104C17.2685 5.2687 16.7254 5.14095 16.1734 5.12559C15.6213 5.11024 15.0719 5.2076 14.5588 5.41174C14.0456 5.61587 13.5795 5.92249 13.1888 6.31285L12.0013 7.50816L10.9779 6.47691C9.41539 4.92223 6.8607 4.69566 5.22789 6.16441C4.81641 6.53276 4.48436 6.98114 4.25202 7.48215C4.01968 7.98316 3.89193 8.52628 3.87657 9.07833C3.86122 9.63038 3.95858 10.1798 4.16271 10.6929C4.36685 11.2061 4.67346 11.6722 5.06383 12.0629L11.556 18.555C11.6745 18.6724 11.8345 18.7382 12.0013 18.7382C12.1681 18.7382 12.3281 18.6724 12.4466 18.555V18.555Z" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+          
+                              <div class="product_details">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh</p>
+                                  <div class="product_price">
+                                      <p>BDT 1980</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+          
+          
+                        <div class="col-6  col-md-3 ">
+                          <div class="square_product">
+                              <div class="product_image">
+                                  <img src="../assets/images/products/p6.jpg" alt="">
+                              </div>
+          
+                              <div class="inc_btn_2 d-flex justify-content-center align-items-center">
+                                <button class="details_bn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.125 7H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 12H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 17H13.25" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.375 17H20.125" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.25 15.125V18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+          
+                                <div class="offer_btn_wrapper">
+                                  <button class="add_to_bag static_btn">Add to Bag</button>
+                                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                                      <button type="button" class="add_to_bag add_btn">+</button>
+                                      <input disabled="" class="text-center" value="1">
+                                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                                  </div>
+                              </div>
+          
+                                <button class="heart_btn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4466 18.555L18.7748 12.2269C20.3295 10.6644 20.556 8.10973 19.0873 6.47691C18.7189 6.06544 18.2705 5.73338 17.7695 5.50104C17.2685 5.2687 16.7254 5.14095 16.1734 5.12559C15.6213 5.11024 15.0719 5.2076 14.5588 5.41174C14.0456 5.61587 13.5795 5.92249 13.1888 6.31285L12.0013 7.50816L10.9779 6.47691C9.41539 4.92223 6.8607 4.69566 5.22789 6.16441C4.81641 6.53276 4.48436 6.98114 4.25202 7.48215C4.01968 7.98316 3.89193 8.52628 3.87657 9.07833C3.86122 9.63038 3.95858 10.1798 4.16271 10.6929C4.36685 11.2061 4.67346 11.6722 5.06383 12.0629L11.556 18.555C11.6745 18.6724 11.8345 18.7382 12.0013 18.7382C12.1681 18.7382 12.3281 18.6724 12.4466 18.555V18.555Z" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+          
+                              <div class="product_details">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh</p>
+                                  <div class="product_price">
+                                      <p>BDT 1980</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+          
+          
+                        <div class="col-6  col-md-3 ">
+                          <div class="square_product">
+                              <div class="product_image">
+                                  <img src="../assets/images/products/p6.jpg" alt="">
+                              </div>
+          
+                              <div class="inc_btn_2 d-flex justify-content-center align-items-center">
+                                <button class="details_bn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.125 7H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 12H18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.125 17H13.25" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.375 17H20.125" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.25 15.125V18.875" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+          
+                                <div class="offer_btn_wrapper">
+                                  <button class="add_to_bag static_btn">Add to Bag</button>
+                                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                                      <button type="button" class="add_to_bag add_btn">+</button>
+                                      <input disabled="" class="text-center" value="1">
+                                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                                  </div>
+                              </div>
+          
+                                <button class="heart_btn side_btn">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.4466 18.555L18.7748 12.2269C20.3295 10.6644 20.556 8.10973 19.0873 6.47691C18.7189 6.06544 18.2705 5.73338 17.7695 5.50104C17.2685 5.2687 16.7254 5.14095 16.1734 5.12559C15.6213 5.11024 15.0719 5.2076 14.5588 5.41174C14.0456 5.61587 13.5795 5.92249 13.1888 6.31285L12.0013 7.50816L10.9779 6.47691C9.41539 4.92223 6.8607 4.69566 5.22789 6.16441C4.81641 6.53276 4.48436 6.98114 4.25202 7.48215C4.01968 7.98316 3.89193 8.52628 3.87657 9.07833C3.86122 9.63038 3.95858 10.1798 4.16271 10.6929C4.36685 11.2061 4.67346 11.6722 5.06383 12.0629L11.556 18.555C11.6745 18.6724 11.8345 18.7382 12.0013 18.7382C12.1681 18.7382 12.3281 18.6724 12.4466 18.555V18.555Z" stroke="#787E8D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+          
+                              <div class="product_details">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh</p>
+                                  <div class="product_price">
+                                      <p>BDT 1980</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+    
+                        
+                      </div>
+             
+    
+                </div>
+                <div class="tab-pane fade" id="v-pills-last_orders" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <div style="max-width:400px;width:100%" class="heading_wrapper d-flex justify-content-between">
+                    <h3 class="tab_heading">My Last Orders</h3>
+    
+                    <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M18.7778 3.22266H3.22222C1.99492 3.22266 1 4.21758 1 5.44488V21.0004C1 22.2277 1.99492 23.2227 3.22222 23.2227H18.7778C20.0051 23.2227 21 22.2277 21 21.0004V5.44488C21 4.21758 20.0051 3.22266 18.7778 3.22266Z"
+                        stroke="#C4C4C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M15.4443 1V5.44444" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M6.55566 1V5.44444" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M1 9.88867H21" stroke="#C4C4C4" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+    
+                  <div class="gap_40"></div>
+    
+                  <div class="delivery_times">
+                    <a href="">Last Week</a>
+                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="2.5" cy="2.5" r="2.5" fill="#D2D2D2" />
+                    </svg>
+                    <a href="">Last Day </a>
+                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="2.5" cy="2.5" r="2.5" fill="#D2D2D2" />
+                    </svg>
+                    <a href="">Today</a>
+    
+                  </div>
+    
+                  <div class="row ">
+                    <div class="for_desktop d-none d-xl-flex">
+                      <div class="col-6">
+    
+    <!-- xx  -->
+    
+    
+                        <div class="all_orders">
+                          <div class="order_card d-flex flex-column justify-content-between active">
+                            <div class="time_and_status d-flex justify-content-between">
+                              <span class="status_badge completed_status">COMPLETE</span>
+      
+                              <div class="ordered_date d-flex flex-column align-items-end">
+                                <p>10/11/2021</p>
+                                <p>8.00pm - 9.00pm</p>
+                              </div>
+                            </div>
+                            <div class="invoice_no">
+                              <p>Invoice # 27A53BF76</p>
+                            </div>
+      
+                            <div class="price_and_button d-flex align-items-center justify-content-between">
+                              <div class="ordered_price">
+                                <small>BDT</small>
+                                <span>1300</span>
+                              </div>
+      
+                              <ul class="nav   order-group"  role="tablist">
+                                <li class="nav-item view_btn" role="presentation">
+                                  <a class="nav-link btn btn-outline-primary"  data-bs-toggle="pill" data-bs-target="#order_1" type="button" aria-selected="false">View  Details</a>
+                                </li>
+                              </ul>
+    
+                            </div>
+                          </div>
+      
+                          <div class="order_card d-flex flex-column justify-content-between ">
+                            <div class="time_and_status d-flex justify-content-between">
+                              <span class="status_badge completed_status">COMPLETE</span>
+      
+                              <div class="ordered_date d-flex flex-column align-items-end">
+                                <p>10/11/2021</p>
+                                <p>8.00pm - 9.00pm</p>
+                              </div>
+                            </div>
+                            <div class="invoice_no">
+                              <p>Invoice # 27A53BF76</p>
+                            </div>
+      
+                            <div class="price_and_button d-flex align-items-center justify-content-between">
+                              <div class="ordered_price">
+                                <small>BDT</small>
+                                <span>1300</span>
+                              </div>
+      
+                              <ul class="nav   order-group"  role="tablist">
+                                <li class="nav-item view_btn" role="presentation">
+                                  <a class="nav-link btn btn-outline-primary"  data-bs-toggle="pill" data-bs-target="#order_2" type="button" aria-selected="false">View  Details</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+      
+                          <div class="order_card d-flex flex-column justify-content-between ">
+                            <div class="time_and_status d-flex justify-content-between">
+                              <span class="status_badge completed_status">COMPLETE</span>
+      
+                              <div class="ordered_date d-flex flex-column align-items-end">
+                                <p>10/11/2021</p>
+                                <p>8.00pm - 9.00pm</p>
+                              </div>
+                            </div>
+                            <div class="invoice_no">
+                              <p>Invoice # 27A53BF76</p>
+                            </div>
+      
+                            <div class="price_and_button d-flex align-items-center justify-content-between">
+                              <div class="ordered_price">
+                                <small>BDT</small>
+                                <span>1300</span>
+                              </div>
+                              
+                              <ul class="nav   order-group"  role="tablist">
+                                <li class="nav-item view_btn" role="presentation">
+                                  <a class="nav-link btn btn-outline-primary"  data-bs-toggle="pill" data-bs-target="#order_3" type="button" aria-selected="false">View  Details</a>
+                                </li>
+                              </ul>
+    
+                            </div>
+      
+                          </div>
+      
+                          <div class="order_card d-flex flex-column justify-content-between ">
+                            <div class="time_and_status d-flex justify-content-between">
+                              <span class="status_badge completed_status">COMPLETE</span>
+      
+                              <div class="ordered_date d-flex flex-column align-items-end">
+                                <p>10/11/2021</p>
+                                <p>8.00pm - 9.00pm</p>
+                              </div>
+                            </div>
+                            <div class="invoice_no">
+                              <p>Invoice # 27A53BF76</p>
+                            </div>
+      
+                            <div class="price_and_button d-flex align-items-center justify-content-between">
+                              <div class="ordered_price">
+                                <small>BDT</small>
+                                <span>1300</span>
+                              </div>
+      
+                              <ul class="nav   order-group"  role="tablist">
+                                <li class="nav-item view_btn" role="presentation">
+                                  <a class="nav-link btn btn-outline-primary"  data-bs-toggle="pill" data-bs-target="#order_4" type="button" aria-selected="false">View  Details</a>
+                                </li>
+                              </ul>
+    
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+    
+                      <div class="col-6">
+                        <div class="display_orders ">
+                          <div class="order_details text-center">
+                            <h3>Order Details</h3>
+                          </div>
+      
+                          <div class="user_address">
+                            <span>Delivery Address:</span>
+                            <span>User’s Delivery Address</span>
+                          </div>
+    
+    
+                           <!-- Desktion product lists  -->
+                          <div class="tab-content" >
+                            <div class="tab-pane fade show active" id="order_1" >
+                              <div class="invoice_wrapper">
+                                <div class="invoice_info d-flex justify-content-between">
+                                  <span>invoice: <span class="invoice_no">27A53BF76</span> </span>
+                                  <div class="invoice_date_time">
+                                    <span> 10/11/2021 </span>
+                                    <span> 8.00pm - 9.00pm </span>
+                                  </div>
+                                </div>
+                                <div class="ordered_product_list for_desktop ">
+                                  <div class="ordered_product">
+                                    <div class="carted_items d-flex justify-content-around align-items-center">
+                                      <div class="carted_image">
+                                        <img src="../assets/images/products/p2.png" alt="">
+                                      </div>
+            
+                                      <div class="carted_item_name d-flex flex-column justify-content-between">
+                                        <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+            
+                                        <div class="item_quantity">250gm</div>
+                                      </div>
+            
+                                      <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                        <div class="ordered_quantity">
+                                          <span>Quantity:</span> <span>1</span>
+                                        </div>
+            
+                                        <div class="item_price"><span>BDT </span> 423</div>
+                                      </div>
+                                    </div>
+                                  </div>
+            
+                                  <div class="ordered_product">
+                                    <div class="carted_items d-flex justify-content-around align-items-center">
+                                      <div class="carted_image">
+                                        <img src="../assets/images/products/p2.png" alt="">
+                                      </div>
+            
+                                      <div class="carted_item_name d-flex flex-column justify-content-between">
+                                        <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+            
+                                        <div class="item_quantity">250gm</div>
+                                      </div>
+            
+                                      <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                        <div class="ordered_quantity">
+                                          <span>Quantity:</span> <span>1</span>
+                                        </div>
+            
+                                        <div class="item_price"><span>BDT </span> 423</div>
+                                      </div>
+                                    </div>
+                                  </div>
+            
+            
+                                  <div class="ordered_product">
+                                    <div class="carted_items d-flex justify-content-around align-items-center">
+                                      <div class="carted_image">
+                                        <img src="../assets/images/products/p2.png" alt="">
+                                      </div>
+            
+                                      <div class="carted_item_name d-flex flex-column justify-content-between">
+                                        <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+            
+                                        <div class="item_quantity">250gm</div>
+                                      </div>
+            
+                                      <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                        <div class="ordered_quantity">
+                                          <span>Quantity:</span> <span>1</span>
+                                        </div>
+            
+                                        <div class="item_price"><span>BDT </span> 423</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="btn btn-primary form-control mt-3">
+                                  <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3756 8.72392L20.9732 19.1055C21.0237 19.434 21.0026 19.7696 20.9114 20.0893C20.8202 20.409 20.6609 20.7052 20.4445 20.9576C20.2282 21.21 19.9598 21.4126 19.6579 21.5517C19.3559 21.6907 19.0275 21.7628 18.695 21.7631H3.30728C2.97465 21.7632 2.64594 21.6913 2.3437 21.5524C2.04145 21.4135 1.77281 21.2109 1.5562 20.9584C1.33959 20.706 1.18013 20.4097 1.08876 20.0899C0.997379 19.77 0.976246 19.4342 1.02681 19.1055L2.62441 8.72392C2.70821 8.17899 2.98439 7.6821 3.40294 7.32322C3.82148 6.96435 4.35471 6.76724 4.90604 6.76758H17.0963C17.6474 6.76751 18.1804 6.96475 18.5987 7.3236C19.017 7.68245 19.293 8.17919 19.3767 8.72392H19.3756Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" fill="white"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414ZM10.9918 14.8414V18.3019V14.8414Z" fill="white"/>
+                                    <path d="M10.9918 14.8414V18.3019M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                  Order these items again
+                                </button>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="order_2" >
+                              <div class="invoice_wrapper">
+                                <div class="invoice_info d-flex justify-content-between">
+                                  <span>invoice: <span class="invoice_no">27A53BF76</span> </span>
+                                  <div class="invoice_date_time">
+                                    <span> 10/11/2021 </span>
+                                    <span> 8.00pm - 9.00pm </span>
+                                  </div>
+                                </div>
+                                
+                                <div class="ordered_product_list for_desktop ">
+                                  <div class="ordered_product">
+                                    <div class="carted_items d-flex justify-content-around align-items-center">
+                                      <div class="carted_image">
+                                        <img src="../assets/images/products/p2.png" alt="">
+                                      </div>
+            
+                                      <div class="carted_item_name d-flex flex-column justify-content-between">
+                                        <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+            
+                                        <div class="item_quantity">250gm</div>
+                                      </div>
+            
+                                      <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                        <div class="ordered_quantity">
+                                          <span>Quantity:</span> <span>1</span>
+                                        </div>
+            
+                                        <div class="item_price"><span>BDT </span> 423</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+    
+                                <button class="btn btn-primary form-control mt-3">
+                                  <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3756 8.72392L20.9732 19.1055C21.0237 19.434 21.0026 19.7696 20.9114 20.0893C20.8202 20.409 20.6609 20.7052 20.4445 20.9576C20.2282 21.21 19.9598 21.4126 19.6579 21.5517C19.3559 21.6907 19.0275 21.7628 18.695 21.7631H3.30728C2.97465 21.7632 2.64594 21.6913 2.3437 21.5524C2.04145 21.4135 1.77281 21.2109 1.5562 20.9584C1.33959 20.706 1.18013 20.4097 1.08876 20.0899C0.997379 19.77 0.976246 19.4342 1.02681 19.1055L2.62441 8.72392C2.70821 8.17899 2.98439 7.6821 3.40294 7.32322C3.82148 6.96435 4.35471 6.76724 4.90604 6.76758H17.0963C17.6474 6.76751 18.1804 6.96475 18.5987 7.3236C19.017 7.68245 19.293 8.17919 19.3767 8.72392H19.3756Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" fill="white"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414ZM10.9918 14.8414V18.3019V14.8414Z" fill="white"/>
+                                    <path d="M10.9918 14.8414V18.3019M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                  Order these items again
+                                </button>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="order_3" >
+                              <div class="invoice_wrapper">
+                                <div class="invoice_info d-flex justify-content-between">
+                                  <span>invoice: <span class="invoice_no">27A53BF76</span> </span>
+                                  <div class="invoice_date_time">
+                                    <span> 10/11/2021 </span>
+                                    <span> 8.00pm - 9.00pm </span>
+                                  </div>
+                                </div>
+                                <div class="ordered_product_list for_desktop ">
+                                  <div class="ordered_product">
+                                    <div class="carted_items d-flex justify-content-around align-items-center">
+                                      <div class="carted_image">
+                                        <img src="../assets/images/products/p2.png" alt="">
+                                      </div>
+            
+                                      <div class="carted_item_name d-flex flex-column justify-content-between">
+                                        <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+            
+                                        <div class="item_quantity">250gm</div>
+                                      </div>
+            
+                                      <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                        <div class="ordered_quantity">
+                                          <span>Quantity:</span> <span>1</span>
+                                        </div>
+            
+                                        <div class="item_price"><span>BDT </span> 423</div>
+                                      </div>
+                                    </div>
+                                  </div>
+            
+                                  <div class="ordered_product">
+                                    <div class="carted_items d-flex justify-content-around align-items-center">
+                                      <div class="carted_image">
+                                        <img src="../assets/images/products/p2.png" alt="">
+                                      </div>
+            
+                                      <div class="carted_item_name d-flex flex-column justify-content-between">
+                                        <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+            
+                                        <div class="item_quantity">250gm</div>
+                                      </div>
+            
+                                      <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                        <div class="ordered_quantity">
+                                          <span>Quantity:</span> <span>1</span>
+                                        </div>
+            
+                                        <div class="item_price"><span>BDT </span> 423</div>
+                                      </div>
+                                    </div>
+                                  </div>
+            
+            
+                                  <div class="ordered_product">
+                                    <div class="carted_items d-flex justify-content-around align-items-center">
+                                      <div class="carted_image">
+                                        <img src="../assets/images/products/p2.png" alt="">
+                                      </div>
+            
+                                      <div class="carted_item_name d-flex flex-column justify-content-between">
+                                        <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+            
+                                        <div class="item_quantity">250gm</div>
+                                      </div>
+            
+                                      <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                        <div class="ordered_quantity">
+                                          <span>Quantity:</span> <span>1</span>
+                                        </div>
+            
+                                        <div class="item_price"><span>BDT </span> 423</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+    
+                                <button class="btn btn-primary form-control mt-3">
+                                  <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3756 8.72392L20.9732 19.1055C21.0237 19.434 21.0026 19.7696 20.9114 20.0893C20.8202 20.409 20.6609 20.7052 20.4445 20.9576C20.2282 21.21 19.9598 21.4126 19.6579 21.5517C19.3559 21.6907 19.0275 21.7628 18.695 21.7631H3.30728C2.97465 21.7632 2.64594 21.6913 2.3437 21.5524C2.04145 21.4135 1.77281 21.2109 1.5562 20.9584C1.33959 20.706 1.18013 20.4097 1.08876 20.0899C0.997379 19.77 0.976246 19.4342 1.02681 19.1055L2.62441 8.72392C2.70821 8.17899 2.98439 7.6821 3.40294 7.32322C3.82148 6.96435 4.35471 6.76724 4.90604 6.76758H17.0963C17.6474 6.76751 18.1804 6.96475 18.5987 7.3236C19.017 7.68245 19.293 8.17919 19.3767 8.72392H19.3756Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" fill="white"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414ZM10.9918 14.8414V18.3019V14.8414Z" fill="white"/>
+                                    <path d="M10.9918 14.8414V18.3019M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                  Order these items again
+                                </button>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="order_4" >
+                              <div class="invoice_wrapper">
+                                <div class="invoice_info d-flex justify-content-between">
+                                  <span>invoice: <span class="invoice_no">27A53BF76</span> </span>
+                                  <div class="invoice_date_time">
+                                    <span> 10/11/2021 </span>
+                                    <span> 8.00pm - 9.00pm </span>
+                                  </div>
+                                </div>
+                                <div class="ordered_product_list for_desktop ">
+                                  <div class="ordered_product">
+                                    <div class="carted_items d-flex justify-content-around align-items-center">
+                                      <div class="carted_image">
+                                        <img src="../assets/images/products/p2.png" alt="">
+                                      </div>
+            
+                                      <div class="carted_item_name d-flex flex-column justify-content-between">
+                                        <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+            
+                                        <div class="item_quantity">250gm</div>
+                                      </div>
+            
+                                      <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                        <div class="ordered_quantity">
+                                          <span>Quantity:</span> <span>1</span>
+                                        </div>
+            
+                                        <div class="item_price"><span>BDT </span> 423</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+    
+                                <button class="btn btn-primary form-control mt-3">
+                                  <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3756 8.72392L20.9732 19.1055C21.0237 19.434 21.0026 19.7696 20.9114 20.0893C20.8202 20.409 20.6609 20.7052 20.4445 20.9576C20.2282 21.21 19.9598 21.4126 19.6579 21.5517C19.3559 21.6907 19.0275 21.7628 18.695 21.7631H3.30728C2.97465 21.7632 2.64594 21.6913 2.3437 21.5524C2.04145 21.4135 1.77281 21.2109 1.5562 20.9584C1.33959 20.706 1.18013 20.4097 1.08876 20.0899C0.997379 19.77 0.976246 19.4342 1.02681 19.1055L2.62441 8.72392C2.70821 8.17899 2.98439 7.6821 3.40294 7.32322C3.82148 6.96435 4.35471 6.76724 4.90604 6.76758H17.0963C17.6474 6.76751 18.1804 6.96475 18.5987 7.3236C19.017 7.68245 19.293 8.17919 19.3767 8.72392H19.3756Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" fill="white"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414ZM10.9918 14.8414V18.3019V14.8414Z" fill="white"/>
+                                    <path d="M10.9918 14.8414V18.3019M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                  Order these items again
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+    
+    
+      
+                          
+    
+    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+    
+                  <div class="row">
+                    <!-- Mobile order lists -->
+                    <div class="for_mobile d-block d-xl-none">
+                      <div class="col-12 ">
+                        <div class="display_orders ordered_product_list ">
+      
+                          <div class="user_address">
+                            <span>Delivery Address:</span>
+                            <span>User’s Delivery Address</span>
+                          </div>
+      
+                          <div class="invoice_info d-flex justify-content-between">
+                            <span>invoice: <span class="invoice_no">27A53BF76</span> </span>
+                            <div class="invoice_date_time">
+                              <span> 10/11/2021 </span>
+                              <span> 8.00pm - 9.00pm </span>
+                            </div>
+                          </div>
+      
+      
+                          <div class="accordion" id="ordered_accordion">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <div class="order_card d-flex flex-column justify-content-between active">
+                                  <div class="time_and_status d-flex justify-content-between">
+                                    <span class="status_badge completed_status">COMPLETE</span>
+      
+                                    <div class="ordered_date d-flex flex-column align-items-end">
+                                      <p>10/11/2021</p>
+                                      <p>8.00pm - 9.00pm</p>
+                                    </div>
+                                  </div>
+                                  <div class="invoice_no">
+                                    <p>Invoice # 27A53BF76</p>
+                                  </div>
+      
+                                  <div class="price_and_button d-flex align-items-center justify-content-between">
+                                    <div class="ordered_price">
+                                      <small>BDT</small>
+                                      <span>1300</span>
+                                    </div>
+      
+                                    <div class="view_btn">
+                                      <a class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">View
+                                        Details</a>
+                                    </div>
+                                  </div>
+                                </div>
+      
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#ordered_accordion">
+                                <div class="ordered_product">
+                                  <div class="carted_items d-flex justify-content-around align-items-center">
+                                    <div class="carted_image">
+                                      <img src="../assets/images/products/p2.png" alt="">
+                                    </div>
+      
+                                    <div class="carted_item_name d-flex flex-column justify-content-between">
+                                      <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+      
+                                      <div class="item_quantity">250gm</div>
+                                    </div>
+      
+                                    <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                      <div class="ordered_quantity">
+                                        <span>Quantity:</span> <span>1</span>
+                                      </div>
+      
+                                      <div class="item_price"><span>BDT </span> 423</div>
+                                    </div>
+                                  </div>
+                                </div>
+    
+    
+                                <button class="btn btn-primary form-control mt-3">
+                                  <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3756 8.72392L20.9732 19.1055C21.0237 19.434 21.0026 19.7696 20.9114 20.0893C20.8202 20.409 20.6609 20.7052 20.4445 20.9576C20.2282 21.21 19.9598 21.4126 19.6579 21.5517C19.3559 21.6907 19.0275 21.7628 18.695 21.7631H3.30728C2.97465 21.7632 2.64594 21.6913 2.3437 21.5524C2.04145 21.4135 1.77281 21.2109 1.5562 20.9584C1.33959 20.706 1.18013 20.4097 1.08876 20.0899C0.997379 19.77 0.976246 19.4342 1.02681 19.1055L2.62441 8.72392C2.70821 8.17899 2.98439 7.6821 3.40294 7.32322C3.82148 6.96435 4.35471 6.76724 4.90604 6.76758H17.0963C17.6474 6.76751 18.1804 6.96475 18.5987 7.3236C19.017 7.68245 19.293 8.17919 19.3767 8.72392H19.3756Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" fill="white"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414ZM10.9918 14.8414V18.3019V14.8414Z" fill="white"/>
+                                    <path d="M10.9918 14.8414V18.3019M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                  Order these items again
+                                </button>
+    
+    
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <div class="order_card d-flex flex-column justify-content-between ">
+                                  <div class="time_and_status d-flex justify-content-between">
+                                    <span class="status_badge completed_status">COMPLETE</span>
+      
+                                    <div class="ordered_date d-flex flex-column align-items-end">
+                                      <p>10/11/2021</p>
+                                      <p>8.00pm - 9.00pm</p>
+                                    </div>
+                                  </div>
+                                  <div class="invoice_no">
+                                    <p>Invoice # 27A53BF76</p>
+                                  </div>
+      
+                                  <div class="price_and_button d-flex align-items-center justify-content-between">
+                                    <div class="ordered_price">
+                                      <small>BDT</small>
+                                      <span>1300</span>
+                                    </div>
+      
+                                    <div class="view_btn">
+                                      <a class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">View
+                                        Details</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#ordered_accordion">
+                                <div class="ordered_product">
+                                  <div class="carted_items d-flex justify-content-around align-items-center">
+                                    <div class="carted_image">
+                                      <img src="../assets/images/products/p2.png" alt="">
+                                    </div>
+      
+                                    <div class="carted_item_name d-flex flex-column justify-content-between">
+                                      <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+      
+                                      <div class="item_quantity">250gm</div>
+                                    </div>
+      
+                                    <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                      <div class="ordered_quantity">
+                                        <span>Quantity:</span> <span>1</span>
+                                      </div>
+      
+                                      <div class="item_price"><span>BDT </span> 423</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="btn btn-primary form-control mt-3">
+                                  <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3756 8.72392L20.9732 19.1055C21.0237 19.434 21.0026 19.7696 20.9114 20.0893C20.8202 20.409 20.6609 20.7052 20.4445 20.9576C20.2282 21.21 19.9598 21.4126 19.6579 21.5517C19.3559 21.6907 19.0275 21.7628 18.695 21.7631H3.30728C2.97465 21.7632 2.64594 21.6913 2.3437 21.5524C2.04145 21.4135 1.77281 21.2109 1.5562 20.9584C1.33959 20.706 1.18013 20.4097 1.08876 20.0899C0.997379 19.77 0.976246 19.4342 1.02681 19.1055L2.62441 8.72392C2.70821 8.17899 2.98439 7.6821 3.40294 7.32322C3.82148 6.96435 4.35471 6.76724 4.90604 6.76758H17.0963C17.6474 6.76751 18.1804 6.96475 18.5987 7.3236C19.017 7.68245 19.293 8.17919 19.3767 8.72392H19.3756Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" fill="white"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414ZM10.9918 14.8414V18.3019V14.8414Z" fill="white"/>
+                                    <path d="M10.9918 14.8414V18.3019M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                  Order these items again
+                                </button>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <div class="order_card d-flex flex-column justify-content-between ">
+                                  <div class="time_and_status d-flex justify-content-between">
+                                    <span class="status_badge completed_status">COMPLETE</span>
+      
+                                    <div class="ordered_date d-flex flex-column align-items-end">
+                                      <p>10/11/2021</p>
+                                      <p>8.00pm - 9.00pm</p>
+                                    </div>
+                                  </div>
+                                  <div class="invoice_no">
+                                    <p>Invoice # 27A53BF76</p>
+                                  </div>
+      
+                                  <div class="price_and_button d-flex align-items-center justify-content-between">
+                                    <div class="ordered_price">
+                                      <small>BDT</small>
+                                      <span>1300</span>
+                                    </div>
+      
+                                    <div class="view_btn">
+                                      <a class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">View
+                                        Details</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#ordered_accordion">
+                                <div class="ordered_product">
+                                  <div class="carted_items d-flex justify-content-around align-items-center">
+                                    <div class="carted_image">
+                                      <img src="../assets/images/products/p2.png" alt="">
+                                    </div>
+      
+                                    <div class="carted_item_name d-flex flex-column justify-content-between">
+                                      <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+      
+                                      <div class="item_quantity">250gm</div>
+                                    </div>
+      
+                                    <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                      <div class="ordered_quantity">
+                                        <span>Quantity:</span> <span>1</span>
+                                      </div>
+      
+                                      <div class="item_price"><span>BDT </span> 423</div>
+                                    </div>
+                                  </div>
+                                </div>
+      
+      
+                                <div class="ordered_product">
+                                  <div class="carted_items d-flex justify-content-around align-items-center">
+                                    <div class="carted_image">
+                                      <img src="../assets/images/products/p2.png" alt="">
+                                    </div>
+      
+                                    <div class="carted_item_name d-flex flex-column justify-content-between">
+                                      <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+      
+                                      <div class="item_quantity">250gm</div>
+                                    </div>
+      
+                                    <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                                      <div class="ordered_quantity">
+                                        <span>Quantity:</span> <span>1</span>
+                                      </div>
+      
+                                      <div class="item_price"><span>BDT </span> 423</div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="btn btn-primary form-control mt-3">
+                                  <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.3756 8.72392L20.9732 19.1055C21.0237 19.434 21.0026 19.7696 20.9114 20.0893C20.8202 20.409 20.6609 20.7052 20.4445 20.9576C20.2282 21.21 19.9598 21.4126 19.6579 21.5517C19.3559 21.6907 19.0275 21.7628 18.695 21.7631H3.30728C2.97465 21.7632 2.64594 21.6913 2.3437 21.5524C2.04145 21.4135 1.77281 21.2109 1.5562 20.9584C1.33959 20.706 1.18013 20.4097 1.08876 20.0899C0.997379 19.77 0.976246 19.4342 1.02681 19.1055L2.62441 8.72392C2.70821 8.17899 2.98439 7.6821 3.40294 7.32322C3.82148 6.96435 4.35471 6.76724 4.90604 6.76758H17.0963C17.6474 6.76751 18.1804 6.96475 18.5987 7.3236C19.017 7.68245 19.293 8.17919 19.3767 8.72392H19.3756Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" fill="white"/>
+                                    <path d="M13.3084 3.30701C13.3084 2.69515 13.0653 2.10835 12.6326 1.67571C12.2 1.24306 11.6132 1 11.0013 1C10.3895 1 9.80269 1.24306 9.37004 1.67571C8.9374 2.10835 8.69434 2.69515 8.69434 3.30701" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414ZM10.9918 14.8414V18.3019V14.8414Z" fill="white"/>
+                                    <path d="M10.9918 14.8414V18.3019M7.53125 14.8414H10.9918H7.53125ZM14.4523 14.8414H10.9918H14.4523ZM10.9918 14.8414V11.3809V14.8414Z" stroke="#FF0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                                  Order these items again
+                                </button>
+      
+                              </div>
+                            </div>
+                          </div>
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+    
+    
+                <div class="tab-pane fade" id="v-pills-new_address" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <div id="add_new_address">
+                    <h3 class="tab_heading">Create New Address</h3>
+                    <form class="new_address_form" action="" method="post">
+    
+                      <p class="short_desc">Add the address where a delivery man should arrive with
+                        your orderd product.</p>
+      
+                      <div class="gap_40"></div>
+    
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-6">
+                            <label for="">Name </label>
+                            <input placeholder="Your Name" class="form-control" type="email" name="" id="" value="Bob Ken">
+                          </div>
+                          <div class="col-6">
+                            <label for="">Old Password</label>
+                            <input placeholder="Old Password" class="form-control" type="password" name="" id=""
+                              value="123456789">
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-12">
+                            <label for="">Email </label>
+                            <input placeholder="Your Email" class="form-control" type="email" name="" id=""
+                              value="bob@gmail.com">
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-6">
+                            <label for="">Email </label>
+                            <input placeholder="Your Email" class="form-control" type="email" name="" id=""
+                              value="bob@gmail.com">
+                          </div>
+                          <div class="col-6">
+                            <label for="">New Password </label>
+                            <input placeholder="New Password" class="form-control" type="password" name="" id="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="gap_64"></div>
+                      <h6>Save my Address as</h6>
+    
+                      <div class="address_options">
+                        <div class="row">
+                          <div class="col-12 col-lg-6">
+                            <div class="option_col d-flex justify-content-between">
+                              <span><input value="" type="radio" name="address_option"> Home</span>
+                              <span><input value="" type="radio" name="address_option"> Office</span>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-6 ">
+                            <div class="option_col d-flex justify-content-between justify-content-lg-around">
+                              <span><input value="other_option" type="radio" name="address_option"> Other</span>
+                              <input placeholder="Address Type" id="other_option" type="text" name="" id="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+                      <div class="alert_check">
+                        <span><input class="me-2" type="checkbox" name="" id=""> Notify me by phone before the delivery man
+                          arrives.</span>
+                      </div>
+    
+                      <div class="form_button_wrapper text-center d-flex align-items-center justify-content-between mt-5 mt-lg-2">
+                        <div class="all_tabs  nav flex-column nav-pills back_button" id="v-pills-tab" role="tablist"
+                          aria-orientation="vertical">
+                          <a style="border-right: none;" class="nav-link text-center text-md-start px-0" id="v-pills-profile-tab"
+                            data-bs-toggle="pill" data-bs-target="#v-pills-delivery_address" type="button" role="tab"
+                            aria-controls="v-pills-profile" aria-selected="false">
+                            Back</a>
+                        </div>
+    
+                        <button class="btn btn-primary" type="submit">Save Changes</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="gap_64"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Mobile header code ended from here ================================== -->
 
@@ -5769,8 +7098,9 @@
         </a>
       </div>
 
-      <div class="mob_menu_item" role="button">
-        <a href="#">
+      <!-- working  -->
+      <div class="mob_menu_item mobile_favourite" role="button">
+        <a data-action="mobile_account">
           <img src="assets/images/icons/heart.svg" alt="" />
           Favorite
         </a>

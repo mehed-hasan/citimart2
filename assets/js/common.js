@@ -129,4 +129,13 @@ $(".remove_btn").click(function(){
 $(".side_btn").click(function(){
   $(this).toggleClass("active_side_btn");
 });
+
+$(".mobile_favourite").click(function(){
+  $(".mobile_account .nav-link").removeClass("active");
+  $("#v-pills-messages-tab").addClass("active");
+
+  $(".mobile_account .tab-pane").attr("class", "tab-pane fade");
+  $("#v-pills-favorites").addClass( "fade active show");
+
+});
 // script for counter button ended 
