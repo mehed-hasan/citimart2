@@ -11,16 +11,7 @@
     margin-bottom: 24px;
   }
   
-  .add_to_bag{
-    padding: 9px;
-    text-align: center;
-    width: 100%;
-    background-color:var(--primary-color);
-    color:white;
-    border-radius: 8px;
-    border: none;
-    min-height:40px;
-  }
+
   
   .offer_card{
     margin-bottom: 80px;
@@ -67,35 +58,9 @@
 }
 
 
-  .counter_btn{
-  max-width: 200px;
-   display: flex;
-   margin: auto;
-   display: none;
-   min-height: 40px;
-  }
+  
 
-  
-  .counter_btn button{
-    width: 25%;
-  }
-  
-  .counter_btn .add_to_bag:first-child{
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .counter_btn .add_to_bag:last-child{
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .counter_btn input{
-    border: none;
-    background-color: #FFEBEB;
-    color: var(--primary-color);
-    font-size: 24px;
-    width: 50%;  
-    padding-left: 10px;
-  }
+
   @media screen and (max-width:992px){
     .offer_card {
         margin-bottom: 40px;

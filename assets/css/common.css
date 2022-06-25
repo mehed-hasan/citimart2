@@ -1535,6 +1535,171 @@ text-align: center;
 /* ----------------------------------------------------- */
 
 
+/* Incemental button )(red) */
+button{
+  border: none;
+  background-color: transparent;
+}
+.add_to_bag {
+  padding: 9px;
+  text-align: center;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  min-height: 40px;
+}
+
+.counter_btn {
+  max-width: 200px;
+  display: flex;
+  margin: auto;
+  display: none;
+  min-height: 40px;
+}
+
+.counter_btn .add_to_bag:first-child {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.counter_btn input {
+  border: none;
+  background-color: #FFEBEB;
+  color: var(--primary-color);
+  font-size: 24px;
+  width: 50%;
+}
+.counter_btn .add_to_bag:last-child {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.counter_btn button{
+  width: 25%;
+}
+
+/* Css forincremental button (red) end  */
+
+
+/* Square product componenebts stareted---------------------------------------  */
+/* Square product img  */
+.square_product{
+  filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.05));
+
+}
+.square_product .product_image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  
+}
+
+.product_details{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #979797;
+}
+
+.product_details p{
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #979797;
+
+}
+
+.product_price p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #44444F;
+  margin-top: 12px;
+}
+
+@media screen and (max-width:768px){
+  .inc_btn_2 .add_to_bag{
+    font-size: 12px;
+  }
+  .inc_btn_2 .counter_btn input{
+    font-size: 12px;
+  }
+}
+/* Square product img ended  */
+
+
+/* Inc button 2  css started  */
+.inc_btn_2{
+  background-color: white;
+}
+
+.inc_btn_2 .side_btn{
+  width: 25%;
+  background: transparent;
+}
+.inc_btn_2 .side_btn svg{
+  border-radius: 4px;
+  transition: 1s;
+
+}
+.inc_btn_2 .offer_btn_wrapper{
+  width: 70%;
+}
+
+.inc_btn_2 .counter_btn button{
+  width: 33.33%;
+}
+.inc_btn_2 .counter_btn input{
+  width: 33.33%;
+}
+
+.inc_btn_2 .add_to_bag {
+  background-color: transparent;
+  border-radius: 0px;
+  color: var(--primary-color);
+}
+
+.inc_btn_2 .side_btn:first-child{
+  border-right: 1px solid #787E8D;
+}
+
+
+.inc_btn_2 .side_btn:last-child{
+  border-left: 1px solid #787E8D;
+}
+
+.inc_btn_2 .counter_btn input, .inc_btn_2 .counter_btn{
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.inc_btn_2 .counter_btn .add_to_bag{
+  color: white;
+}
+
+
+.active_side_btn  svg{
+  background-color: var(--primary-color);
+}
+
+.active_side_btn  svg path{
+  stroke: white;
+}
+
+/* Inc button 2  css ended  */
+
+
+
+/* Square product component css has ended here ----------------------------------- */
+
 
 /*===========================Media query of common css ==============================================
 =====================================================================================================- */

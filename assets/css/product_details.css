@@ -1,0 +1,63 @@
+@import url(common.css);
+.product_details img{
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.08);
+border-radius: 20px;
+}
+
+.details_info{
+    max-width: 494px;
+    width: 100%;
+}
+.product_name_price p:first-child{
+    font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+
+color: #44444F;
+}
+
+.product_name_price p:last-child{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--primary-color);
+    
+}
+.product_name_price p:last-child small{
+    font-size: 14px;
+    line-height: 21px;
+    color: #DADADA;
+}
+
+.bordered_btns_group{
+    margin-top: 10px;
+}
+.bordered_btns_group button:first-child{
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+.bordered_btns_group button svg{
+    padding: 4px;
+}
+
+.bordered_btns_group button:last-child{
+    min-width: 286px;
+}
+
+.product_details .details p{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #B7B6B6;
+}
+
+.details_btn_groups{
+    max-width: 354px;
+    width: 100%;
+}
