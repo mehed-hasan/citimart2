@@ -139,3 +139,34 @@ $(".mobile_favourite").click(function(){
 
 });
 // script for counter button ended 
+
+
+
+// Script for link with tab active 
+
+$(document).ready(function(){
+  $page_link = window.location.href;
+  if($page_link.includes('#')){
+    $tab_name =  $page_link.split("#").pop();
+    // set session 
+    localStorage.setItem('tab_name', $tab_name);
+
+    $get_tab_name = localStorage.getItem("tab_name");
+    $(".page_linked .tab-pane").removeClass("show active");
+    $(".nav-pills button").removeClass("active");
+  
+    $("#"+ $get_tab_name).addClass("show active");
+    $("."+ $get_tab_name).addClass("active");
+    console.log("#"+ $get_tab_name);
+  
+
+  }else{
+    localStorage.setItem('tab_name', '');
+    
+  }
+
+
+
+  
+  
+});

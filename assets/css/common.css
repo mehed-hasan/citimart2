@@ -162,7 +162,7 @@ line-height: 21px;
 
 
 #desktop_header{
-  margin-bottom: 180px;
+  margin-bottom: 155px;
 }
 header.custom_header {
   position: fixed;
@@ -247,6 +247,7 @@ header.custom_header {
   color: #787e8d;
   border-radius: 0;
   border: 0;
+  cursor: pointer;
 }
 
 .custom_header .top-header .top_header_right ul li a svg {
@@ -562,6 +563,9 @@ header.custom_header {
 }
 
 /* Header search bar  */
+.search_bar input:focus{
+  box-shadow: none !important;
+}
 .custom_header .search_bar{
   max-width: 648px;
   width: 100%;
