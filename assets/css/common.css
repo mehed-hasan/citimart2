@@ -9,6 +9,9 @@
 input{
   accent-color: var(--primary-color);
 }
+.tab-pane{
+  offset: unset;
+}
 
 /* Preventing default  */
 
@@ -163,6 +166,11 @@ line-height: 21px;
 
 #desktop_header{
   margin-bottom: 155px;
+}
+
+#categoryMenuToggle svg{
+  height: 16px;
+  width: 20px;
 }
 header.custom_header {
   position: fixed;
@@ -1602,7 +1610,7 @@ button{
   height: 100%;
   width: 100%;
   object-fit: cover;
-
+ cursor: pointer;
   
 }
 
@@ -1678,6 +1686,7 @@ button{
 
 .inc_btn_2 .side_btn:first-child{
   border-right: 1px solid #787E8D;
+  text-align: center;
 }
 
 
@@ -1787,6 +1796,7 @@ color: #B7B6B6;
 #product_modal .tiny_footer_images img{
   margin: 5px;
 }
+
 @media screen and (max-width:1200px){
   .we_provide_card{
     max-width: 150px;
@@ -1906,14 +1916,14 @@ z-index: 3;
 }
 
 .big_view{
-  max-height: 750px;
-  overflow: hidden;
+
 }
 .big_view img{
   transition: 1s;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+  height: auto;
+  width: 70%;
+  object-fit: cover;
+  margin: auto;
 }
 
 #product_modal .modal-dialog{
@@ -1925,6 +1935,15 @@ z-index: 3;
 #product_modal .product_details{
   padding: 20px;
 }
+
+#product_modal .crosser svg {
+  position: absolute;
+  right: 7px;
+  top: 15px;
+  height: 16px;
+  z-index: 10;
+}
+
 #product_modal .modal-content {
   padding: 0px ;
   border-radius: 10px;
@@ -1983,7 +2002,7 @@ z-index: 3;
     }
     #mobile_header{
       display: block !important;
-      z-index: 10;
+      z-index: 100;
     }
   
 

@@ -27,7 +27,9 @@ $("#categoryMenuToggle").on("click", function () {
   $(".all_department_menu").slideToggle(500);
 });
 
-
+$(".product_image img").click(function(){
+  $("#product_modal").modal('show');
+})
 
 
 
@@ -38,7 +40,6 @@ $("#categoryMenuToggle").on("click", function () {
 
 $(window).on('load', function() {
   $(".location_modal").modal('show');
-
   $(".sign_in_btn").click(function(){
     $(".modal").modal('hide');
     $(".sign_in_modal").modal('show');
@@ -84,7 +85,6 @@ $(window).on('load', function() {
           var next = $(this).find("button:last-child").attr("data-next");
           $(this).parent().parent().parent().modal('hide');
           $("."+next).modal('show');
-           
           }
 
           form.classList.add('was-validated')
@@ -126,18 +126,11 @@ $(".remove_btn").click(function(){
 });
 
 
-$(".side_btn").click(function(){
+$(".heart_btn").click(function(){
   $(this).toggleClass("active_side_btn");
 });
 
-$(".mobile_favourite").click(function(){
-  $(".mobile_account .nav-link").removeClass("active");
-  $("#v-pills-messages-tab").addClass("active");
 
-  $(".mobile_account .tab-pane").attr("class", "tab-pane fade");
-  $("#v-pills-favorites").addClass( "fade active show");
-
-});
 // script for counter button ended 
 
 
@@ -153,10 +146,12 @@ $(document).ready(function(){
 
     $get_tab_name = localStorage.getItem("tab_name");
     $(".page_linked .tab-pane").removeClass("show active");
+
     $(".nav-pills button").removeClass("active");
   
     $("#"+ $get_tab_name).addClass("show active");
     $("."+ $get_tab_name).addClass("active");
+    
     console.log("#"+ $get_tab_name);
   
 
@@ -166,7 +161,4 @@ $(document).ready(function(){
   }
 
 
-
-  
-  
 });
