@@ -1,5 +1,4 @@
 
-
   $(".mobile_menu a, .mobile_top_bar a ").click(function(){
     var mobile_menu_content_name = $(this).attr("data-action");
     // If go to home then scroll is available -----------
@@ -39,6 +38,10 @@ $(".product_image img").click(function(){
 // Js for modal started 
 
 $(window).on('load', function() {
+
+   $("#preloader ").fadeOut(500); 
+  $("body").css({'overflow':'unset'}); 
+
   $(".location_modal").modal('show');
   $(".sign_in_btn").click(function(){
     $(".modal").modal('hide');
