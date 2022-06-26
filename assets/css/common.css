@@ -12,6 +12,10 @@ input{
 .tab-pane{
   offset: unset;
 }
+.mid_header .dropdown-item:focus, .dropdown-item:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
 
 /* Preventing default  */
 
@@ -620,6 +624,7 @@ header.custom_header {
 
 .all_department_menu{
   position: relative;
+  box-shadow: 4px 4px 40px rgb(0 0 0 / 8%);
 }
 
 .department_items .nav_mega_menu {
