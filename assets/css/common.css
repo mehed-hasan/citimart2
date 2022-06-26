@@ -1565,14 +1565,15 @@ button{
   background-color: transparent;
 }
 .add_to_bag {
-  padding: 9px;
+  /* padding: 9px; */
+  padding: 0px;
   text-align: center;
   width: 100%;
   background-color: var(--primary-color);
   color: white;
   border-radius: 8px;
   border: none;
-  min-height: 40px;
+  min-height: 35px;
 }
 
 .counter_btn {
@@ -1580,7 +1581,7 @@ button{
   display: flex;
   margin: auto;
   display: none;
-  min-height: 40px;
+  min-height: 30px;
 }
 
 .counter_btn .add_to_bag:first-child {
