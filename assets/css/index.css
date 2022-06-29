@@ -80,6 +80,7 @@
 
 .sidemenu_item img {
     transition: .5s;
+    height: 22px;
 }
 
 .sidemenu_item svg {

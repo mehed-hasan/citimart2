@@ -15,6 +15,24 @@ body{
   z-index: 0;
 }
 
+/* Code for creating custom gap left right   */
+@media screen and (max-width:1600px){
+  #page_content{
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width:992px){
+  #page_content{
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+  }
+}
+/* Code for creating custom gap ended left right   */
+
+
 #preloader {
   font-family: 'Poppins';
   display: flex;
@@ -242,6 +260,7 @@ line-height: 21px;
 @media  (min-width: 1200px){
   .container, .container-lg, .container-md, .container-sm, .container-xl {
       max-width: 1520px !important;
+      /* width: 97%; */
   }
 }
 #page_content {
@@ -630,11 +649,12 @@ header.custom_header {
   text-decoration: none;
   text-transform: capitalize;
   text-align: center;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
-.all_department_menu .department_items ul li a:hover {
+.float_nav_item >li a:hover {
   color: var(--primary-color);
+  -webkit-filter: invert(0%) grayscale(100%) brightness(93%) sepia(81%) hue-rotate(-49deg) saturate(400%) contrast(5);
 }
 
 .all_department_menu .department_items ul li a img {
@@ -1302,9 +1322,7 @@ line-height: 24px;
 .hotline_area span{
   display: none;
 }
-.all_department span{
-  display: none;
-}
+
 .nav_mega_menu .title{
   font-size: 14px;
   line-height: 10px;
