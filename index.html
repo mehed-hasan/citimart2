@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CityMart || Blog Details</title>
+    <title>CityMart || Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -464,7 +464,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a class="locator_btn" role="button">
                         <svg
                           width="12"
                           height="18"
@@ -988,12 +988,11 @@
               <div class="col-9 col-sm-7">
                 <div class="desktop_nav_items text-center">
                   <ul class="justify-content-center">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="pages/products.html">products</a></li>
-                    <li><a href="">daily need</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/comingsoon.html">CitiCafe</a></li>
+                    <li><a href="pages/comingsoon.html">CitiPay</a></li>
+                    <li><a href="pages/comingsoon.html">Designerciti.com</a></li>
                     <li><a href="pages/offers.html">offers</a></li>
-                    <li><a href="">flash sell</a></li>
-                    <li><a href="">ramadan</a></li>
                   </ul>
                 </div>
               </div>
@@ -7875,8 +7874,9 @@
     <script src="assets/js/common.js" type="text/javascript"></script>
     <script src="assets/plugins/isotop/isotop_pack.js" type="text/javascript"></script>
     <script src="assets/plugins/isotop/isotop.js" type="text/javascript"></script>
-
     <script>
+
+
       $(".banner_slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -7886,8 +7886,17 @@
         dots: true,
       });
 
-      // external js: isotope.pkgd.js
 
+      $(window).scroll(function() {
+      if ($(window).scrollTop() > 380 ){
+        $(".all_department").addClass("visible_department");
+      } else {
+        $(".all_department").removeClass("visible_department");
+        $(".all_department_menu").slideUp(500);
+      };   	
+      });
+
+      // external js: isotope.pkgd.js
     </script>
   </body>
 </html>

@@ -36,6 +36,18 @@ text-align: center;
 color: var(--primary-color);
 margin-bottom: 41px;
 }
+.coming{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 68px;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 41px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 10px);
+}
 
 
 .loading span {
@@ -388,10 +400,10 @@ header.custom_header {
 .desktop_nav_items ul li a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .hotline_area ul {
@@ -404,7 +416,7 @@ header.custom_header {
 }
 
 .hotline_area ul li a {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1131,7 +1143,7 @@ color: #898989;
 
 
 #footer{
-  background-color:#E11919;
+  background-color:#373f50;
 }
 #footer .top_footer .row{
   min-height: 329px;
@@ -2128,6 +2140,12 @@ z-index: 3;
 
 /* Gap classes for this project ended--------   */
 
+.loading {
+  font-size: 30px;
+}
+.coming {
+  font-size: 30px;
+}
 
   .heading_1{
     font-size: 26px;
@@ -2234,7 +2252,12 @@ z-index: 3;
 .gap_24{
   height: 6px;
 }
-
+.loading {
+  font-size: 20px;
+}
+.coming {
+  font-size: 20px;
+}
 
 
 /* Gap classes for this project ended--------   */

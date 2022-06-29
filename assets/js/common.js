@@ -42,7 +42,9 @@ $(window).on('load', function() {
    $("#preloader ").fadeOut(500); 
   $("body").css({'overflow':'unset'}); 
 
-  $(".location_modal").modal('show');
+  $(".locator_btn").click(function(){
+    $(".location_modal").modal('show');
+  });
   $(".sign_in_btn").click(function(){
     $(".modal").modal('hide');
     $(".sign_in_modal").modal('show');
@@ -157,11 +159,9 @@ $(document).ready(function(){
     
     console.log("#"+ $get_tab_name);
   
-
   }else{
     localStorage.setItem('tab_name', '');
     
   }
-
 
 });

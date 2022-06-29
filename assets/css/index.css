@@ -4,6 +4,20 @@
 /* Home banner with side menu started ----====  */
 /* ============================================== */
 
+@media screen and (min-width:1200px){
+    .all_department{
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+    
+    .visible_department{
+        opacity: 1;
+        visibility:visible; 
+    }
+}
+
+
 #sidemenu_banner .banner_part {
     padding: 0px !important;
 }
