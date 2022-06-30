@@ -96,7 +96,7 @@
 }
 
 .sidemenu_item:hover img {
-    -webkit-filter: invert(80%) grayscale(100%) brightness(93%) sepia(81%) hue-rotate(-49deg) saturate(400%) contrast(5);
+    -webkit-filter: invert(0%) grayscale(100%) brightness(93%) sepia(81%) hue-rotate(-49deg) saturate(400%) contrast(5);
 }
 
 .sidemenu_item span {
@@ -150,7 +150,7 @@
 }
 
 .banner_slider_el {
-    margin-top: 80px;
+    margin-top: 135px;
 }
 
 .intro_img img {
@@ -280,16 +280,22 @@
 /* Specific product section css started */
 .specific_bundles .rounded_product{
 margin-bottom: 40px;
+width: 16.66%;
+text-align: center;
 }
+
+
+
+
 .rounded_product  div {
     height: 200px;
-    max-width: 200px;
-    width: 100%;
+    width: 200px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
     margin-bottom: 12px !important;
     margin: auto;
+    
 }
 
 .rounded_product a {
@@ -306,16 +312,17 @@ margin-bottom: 40px;
 #addvertise_section .find_store{
     background-color: var(--primary-color) ;
     margin-bottom: 0px;
+    text-decoration: none;
    }
    .addvertise_left{
-       height: 100%;
+       height: 103%;
        background-position: center;
        background-repeat: no-repeat;
        background-size: cover;
        border-radius: 15px;
    }
   .addvertise_right{
-      min-height: 630px    ;
+      min-height:103%;
   }
 
 
@@ -526,10 +533,19 @@ margin-bottom: 40px;
   
   @media screen and (max-width:768px){
     .isotop .element-item {
-      width: 33.33%;
+      width: 25%
+      }
+  }
+
+  @media screen and (max-width:611px){
+    .isotop .element-item {
+      width:33.33%;
       }
   }
   
+
+  
+
   @media screen and (max-width:450px){
     /* .isotop .element-item {
       width: 100%;
@@ -580,9 +596,6 @@ margin-bottom: 40px;
 
 /* Advertise section responsive  */
 @media screen and (max-width:1201px) {
-    .addvertise_right{
-        min-height: 500px
-    }
     .banner_slider_el{
         margin: 20px 0px;
     }
@@ -644,9 +657,7 @@ margin-bottom: 40px;
     }
 
     /* Advertise section responsive  */
-    .addvertise_right{
-        min-height: 400px
-    }
+
     #addvertise_section .find_store a{
         line-height: 20px;
     }
@@ -681,11 +692,7 @@ margin-bottom: 40px;
     .rounded_product a {
         font-size: 10px;
     }
-    .rounded_product div{
-        height: 111px;
-        max-width: 111px;
-        width: 100%;
-    } 
+
 
         /* Advertise section responsive  */
 
@@ -705,5 +712,87 @@ margin-bottom: 40px;
 
 
 
+}
+
+
+
+@media screen and (max-width:1450px){
+    .rounded_product  div {
+        height: 180px;
+        width: 180px;
+    }
+
+
+    .isotop .rounded_product  div {
+        height: 130px;
+        width: 130px;
+    }
+
+
+    .specific_bundles .rounded_product{
+        width: 20%;
+        }
+}
+
+@media screen and (max-width:1250px){
+
+    .specific_bundles .rounded_product{
+        width: 20%;
+        }
+}
+
+@media screen and (max-width:1150px){
+
+    .specific_bundles .rounded_product{
+        width: 25%;
+        }
+}
+
+@media screen and (max-width:815px){
+    .specific_bundles .rounded_product{
+        width: 33.33%;
+        }
+    }
+
+@media screen and (max-width:697px){
+
+    .rounded_product  div {
+       margin-bottom: 0px !important;
+    }
+
+    
+    .specific_bundles .rounded_product{
+        margin-bottom: 20px;
+    }
+    .isotop .rounded_product{
+        margin-bottom: 20px;
+    }
+
+    .rounded_product {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:475px){
+    .isotop .rounded_product div{
+        width: 100%;
+        height: 100px;
+    }
+  }
+
+@media screen and (max-width:450px){
+    
+    .rounded_product  div {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:370px){
+    
+    .rounded_product  div {
+        height: 90px;
+        width: 90px;
+    }
 }
 

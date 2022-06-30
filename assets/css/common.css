@@ -277,6 +277,7 @@ line-height: 21px;
 #categoryMenuToggle svg{
   height: 16px;
   width: 20px;
+  fill: white;
 }
 header.custom_header {
   position: fixed;
@@ -288,7 +289,10 @@ header.custom_header {
 
 .custom_header .top-header {
   background: #d1d1d1;
-  padding: 9px 0;
+  padding: 6px 0;
+}
+.top-header .row{
+  align-items: center;
 }
 
 .custom_header .top-header .top_header ul {
@@ -506,6 +510,11 @@ header.custom_header {
 .desktop_cart_content .carted_items:last-child{
   margin-bottom: 45px;
 }
+
+.light_badge{
+  padding: 5px;
+  background-color: var(--primary-color);
+}
 .desktop_cart_box:hover .desktop_cart{
   top: 0px;
   opacity: 1;
@@ -531,11 +540,11 @@ header.custom_header {
 
 
 .desktop_place_order  button:first-child{
-  padding: 12px;
+  padding: 9px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 26px;
   color: #FFFFFF;
   background: var(--primary-color);
   border-bottom-left-radius: 15px;
@@ -547,11 +556,11 @@ header.custom_header {
   width: 49%;
 }
 .desktop_place_order button:last-child{
-  padding: 12px;
+  padding: 9px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 26px;
   color: var(--primary-color);
   background: white;
   border-bottom-right-radius: 15px;
@@ -579,7 +588,7 @@ header.custom_header {
 }
 
 .carted_item span {
-  color: #787e8d !important;
+  color: var(--primary-color) !important;
   margin-left: 10px;
 }
 
@@ -587,12 +596,15 @@ header.custom_header {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #787e8d80;
+  color: var(--primary-color);
 }
 
 .carted_item-price span {
   color: var(--primary-color);
   margin-left: 10px;
+}
+.carted_item_price span:first-child{
+  opacity: .4;
 }
 
 .header_user_area ul {
@@ -617,7 +629,8 @@ header.custom_header {
 }
 
 .header_user_area ul li a svg {
-  margin-right: 10px;
+  margin-right: 5px;
+  height: 20px;
 }
 
 /*new category menu*/
@@ -699,12 +712,16 @@ header.custom_header {
   font-size: 14px;
   line-height: 21px;
   color: #263238;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .custom_header .search_bar .search_btn{
   background-color: var(--primary-color);
   color: white;
   border:none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .custom_header .search_bar  input{
@@ -718,7 +735,7 @@ header.custom_header {
 
 .custom_header .header_user_area .sign_in_btn{
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   color: var(--primary-color);
@@ -1260,6 +1277,7 @@ line-height: 24px;
             width: 100%;
             padding: 8px;
             margin-bottom: 21px;
+            text-decoration: none;
 
           }
 
@@ -1272,8 +1290,8 @@ line-height: 24px;
             padding-left: 22px;
           }
           .find_store svg{
-            padding: 5px;
-            width: 95px;
+            width: 25px;
+            margin-right: 36px;
       
           }
           .find_store p{
@@ -1533,10 +1551,10 @@ margin-right: 8px;
 }
 
 .mobile_place_order button:first-child{
-  padding: 12px;
+  padding: 6px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 36px;
   color: #FFFFFF;
   background: var(--primary-color);
@@ -1554,10 +1572,10 @@ bottom: calc(0% + 62px);
   width: 49%;
 }
 .mobile_place_order button:last-child{
-  padding: 12px;
+  padding: 6px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 36px;
   color: var(--primary-color);
   background: white;
@@ -2107,7 +2125,7 @@ z-index: 3;
     }
     #mobile_header{
       display: block !important;
-      z-index: 100;
+      z-index: 999;
     }
   
 
@@ -2174,6 +2192,7 @@ z-index: 3;
   #footer{
     padding:0px 10px;
     margin-bottom: 60px;
+    padding-bottom: 25px;
 
   }
   .top_footer .useful_links {
