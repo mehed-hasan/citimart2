@@ -1709,7 +1709,7 @@ button{
   border: none;
   background-color: #FFEBEB;
   color: var(--primary-color);
-  font-size: 24px;
+  font-size: 18px;
   width: 50%;
 }
 .counter_btn .add_to_bag:last-child {
@@ -1796,6 +1796,7 @@ button{
 
 .inc_btn_2 .counter_btn button{
   width: 33.33%;
+  width:70%;
 }
 .inc_btn_2 .counter_btn input{
   width: 33.33%;
@@ -1826,6 +1827,7 @@ button{
 
 .inc_btn_2 .counter_btn .add_to_bag{
   color: white;
+  font-size: 22px;
 }
 
 
