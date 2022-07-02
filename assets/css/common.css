@@ -24,11 +24,17 @@ body{
   }
 }
 @media screen and (max-width:992px){
+
   #page_content{
     max-width: 100%;
     width: 100%;
     margin: auto;
   }
+}
+.square_product .counter_btn{
+  height: 27px;
+  align-items: center;
+  margin-bottom: 5px;
 }
 /* Code for creating custom gap ended left right   */
 
@@ -117,6 +123,14 @@ input{
   color: white;
   background-color: var(--primary-color);
 }
+.mid_header .search_bar .dropdown-menu a{
+  display: flex;
+  align-items: center;
+}
+.mid_header .search_bar .dropdown-menu img{
+  width: 20px;
+  margin-right: 10px;
+}
 
 /* Preventing default  */
 
@@ -181,7 +195,7 @@ input{
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: unset;
+  /* overflow: unset; */
 }
 .body_scroll_lock{
   overflow: hidden;
@@ -450,7 +464,7 @@ header.custom_header {
 }
 
 .hotline_area ul li a svg {
-  margin-right: 15px;
+  margin-right: 4px;
 }
 
 .mid_header {
@@ -704,7 +718,7 @@ header.custom_header {
   display: none;
 }
 .custom_header .search_bar .dropdown-toggle{
-  background-color: var(--secondary-color);
+  background-color: #e9e9e9;
   color: rgba(38, 50, 56, 1);
   border: none;
   font-style: normal;
@@ -896,6 +910,7 @@ header.custom_header {
   line-height: 14px;
   color: var(--primary-color);
   margin-top: 17px;
+  margin-bottom: 15px;
 }
 .mobile_drawer .accordion-item {
   background-color: #fff;
@@ -1088,6 +1103,10 @@ align-items: center;
   padding: 15px !important;
   border: none;
 }
+
+.modal-content .counter_btn input{
+  padding: 5px !important;
+}
 .modal .form_items{
   margin-bottom: 35px;
 }
@@ -1182,6 +1201,14 @@ color: #898989;
 #footer{
   background-color:#373f50;
 }
+@media screen and (max-width:1202px){
+  #footer{
+    padding-bottom: 70px;
+  }
+  .product_details_page {
+    margin-top: 90px !important;
+}
+}
 #footer .top_footer .row{
   min-height: 329px;
 }
@@ -1257,8 +1284,9 @@ line-height: 24px;
 } 
 
 .tiny_footer_images img{
-  margin: 0px 10px;
+  margin: 0px 8px;
   border-radius: 5px;
+  width: 60px;
 }
 
 
@@ -1291,7 +1319,7 @@ line-height: 24px;
           }
           .find_store svg{
             width: 25px;
-            margin-right: 36px;
+            margin-right: 26px;
       
           }
           .find_store p{
@@ -1395,7 +1423,7 @@ line-height: 24px;
   color: rgba(215, 215, 215, 1);
 }
 .mobile_menu_content .input-group{
-  height: 50px;
+  height: 40px;
   margin-top: 10px;
 }
 
@@ -1436,6 +1464,9 @@ line-height: 24px;
 }
 .menu_content_heading{
   background:#F4F4F4 ;
+}
+.add_item{
+  padding: 0px 5px;
 }
 .menu_content_heading h4{
   padding: 8px 0px;
@@ -1718,6 +1749,7 @@ button{
 }
 .counter_btn button{
   width: 25%;
+  font-size: 20px;
 }
 
 /* Css forincremental button (red) end  */
@@ -1737,6 +1769,10 @@ button{
   
 }
 
+.product_details_page{
+  margin-top: 200px;
+
+}
 .product_details{
   font-style: normal;
   font-weight: 400;
@@ -1770,9 +1806,23 @@ button{
     font-size: 12px;
   }
   .inc_btn_2 .counter_btn input{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:500){
+
+  .inc_btn_2 .counter_btn input, .inc_btn_2 .counter_btn .add_to_bag{
     font-size: 12px;
   }
 }
+@media screen and (max-width:430px){
+
+  .inc_btn_2 .counter_btn input, .inc_btn_2 .counter_btn .add_to_bag{
+    font-size: 18px !important;
+  }
+}
+
 /* Square product img ended  */
 
 
@@ -1854,7 +1904,7 @@ button{
 }
 
 .payment_footer .row{
-  min-height: 350px;
+  min-height: 250px;
 
 }
 
@@ -1978,7 +2028,7 @@ color: #44444F;
   border-radius: 4px;
 }
 .bordered_btns_group button svg{
-  padding: 4px;
+  padding: 8px;
 }
 
 .bordered_btns_group button:last-child{
@@ -1997,7 +2047,7 @@ color: #B7B6B6;
 }
 
 .details_btn_groups{
-  max-width: 354px;
+  max-width: 300px;
   width: 100%;
 }
 .single_image{
@@ -2192,9 +2242,7 @@ z-index: 3;
     height: 40px;
   }
   #footer{
-    padding:0px 10px;
     margin-bottom: 60px;
-    padding-bottom: 25px;
 
   }
   .top_footer .useful_links {

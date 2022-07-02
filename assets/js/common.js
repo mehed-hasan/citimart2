@@ -1,5 +1,5 @@
 
-  $(".mobile_menu a, .mobile_top_bar a ").click(function(){
+  $(".mobile_menu a, .mobile_top_bar a, .cus_menu a ").click(function(){
     var mobile_menu_content_name = $(this).attr("data-action");
     // If go to home then scroll is available -----------
     if(mobile_menu_content_name == "home"){
@@ -160,8 +160,7 @@ $(document).ready(function(){
     console.log("#"+ $get_tab_name);
   
   }else{
-    localStorage.setItem('tab_name', '');
-    
+    localStorage.setItem('tab_name', '');  
   }
 
 });

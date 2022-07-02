@@ -195,6 +195,24 @@
 .cat_btn_group {
     text-align: center;
 }
+.see_more_wrapper button{
+    padding: 2px 15px;
+}
+
+.see_more_wrapper{
+    display: none;
+}
+
+@media screen and (max-width:992px){
+    .cat_expand{
+        display: none;
+    }
+    .see_more_wrapper{
+        display: block;
+    }
+  
+}
+
 
 .cat_btn_group .cat_btn {
     margin-bottom: 16px;
@@ -279,7 +297,7 @@
 
 /* Specific product section css started */
 .specific_bundles .rounded_product{
-margin-bottom: 40px;
+margin-bottom: 20px;
 width: 16.66%;
 text-align: center;
 }
@@ -301,7 +319,7 @@ text-align: center;
 .rounded_product a {
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: #474C5A;
 }
@@ -724,8 +742,8 @@ text-align: center;
 
 
     .isotop .rounded_product  div {
-        height: 130px;
-        width: 130px;
+        height: 100px;
+        width: 110px;
     }
 
 
@@ -772,18 +790,24 @@ text-align: center;
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width:610px){
+    .rounded_product div {
+        height: 120px;
+        width: 130px;
+    }
+}
 
 @media screen and (max-width:475px){
     .isotop .rounded_product div{
-        width: 100%;
-        height: 100px;
+        width: 80px;
+        height: 70px;
     }
   }
 
 @media screen and (max-width:450px){
     
     .rounded_product  div {
-        height: 100px;
+        height: 90px;
         width: 100px;
     }
 }

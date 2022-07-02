@@ -406,6 +406,7 @@ height: 30px;
 
 .for_mobile .accordion-item{
     border: none;
+    margin-bottom: 40px;
 }
 
 .btn-outline-primary.active{
