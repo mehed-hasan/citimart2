@@ -203,9 +203,10 @@
     display: none;
 }
 
+
 @media screen and (max-width:992px){
     .cat_expand{
-        display: none;
+        display: none ;
     }
     .see_more_wrapper{
         display: block;

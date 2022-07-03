@@ -684,7 +684,7 @@
                       <div class="desktop_cart">
                         <div class="cart_arrow"></div>
                         <div class="desktop_cart_content">
-                         <form action="">
+                         <form action="pages/checkout.html">
                           <div class="items_no text-left px-4 py-2">
                             <h2>3 ITEMS</h2>
                             
@@ -868,9 +868,7 @@
                               </div>
                             </div>
                           </div>
-                          <div
-                            class="carted_items d-flex justify-content-around align-items-center"
-                          >
+                          <div class="carted_items d-flex justify-content-around align-items-center">
                             <div class="item_cross">
                               <svg
                                 width="14"
@@ -955,7 +953,7 @@
                           </div>
 
                           <div class="desktop_place_order">
-                            <button type="submit"  class="place_order">Place Order</button>
+                            <button  type="submit"  class="place_order">Place Order</button>
                             <button href=""><span>BDT </span> 423</button>
                           </div>
                          </form>
@@ -6985,7 +6983,54 @@
         </div>
       </section>
 
-      <section id="all_cat_name" >
+
+      <!-- For desktop  -->
+      <section id="all_cat_name desktop_all_cat_name  "class="d-none d-lg-block" >
+        <div class="gap_40"></div>
+        <div class="container">
+          <div class="cat_btn_group">
+            <a href="pages/products.html" class="cat_btn">Rice</a>
+            <a href="pages/products.html" class="cat_btn">Cooking Essentials</a>
+            <a href="pages/products.html" class="cat_btn">Rice</a>
+            <a href="pages/products.html" class="cat_btn">Oil</a>
+            <a href="pages/products.html" class="cat_btn">Vegetables</a>
+            <a href="pages/products.html" class="cat_btn">Fruits</a>
+            <a href="pages/products.html" class="cat_btn">Chocolates & Candies</a>
+            <a href="pages/products.html" class="cat_btn">Fish Meat</a>
+            <a href="pages/products.html" class="cat_btn">Flour</a>
+            <a href="pages/products.html" class="cat_btn">Baby Food & Care</a>
+            <a href="pages/products.html" class="cat_btn">Breads</a>
+            <a href="pages/products.html" class="cat_btn">Milk & Dairy Products</a>
+            <a href="pages/products.html" class="cat_btn">Home Appliances</a>
+            <a href="pages/products.html" class="cat_btn">Personal Care</a>
+            <a href="pages/products.html" class="cat_btn">Stationery</a>
+            <a href="pages/products.html" class="cat_btn">Gift & Toys</a>
+            <a href="pages/products.html" class="cat_btn">Sauces & Pickles</a>
+            <a href="pages/products.html" class="cat_btn">Beverage</a>
+            <a href="pages/products.html" class="cat_btn">Biscuits & Cakes</a>
+            <a href="pages/products.html" class="cat_btn">Fish Meat</a>
+            <a href="pages/products.html" class="cat_btn">Milk & Dairy Products</a>
+            <a href="pages/products.html" class="cat_btn">Stationery</a>
+            <a href="pages/products.html" class="cat_btn">Gift & Toys</a>
+            <a href="pages/products.html" class="cat_btn">Beverage</a>
+            <a href="pages/products.html" class="cat_btn">Beverage</a>
+            <a href="pages/products.html" class="cat_btn">Oil</a>
+            <a href="pages/products.html" class="cat_btn">Biscuits & Cakes</a>
+            <a href="pages/products.html" class="cat_btn">Flour</a>
+            <a href="pages/products.html" class="cat_btn">Fish Meat</a>
+            <div class="text-center see_more_wrapper">
+            </div>
+          </div>
+        </div>
+        <div class="gap_40"></div>
+      </section>
+
+
+      <!-- For Desktop ended  -->
+
+
+      <!-- For mobile all cat nav  -->
+      <section id="all_cat_name mobile_all_cat_name " class="d-block d-lg-none mt-3">
         <div class="gap_40"></div>
         <div class="container">
           <div class="cat_btn_group">
@@ -7029,7 +7074,7 @@
         </div>
         <div class="gap_40"></div>
       </section>
-  
+  <!-- For mobile all cat nav  -->
   
       <section id="product_offers">
         <div class="gap_40"></div>
@@ -8004,31 +8049,17 @@
 
       $(".cat_expandar").click(function(){
         $(".cat_expand").fadeToggle(500);
+
+        $text = $(this).text();
+        if($text == "See Less"){
+          $(this).text("See More");
+        }else{
+          $(this).text("See Less");
+        }
       });
       
   
 
-      $(window).resize(function(){
-        if(window.innerWidth > 992){
-          $(".cat_expand").fadeIn(500);
-
-        }else{
-          $(".cat_expand").fadeOut(500);
-
-
-          // Track to isotop section 
-          $( '.isotop_filter_btn' ).on( 'click', function(e){
-          var href = "#isotop_section"
-
-          $( 'html, body' ).animate({
-            scrollTop: $( href ).offset().top
-          }, '300' );
-          
-          e.preventDefault();
-        });
-
-        }
-      });
 
 
 
