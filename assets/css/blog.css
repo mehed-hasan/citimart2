@@ -278,6 +278,10 @@
     color: #5c5d78;
     margin-top: 40px;
     margin-bottom: 10px;
+    text-decoration: none;
+}
+a.news_body_title:hover{
+    color: #5c5d78;
 }
 .news_card .blog_status{
     max-width: 100% !important; 
