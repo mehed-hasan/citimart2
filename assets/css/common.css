@@ -467,6 +467,10 @@ header.custom_header {
   margin-right: 4px;
 }
 
+.hotline_area ul li a span{
+  margin-right: 8px;
+}
+
 .mid_header {
   padding: 12px 0px;
   background: #fff;
@@ -763,7 +767,7 @@ header.custom_header {
 
 .department_items .nav_mega_menu {
   position: absolute;
-  top: 200%;
+  top: 150%;
   transition: .5s;
   left: 50%;
   transform: translate(-50%, -10%);
@@ -864,13 +868,13 @@ header.custom_header {
   z-index: 990;
 }
 
-.mobile_drawer .all_department_menu{
+.mobile_cat .all_department_menu{
   padding: 0px;
   position: relative;
   height: 100vh;
 }
 
-.mobile_drawer .department_items{
+.mobile_cat .department_items{
   max-width: 94px;
   width: 100%;
   position: relative;
@@ -881,30 +885,30 @@ header.custom_header {
   padding-bottom: 42px;
 }
 
-.mobile_drawer ul{
+.mobile_cat ul{
   margin-bottom: 0px;
 }
 
-.mobile_drawer ul li{
+.mobile_cat ul li{
   background-color: #f9f9f9;
   padding: 5px;
 }
 
-.mobile_drawer .nav{
+.mobile_cat .nav{
   display: block !important;
 }
-.mobile_drawer ul li a.active span{
+.mobile_cat ul li a.active span{
   color: var(--primary-color);
 }
-.mobile_drawer ul li a.active{
+.mobile_cat ul li a.active{
   background-color: transparent !important;
 }
 
-.mobile_drawer ul li a.active img {
+.mobile_cat ul li a.active img {
   -webkit-filter: invert(0%) grayscale(100%) brightness(93%) sepia(81%) hue-rotate(-49deg) saturate(400%) contrast(5);
 }
 
-.mobile_drawer .mobile_item_heading h5{
+.mobile_cat .mobile_item_heading h5{
   font-weight: 600;
   font-size: 14px;
   line-height: 14px;
@@ -912,24 +916,24 @@ header.custom_header {
   margin-top: 17px;
   margin-bottom: 15px;
 }
-.mobile_drawer .accordion-item {
+.mobile_cat .accordion-item {
   background-color: #fff;
   border: none;
 }
-.mobile_drawer .accordion-button:not(.collapsed) {
+.mobile_cat .accordion-button:not(.collapsed) {
   color: #3B3D4A;
   background-color: transparent;
   box-shadow: none;
 }
-.mobile_drawer .accordion-button:not(.collapsed)::after {
+.mobile_cat .accordion-button:not(.collapsed)::after {
   background-image:url(../images/icons/arrow.png);
   transform: rotate(-180deg);
 }
-.mobile_drawer .accordion-button::after {
+.mobile_cat .accordion-button::after {
   background-image:url(../images/icons/arrow.png);
 }
 
-.mobile_drawer .accordion-button:focus {
+.mobile_cat .accordion-button:focus {
   z-index: 0;
   border-color: none;
   outline: 0;
@@ -939,7 +943,7 @@ header.custom_header {
 border-radius: 8px;
 }
 
-.mobile_drawer .accordion-button{
+.mobile_cat .accordion-button{
   padding: 10px;
   font-weight: 500;
   font-size: 14px;
@@ -949,14 +953,14 @@ border-radius: 8px;
   padding: 10px 5px;
 }
 
-.mobile_drawer .mobile_sub_item ul li{
+.mobile_cat .mobile_sub_item ul li{
   list-style: none;
   background: white;
   padding-bottom: 11px;
   padding-top: 0px;
 }
 
-.mobile_drawer .mobile_sub_item ul li a{
+.mobile_cat .mobile_sub_item ul li a{
   text-decoration: none;
   font-weight: 400;
   font-size: 12px;
@@ -966,12 +970,12 @@ border-radius: 8px;
   text-decoration: none;
 }
 
-.mobile_drawer .accordion-body {
+.mobile_cat .accordion-body {
   padding: 0px 10px;
   overflow: scroll;
 }
 
-.mobile_drawer .tab-content>.tab-pane {
+.mobile_cat .tab-content>.tab-pane {
   overflow: scroll;
   height: calc(100vh + 60px);
 }
@@ -2154,7 +2158,11 @@ z-index: 3;
 /* 1425px break point ------------------- */
 @media screen and (max-width:1425px){
   .department_items .nav_mega_menu {
-    top:178% !important;
+    top:158% !important;
+  }
+
+  .add_to_bag{
+    font-size: 13px;
   }
 
 }
@@ -2252,7 +2260,9 @@ z-index: 3;
 }
 
 
-
+.add_to_bag{
+  font-size: 14px;
+}
 .top_footer img{
   padding-top: 20px;
 

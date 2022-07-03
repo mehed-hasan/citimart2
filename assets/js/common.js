@@ -140,14 +140,15 @@ $(".heart_btn").click(function(){
 
 
 
-// Script for link with tab active 
+// Script for link with tab active ------------------------
+// ---------------------------------------------------------
 
-$(document).ready(function(){
-  $page_link = window.location.href;
-  if($page_link.includes('#')){
+$(".footer_options a").click(function(){
+  
+    $page_link =$(this).attr('href');
+    if($page_link.includes('#')){
     $tab_name =  $page_link.split("#").pop();
-    alert($tab_name);
-    // set session 
+    // alert($tab_name);
     localStorage.setItem('tab_name', $tab_name);
 
     $get_tab_name = localStorage.getItem("tab_name");
@@ -158,7 +159,12 @@ $(document).ready(function(){
     $("#"+ $get_tab_name).addClass("show active");
     $("."+ $get_tab_name).addClass("active");
     
-    console.log("#"+ $get_tab_name);
+    // console.log("#"+ $get_tab_name);
+    var href = "#desktop_header";
+
+          $( 'html, body' ).animate({
+            scrollTop: $( href ).offset().top
+          }, '300' );
   
   }else{
     localStorage.setItem('tab_name', '');  
@@ -166,3 +172,33 @@ $(document).ready(function(){
 
 });
 
+$(document).ready(function(){
+  $page_link = window.location.href;
+  if($page_link.includes('#')){
+    $tab_name =  $page_link.split("#").pop();
+    // alert($tab_name);
+    localStorage.setItem('tab_name', $tab_name);
+
+    $get_tab_name = localStorage.getItem("tab_name");
+    $(".page_linked .tab-pane").removeClass("show active");
+
+    $(".nav-pills button").removeClass("active");
+  
+    $("#"+ $get_tab_name).addClass("show active");
+    $("."+ $get_tab_name).addClass("active");
+    
+    // console.log("#"+ $get_tab_name);
+    var href = "#desktop_header";
+
+    $( 'html, body' ).animate({
+      scrollTop: $( href ).offset().top
+    }, '300' );
+  
+  }else{
+    localStorage.setItem('tab_name', '');  
+  }
+
+});
+
+// Script for link with tab active ------------------------
+// ---------------------------------------------------------

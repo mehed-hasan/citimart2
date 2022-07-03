@@ -7,6 +7,16 @@
 
 }
 
+.track_order_banner .search_bar .dropdown-menu a {
+    display: flex;
+    align-items: center;
+}
+
+.track_order_banner .search_bar .dropdown-menu  a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
 .track_order_banner p{
     font-style: normal;
     font-weight: 400;
@@ -21,12 +31,26 @@
 }
 .track_order_banner  input{
     padding: 12px 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
-.track_order_banner .search_bar button{
+.track_order_banner .search_bar button:first-child{
     background-color:var(--primary-color);
     color: white;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
+
+.track_order_banner .search_bar button:last-child{
+    background-color:var(--primary-color);
+    color: white;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
 
 .track_order_banner .invoices{
     font-style: normal;
@@ -301,6 +325,8 @@
     font-size: 14px;
 }
  
+
+
 
 #track_history img {
     height: 40px;

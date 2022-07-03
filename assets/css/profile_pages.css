@@ -264,7 +264,7 @@ margin-top: 10px;
 .all_orders{
     max-width: 480px;
     width: 100%;
-    height: 560px;
+    height: 690px;
     overflow: scroll;
     border-right: 1px solid 
     rgba(183, 182, 182, 1);
@@ -361,9 +361,15 @@ height: 30px;
     font-size: 14px;
  
 }
+
+    .display_orders{
+        margin-left: 20px;
+    }
+
 .display_orders .invoice_info{
     color: rgba(196, 196, 196, 1);
     margin: 20px 0px;
+    font-size: 14px !important;
 }
 
 .display_orders .invoice_date_time span:first-child{
@@ -376,6 +382,8 @@ height: 30px;
 
 .display_orders .ordered_product_list{
     margin-top: 40px;
+    height: 400px;
+    overflow: scroll;
 }
 
 .display_orders .ordered_quantity span:first-child{
@@ -397,7 +405,7 @@ height: 30px;
     padding: 15px;
 }
 .invoice_no{
-    font-size: 16px;
+    font-size: 14px;
 }
 /* Last order tab/page css ended  */
 
@@ -474,7 +482,9 @@ height: 30px;
         padding: 25px 10px;
     }
 
-
+    .display_orders{
+        margin-left: 0px;
+    }
     .delivery_address {
         margin: auto;
     }
