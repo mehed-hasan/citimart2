@@ -146,6 +146,7 @@ $(document).ready(function(){
   $page_link = window.location.href;
   if($page_link.includes('#')){
     $tab_name =  $page_link.split("#").pop();
+    alert($tab_name);
     // set session 
     localStorage.setItem('tab_name', $tab_name);
 
