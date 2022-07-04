@@ -850,7 +850,9 @@ header.custom_header {
 .mobile_menu_closer{
   padding: 5px 12px;
   background-color: #F7F7F7;
+  display: none;
 }
+
 .mobile_search_cart_btn a:first-child {
 }
 .mobile_menu_content{
@@ -862,6 +864,8 @@ header.custom_header {
   z-index: 1;
   background-color: white;
   overflow: scroll;
+}
+.mobile_menu_content .container{
 }
 .accordion-collapse.show{
   transition: 4s;

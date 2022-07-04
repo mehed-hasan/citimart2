@@ -3,9 +3,11 @@
     var mobile_menu_content_name = $(this).attr("data-action");
     // If go to home then scroll is available -----------
     if(mobile_menu_content_name == "home"){
+      $(".mobile_menu_closer").hide();
       $("body").removeClass("body_scroll_lock");
     }else{
       $("body").addClass("body_scroll_lock");
+      $(".mobile_menu_closer").show();
     }
      // If go to home then scroll is available -----------
 
@@ -18,6 +20,12 @@
     //Activing color 
     $(".mobile_menu a, .mobile_top_bar a ").removeClass("mob_menu_item_active");
     $(this).addClass("mob_menu_item_active");
+    
+  });
+
+
+  $(".mobile_menu_closer a").click(function(){
+    $(".mobile_menu_closer").hide();
   });
 
 
