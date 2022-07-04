@@ -655,7 +655,6 @@ header.custom_header {
 .all_department_menu {
   background: #fff;
   padding: 15px 0;
-  display: none; /** display none by default*/
 }
 
 .all_department_menu .department_items ul.float_nav_item {
