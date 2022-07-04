@@ -2047,6 +2047,11 @@ color: #44444F;
  width: 80%;
 }
 
+
+.bordered_btns_group a:last-child{
+  width: 80%;
+ }
+
 .product_details .details p{
   font-style: normal;
 font-weight: 400;
