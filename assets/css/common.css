@@ -847,6 +847,10 @@ header.custom_header {
 .mobile_search_cart_btn a{
   text-decoration: none;
 }
+.mobile_menu_closer{
+  padding: 5px;
+  background-color: #F7F7F7;
+}
 .mobile_search_cart_btn a:first-child {
 }
 .mobile_menu_content{
