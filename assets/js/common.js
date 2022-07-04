@@ -210,3 +210,15 @@ $(document).ready(function(){
 
 // Script for link with tab active ------------------------
 // ---------------------------------------------------------
+
+// Cart counter 
+
+// $(".cart_counter button:last-child").click(function(){
+ 
+//  $price = parseInt($(this).parent().parent().find(".single_price").text());
+//  $quantity = parseInt($(this).parent().find("input").val());
+
+//  $total_price = $price*$quantity;
+// //  alert($total_price);
+//  $(this).parent().parent().find(".single_price").text($total_price);
+// });

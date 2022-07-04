@@ -656,6 +656,9 @@ header.custom_header {
   background: #fff;
   padding: 15px 0;
 }
+.all_department_menu_desktop{
+  display: none;
+}
 
 .all_department_menu .department_items ul.float_nav_item {
   display: flex;
@@ -845,6 +848,9 @@ header.custom_header {
 }
 .mobile_search_cart_btn a{
   text-decoration: none;
+}
+.mobile_favourite .mob_fav_items{
+  margin-bottom: 120px;
 }
 .mobile_menu_closer{
   padding: 5px 12px;
@@ -1310,6 +1316,7 @@ line-height: 24px;
            /* Find store css  */
 
            .find_store{
+            position: relative;
             background-color: transparent;
             height: 120px;
             border-radius: 25px;
@@ -1318,6 +1325,12 @@ line-height: 24px;
             margin-bottom: 21px;
             text-decoration: none;
 
+          }
+
+          .find_store .anchor{
+            position: absolute;
+            height: 100%;
+            width: 100%;
           }
 
           .location_flinder{
@@ -1356,6 +1369,7 @@ line-height: 24px;
         }
       
       /* Find store css ended  */
+
 
 /* -------------------------------------------------- */
 /* Footer part ended ----------------- */
@@ -1515,9 +1529,15 @@ text-align: center;
 color: #DADADA;
 margin-right: 8px;
 }
+.item_price .single_price{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--primary-color);
+}
 .carted_item_name h3{
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   color: #44444F;

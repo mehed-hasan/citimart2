@@ -7,15 +7,7 @@
 
 }
 
-.track_order_banner .search_bar .dropdown-menu a {
-    display: flex;
-    align-items: center;
-}
 
-.track_order_banner .search_bar .dropdown-menu  a img {
-    width: 20px;
-    margin-right: 10px;
-}
 
 .track_order_banner p{
     font-style: normal;
@@ -29,26 +21,9 @@
 .track_order_banner .search_bar{
    margin: 56px 0px;
 }
-.track_order_banner  input{
+
+.track_order_banner input {
     padding: 12px 20px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.track_order_banner .search_bar button:first-child{
-    background-color:var(--primary-color);
-    color: white;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-.track_order_banner .search_bar button:last-child{
-    background-color:var(--primary-color);
-    color: white;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
 }
 
 
@@ -109,6 +84,10 @@
 }
 
 
+.track_order_banner .search_bar button {
+    background-color: var(--primary-color);
+    color: white;
+}
 
 
 /* Track history css started   */

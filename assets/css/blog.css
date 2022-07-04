@@ -3,10 +3,10 @@
 /******************** Latest Reviews Part Start  ********************/
 .blog_page_title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 80px;
     color: #b5b6c2;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 .latest_blog_card {
@@ -33,7 +33,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .blog_category p {
     font-family: "Poppins";
@@ -222,13 +222,14 @@
     border-top-right-radius: 20px;
     min-height: 300px;
 }
-.trending_review_title {
+.trending_review_title a{
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #5c5d78;
     margin-top: 10px;
     margin-bottom: 5px;
+    text-decoration: none;
 }
 .trending_review_body {
     padding: 20px;
@@ -291,6 +292,7 @@ a.news_body_title:hover{
     font-size: 14px;
     line-height: 21px;
     color: rgba(92, 93, 120, 0.6);
+    margin-top: 12px;
 }
 .slider {
     margin: 0px auto;
