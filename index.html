@@ -1011,7 +1011,7 @@
             </div>
           </div>
         </div>
-        <div class="all_department_menu">
+        <div class="all_department_menu all_department_menu_desktop">
           <div class="container">
             <div class="row">
               <div class="col-12">
@@ -8039,7 +8039,7 @@
         $(".all_department").addClass("visible_department");
       } else {
         $(".all_department").removeClass("visible_department");
-        $(".all_department_menu").slideUp(500);
+        $(".all_department_menu_desktop").slideUp(500);
       };   	
       });
 
@@ -8054,8 +8054,14 @@
         }
       });
       
-  
+      // Turn back to isotop section 
+    $(".isotop_filter_btn").click(function(){
+      var href = "#isotop_section";
 
+    $( 'html, body' ).animate({
+      scrollTop: $( href ).offset().top
+    }, '300' );
+    });
 
 
 
